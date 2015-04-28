@@ -1,0 +1,1072 @@
+// Define a basic language understanding state machine.
+// Understands simple sentences such as 'Sky is blue', 'Is sky blue?','Sky is not blue', 'Is sky not blue?', 'Bob is big', 'Bob is big?', 'Bob big', 'Bob big?'
+State:NounVerbAdjectiveStateMachine {
+	case :input goto State:sentenceState for each #word of :sentence;
+
+	:input {
+		set #input to :sentence;
+		set #speaker to :speaker;
+		set #conversation to :conversation;
+		set #target to :target;
+	}
+	:sentence {
+		set #instantiation to #sentence;
+	}
+	State:sentenceState {
+		case :do goto State:doState;
+
+		case "don" goto State:doState;
+
+		case "doesn" goto State:doState;
+
+		case "dont" goto State:dontState;
+
+		case "doesnt" goto State:dontState;
+
+		case :a goto State:sentenceState;
+
+		case :the goto State:sentenceState;
+
+		case :nounPossessive goto State:nounQuoteState;
+
+		case :noun goto State:nounState;
+
+		case :verb goto State:verbState;
+
+		case :what goto State:whatState;
+
+		case "whats" goto State:WhatQuoteSState;
+
+		case "Whats" goto State:WhatQuoteSState;
+
+		case :who goto State:whoState;
+
+		:do {
+			set #meaning to #do;
+		}
+		:a {
+			set #meaning to #a;
+		}
+		:the {
+			set #meaning to #the;
+		}
+		:nounPossessive {
+			set #meaning to :thing;
+			set #type to #possessive;
+		}
+		:thing {
+			set #instantiation to #thing;
+		}
+		:noun {
+			set #meaning to :thing;
+		}
+		:verb {
+			set #meaning to :action;
+		}
+		:action {
+			set #instantiation to #action;
+		}
+		:what {
+			set #meaning to #what;
+		}
+		:who {
+			set #meaning to #who;
+		}
+		// 'Do...', 'Does...'
+		State:doState {
+			do (assign :isQuestion to #true);
+			case :quote2 goto State:doState;
+
+			case "t" goto State:dontState;
+
+			case :not goto State:notState;
+
+			return;
+
+			:quote2 {
+				set #meaning to #quote;
+			}
+			:not {
+				set #meaning to #not;
+			}
+			// 'Sky is not...'
+			State:notState {
+				do (if (:isNot, #null)
+						then (assign :isNot to #true)
+						else (assign :isNot to (not :isNot)));
+				return;
+
+			}
+		}
+		// 'Dont...', 'Doesnt...'
+		State:dontState {
+			do (
+				assign :isQuestion to #true,
+				if (:do, #null)
+					then (assign :do to "do"),
+				if (:isNot, #null)
+					then (assign :isNot to #true)
+					else (assign :isNot to (not :isNot))
+			);
+			return;
+
+		}
+		// 'Sky's...'
+		State:nounQuoteState {
+			do (if (:nounPossessive, #null)
+					else (assign :noun to :nounPossessive));
+			case "s" goto State:nounQuoteState;
+
+			case :noun2 goto State:nounNounState;
+
+			:noun2 {
+				set #meaning to :thing2;
+			}
+			:thing2 {
+				set #instantiation to #thing;
+			}
+			// 'My age...'
+			State:nounNounState {
+				case :verb goto State:nounVerbState;
+
+				case :questionmark goto State:whatIsNounNounState;
+
+				:questionmark {
+					set #meaning to #question-mark;
+				}
+				// 'Sky is...'
+				State:nounVerbState {
+					case :a2 goto State:nounVerbState;
+
+					case :not goto State:notState;
+
+					case :adjective goto State:nounVerbAdjectiveState;
+
+					case :typenoun goto State:nounVerbTypeState;
+
+					case :questionWord goto State:nounVerbQuestionState;
+
+					:a2 {
+						set #meaning to #a;
+					}
+					:adjective {
+						set #meaning to :description;
+					}
+					:description {
+						set #instantiation to #description;
+					}
+					:typenoun {
+						set #meaning to :type;
+					}
+					:type {
+						set #instantiation to #thing;
+					}
+					:questionWord {
+						set #meaning to :question;
+					}
+					:question {
+						set #instantiation to #question;
+					}
+					// 'Sky is blue', "a ball is red", "I am a human", "I have a car", "My age is 44", "My car is a Honda"
+					State:nounVerbAdjectiveState {
+						case :adjective2 goto State:nounVerbAdjectiveState;
+
+						case :questionWord goto State:questionState;
+
+						case :punctuation goto State:nounVerbAdjectiveState;
+
+						:adjective2 {
+							set #meaning to :description2;
+						}
+						:description2 {
+							set #instantiation to #description;
+						}
+						:punctuation {
+							set #instantiation to #punctuation;
+						}
+						Answer:1.00:Function:nounVerbAdjectiveResponse;
+						Function:nounVerbAdjectiveResponse {
+							if (:isQuestion, #true)
+								then (Function:nounVerbAdjectiveRelation)
+								else (do (
+										assign :tense to (get #tense from :verb),
+										assign :nountype to (get #type from :noun),
+										assign :adjectivetype to (get #type from :adjective),
+										if (:not, #null)
+											then (assign :not to #not),
+										if (:a, #null)
+											else (do (assign :thing to (new :thing))),
+										if (:the, #null)
+											else (do (
+													assign :variable to (new (#variable, :thing)),
+													assign :context to (call #search on #Context with (:variable)),
+													if (:context, #null)
+														else (assign :thing to :context)
+												)),
+										if (:thing, #self)
+											then (do (
+													assign :pronoun to #true,
+													assign :noun to #i
+												)),
+										if (:thing, #it)
+											then (do (
+													assign :pronoun to #true,
+													assign :context to (call #search on #Context with (get #variable from #it)),
+													if (:context, #null)
+														else (assign :thing to :context)
+												)),
+										if (:thing, #his)
+											then (do (
+													assign :pronoun to #true,
+													assign :context to (call #search on #Context with (get #variable from #his)),
+													if (:context, #null)
+														else (assign :thing to :context)
+												)),
+										if (:thing, #her)
+											then (do (
+													assign :pronoun to #true,
+													assign :context to (call #search on #Context with (get #variable from #her)),
+													if (:context, #null)
+														else (assign :thing to :context)
+												)),
+										if (:thing, #this)
+											then (do (
+													assign :pronoun to #true,
+													assign :context to (call #search on #Context with (get #variable from #this)),
+													if (:context, #null)
+														else (assign :thing to :context)
+												)),
+										if (:thing, #i)
+											then (do (
+													assign :pronoun to #true,
+													assign :thing to (get #speaker from :input),
+													assign :noun to #you,
+													if (:noun2, #null)
+														then (assign :verb to :action)
+												)),
+										if (:thing, #you)
+											then (do (
+													assign :pronoun to #true,
+													assign :thing to (get #target from :input),
+													assign :noun to #i,
+													if (:noun2, #null)
+														then (assign :verb to :action)
+												)),
+										if (:description, #self)
+											then (assign :adjective to #i),
+										if (:description, #i)
+											then (do (
+													assign :description to (get #speaker from :input),
+													assign :adjective to #you
+												)),
+										if (:description, #you)
+											then (do (
+													assign :description to (get #target from :input),
+													assign :adjective to #i
+												)),
+										if (:description, #it)
+											then (do (
+													assign :context to (call #search on #Context with (get #variable from #it)),
+													if (:context, #null)
+														else (assign :description to :context)
+												)),
+										if (:description, #his)
+											then (do (
+													assign :context to (call #search on #Context with (get #variable from #his)),
+													if (:context, #null)
+														else (assign :description to :context)
+												)),
+										if (:description, #her)
+											then (do (
+													assign :context to (call #search on #Context with (get #variable from #her)),
+													if (:context, #null)
+														else (assign :description to :context)
+												)),
+										if (:description, #this)
+											then (do (
+													assign :context to (call #search on #Context with (get #variable from #this)),
+													if (:context, #null)
+														else (assign :description to :context)
+												)),
+										if (:description2, #null)
+											else (do (
+													if (:isNot, #true)
+														else (do (weak associate 
+																	:thing to 
+																	:description2 by 
+																	:action with meta 
+																	#tense as 
+																	:tense
+																)),
+													assign :newAdjective to (word (:adjective, :adjective2)),
+													associate :newAdjective to #adjective by #instantiation,
+													assign :newDescription to (new #description),
+													associate :newDescription to #description by #instantiation,
+													associate :newDescription to :description2 by #specialization,
+													associate :newDescription to :description by #is,
+													associate :newDescription to :description2 by #is,
+													associate :newDescription to :newAdjective by #word,
+													associate :newAdjective to :newDescription by #meaning,
+													assign :description to :newDescription,
+													assign :adjective to :newAdjective
+												)),
+										if (:a2, #null)
+											else (do (if (:action, #is)
+														then (assign :action to #instantiation)
+														else (assign :description to (new :description)))),
+										call #push on #Context with (:description),
+										call #push on #Context with (:thing),
+										set #topic to :thing on :conversation,
+										if (:noun2, #null)
+											else (do (if (:action, #is)
+														then (assign :action to :thing2)
+														else (assign :thing to (get :thing2 from :thing)))),
+										if (:thing2, #null)
+											else (call #push on #Context with (:thing2)),
+										if (:isNot, #true)
+											then (dissociate 
+													:thing to 
+													:description by 
+													:action with meta 
+													#tense as 
+													:tense
+												)
+											else (associate 
+													:thing to 
+													:description by 
+													:action with meta 
+													#tense as 
+													:tense
+												),
+										assign :response to (new #sentence),
+										append (random ("Okay, I will remember that", "I understand,", "I believe you that")) to #word of :response,
+										if (:a, #null)
+											else (append #the to #word of :response),
+										if (:the, #null)
+											else (append #the to #word of :response),
+										append 
+											:noun to 
+											#word of 
+											:response with meta 
+											#type as 
+											:nountype
+										,
+										if (:quote, #null)
+											else (do (
+													append :quote to #word of :response,
+													append "s" to #word of :response
+												)),
+										if not (:thing2, #null)
+											then (if (:noun2, #self)
+													then (append #i to #word of :response)
+													else (append :noun2 to #word of :response)),
+										if not (:do, #null)
+											then (do (
+													append :do to #word of :response,
+													if (:isNot, #true)
+														then (append :not to #word of :response)
+												)),
+										append 
+											:verb to 
+											#word of 
+											:response with meta 
+											#tense as 
+											:tense
+										,
+										if (:isNot, #true) and (:do, #null)
+											then (append :not to #word of :response),
+										if not (:a2, #null)
+											then (append :a2 to #word of :response),
+										if (:description, #self)
+											then (append #i to #word of :response)
+											else (append 
+													:adjective to 
+													#word of 
+													:response with meta 
+													#type as 
+													:adjectivetype
+												),
+										append #period to #word of :response
+									));
+						}
+						:quote {
+							set #meaning to #quote;
+						}
+						Function:nounVerbAdjectiveRelation {
+							assign :adjectiveOrig to :adjective;
+							assign :nounOrig to :noun;
+							assign :tense to (get #tense from :verb);
+							assign :nountype to (get #type from :noun);
+							assign :adjectivetype to (get #type from :adjective);
+							if (:not, #null)
+								then (assign :not to #not);
+							if not (:a, #null)
+								then (assign :thing to (new :thing));
+							if not (:the, #null)
+								then (do (
+										assign :variable to (new (#variable, :thing)),
+										assign :context to (call #search on #Context with (:variable)),
+										if (:context, #null)
+											else (assign :thing to :context)
+									));
+							if (:thing, #self)
+								then (do (
+										assign :pronoun to #true,
+										assign :noun to #i
+									));
+							if (:thing, #it)
+								then (do (
+										assign :pronoun to #true,
+										assign :context to (call #search on #Context with (get #variable from #it)),
+										if (:context, #null)
+											else (assign :thing to :context)
+									));
+							if (:thing, #his)
+								then (do (
+										assign :pronoun to #true,
+										assign :context to (call #search on #Context with (get #variable from #his)),
+										if (:context, #null)
+											else (assign :thing to :context)
+									));
+							if (:thing, #her)
+								then (do (
+										assign :pronoun to #true,
+										assign :context to (call #search on #Context with (get #variable from #her)),
+										if (:context, #null)
+											else (assign :thing to :context)
+									));
+							if (:thing, #this)
+								then (do (
+										assign :pronoun to #true,
+										assign :context to (call #search on #Context with (get #variable from #this)),
+										if (:context, #null)
+											else (assign :thing to :context)
+									));
+							if (:description, #self)
+								then (assign :adjective to #i);
+							if (:description, #it)
+								then (do (
+										assign :context to (call #search on #Context with (get #variable from #it)),
+										if (:context, #null)
+											else (assign :description to :context)
+									));
+							if (:description, #his)
+								then (do (
+										assign :context to (call #search on #Context with (get #variable from #his)),
+										if (:context, #null)
+											else (assign :description to :context)
+									));
+							if (:description, #her)
+								then (do (
+										assign :context to (call #search on #Context with (get #variable from #her)),
+										if (:context, #null)
+											else (assign :description to :context)
+									));
+							if (:description, #this)
+								then (do (
+										assign :context to (call #search on #Context with (get #variable from #this)),
+										if (:context, #null)
+											else (assign :description to :context)
+									));
+							if (:thing, #i)
+								then (do (
+										assign :thing to (get #speaker from :input),
+										assign :noun to #you,
+										if (:noun2, #null)
+											then (assign :verb to :action)
+									));
+							if (:thing, #you)
+								then (do (
+										assign :thing to (get #target from :input),
+										assign :noun to #i,
+										if (:noun2, #null)
+											then (assign :verb to :action)
+									));
+							if (:description, #i)
+								then (do (
+										assign :description to (get #speaker from :input),
+										assign :adjective to #you
+									));
+							if (:description, #you)
+								then (do (
+										assign :description to (get #target from :input),
+										assign :adjective to #i
+									));
+							if not (:description2, #null)
+								then (do (
+										assign :newAdjective to (word (:adjective, :adjective2)),
+										associate :newAdjective to #adjective by #instantiation,
+										assign :newDescription to (new #description),
+										associate :newDescription to #description by #instantiation,
+										associate :newDescription to :description2 by #specialization,
+										associate :newDescription to :description by #is,
+										associate :newDescription to :description2 by #is,
+										associate :newDescription to :newAdjective by #word,
+										associate :newAdjective to :newDescription by #meaning,
+										assign :description to :newDescription,
+										assign :adjective to :newAdjective
+									));
+							if not (:a2, #null)
+								then (do (if (:action, #is)
+											then (assign :action to #instantiation)
+											else (assign :description to (new (:description, #variable)))));
+							if not (:noun2, #null)
+								then (do (if (:action, #is)
+											then (assign :action to :thing2)
+											else (assign :thing to (get :thing2 from :thing))));
+							call #push on #Context with (:description);
+							call #push on #Context with (:thing);
+							set #topic to :thing on :conversation;
+							if (:description, #null)
+								then (do (
+										if (:noun2, #null)
+											then (do (
+													assign :result to (get :action from :thing),
+													if (:result, #null)
+														then (if (:action, #is)
+																then (do (
+																		if (:noun, "up")
+																			then (return #null),
+																		if (:noun, "there")
+																			then (return #null),
+																		if (:pronoun, #true)
+																			then (assign :result to :thing)
+																			else (do (
+																					assign :a2 to #a,
+																					assign :result to (get #instantiation from :thing)
+																				))
+																	)))
+												))
+											else (assign :result to (all :thing2 from :thing)),
+										assign :response to (new #sentence),
+										if (:result, #null)
+											then (do (
+													append (random ("I understand, but am not sure", "I understand the question, but have no idea", "I'm not sure")) to #word of :response,
+													if (:noun2, #null)
+														then (if (:who, #null)
+																then (append #what to #word of :response)
+																else (append #who to #word of :response)),
+													append 
+														:noun to 
+														#word of 
+														:response with meta 
+														#type as 
+														:nountype
+													,
+													if not (:quote, #null)
+														then (do (
+																append :quote to #word of :response,
+																append "s" to #word of :response
+															)),
+													if (:noun2, #null)
+														then (append 
+																:verb to 
+																#word of 
+																:response with meta 
+																#tense as 
+																:tense
+															)
+														else (append :noun2 to #word of :response),
+													if (:action, #is)
+														then (append :verb to #word of :response)
+												))
+											else (do (
+													append (random ("I known that", "To my knowledge")) to #word of :response,
+													if not (:a, #null)
+														then (append #a to #word of :response),
+													if not (:the, #null)
+														then (append #the to #word of :response),
+													append 
+														:noun to 
+														#word of 
+														:response with meta 
+														#type as 
+														:nountype
+													,
+													if not (:quote, #null)
+														then (do (
+																append :quote to #word of :response,
+																append "s" to #word of :response
+															)),
+													if not (:noun2, #null)
+														then (append :noun2 to #word of :response),
+													append 
+														:verb to 
+														#word of 
+														:response with meta 
+														#tense as 
+														:tense
+													,
+													if not (:a2, #null)
+														then (append #a to #word of :response),
+													if (:result, #self)
+														then (append #i to #word of :response)
+														else (append :result to #word of :response)
+												)),
+										append #period to #word of :response,
+										return :response
+									))
+								else (assign :result to (is :thing related to :description by :action));
+							assign :value to (get :action from :thing);
+							if (:result, #unknown)
+								then (do (
+										assign :result2 to (is :thing related to :adjectiveOrig by :action),
+										if (:result2, #unknown)
+											then (assign :result3 to (is :nounOrig related to :description by :action))
+											else (do (
+													assign :result to :result2,
+													assign :adjective to :adjectiveOrig,
+													assign :description to :adjectiveOrig
+												)),
+										if (:result3, #true) or (:result3, #false)
+											then (do (
+													assign :result to :result3,
+													assign :noun to :nounOrig,
+													assign :thing to :nounOrig,
+													assign :value to (get :action from :nounOrig)
+												))
+									));
+							if (:value, #self)
+								then (assign :value to #i);
+							if (:value, :speaker)
+								then (assign :value to #you);
+							if (:isNot, #true)
+								then (assign :result to (not :result));
+							assign :response to (new #sentence);
+							if (:result, #unknown)
+								then (if (:value, #null)
+										then (append (random ("I understand, but am not sure if", "I understand the question, but have no idea if", "I'm not sure if")) to #word of :response)
+										else (append (random ("I'm not certain, but I think", "I'm pretty sure that", "Perhaps, but I think")) to #word of :response))
+								else (if (:result, #true)
+										then (append (random ("That's right,", "You are correct,", "Yes, to my knowledge")) to #word of :response)
+										else (append (random ("No,", "You are incorrect,", "No, to my knowledge")) to #word of :response));
+							if not (:a, #null)
+								then (append #the to #word of :response);
+							if not (:the, #null)
+								then (append #the to #word of :response);
+							append 
+								:noun to 
+								#word of 
+								:response with meta 
+								#type as 
+								:nountype
+							;
+							if not (:quote, #null)
+								then (do (
+										append :quote to #word of :response,
+										append "s" to #word of :response
+									));
+							if not (:noun2, #null)
+								then (append :noun2 to #word of :response);
+							if not (:do, #null)
+								then (if (:result, #unknown)
+										then (if not (:value, #null)
+												then (assign :do_not to #true))
+										else (if (:isNot, #true)
+												then (if (:result, #true)
+														then (assign :do_not to #true))
+												else (if (:result, #false) and (:value, #null)
+														then (assign :do_not to #true))));
+							if (:do_not, #true)
+								then (do (
+										append :do to #word of :response,
+										append "not" to #word of :response
+									));
+							append 
+								:verb to 
+								#word of 
+								:response with meta 
+								#tense as 
+								:tense
+							;
+							if (:isNot, #true)
+								then (do (
+										if (:do, #null)
+											then (if (:result, #true) or (:result, #unknown)
+													then (append :not to #word of :response)),
+										if (:a2, #null)
+											else (append :a2 to #word of :response),
+										if not (:result, #unknown) or (:value, #null)
+											then (append 
+													:adjective to 
+													#word of 
+													:response with meta 
+													#type as 
+													:adjectivetype
+												)
+									))
+								else (if (:result, #false)
+										then (do (if (:value, #null)
+													then (do (
+															if (:do, #null)
+																then (append "not" to #word of :response),
+															if not (:a2, #null)
+																then (append :a2 to #word of :response),
+															append :adjective to #word of :response
+														))
+													else (do (
+															if not (:a2, #null)
+																then (append :a2 to #word of :response),
+															append :value to #word of :response,
+															append "not" to #word of :response,
+															append :adjective to #word of :response
+														))))
+										else (do (
+												if not (:result, #true) and not (:value, #null)
+													then (if (:do_not, #null)
+															then (append "not" to #word of :response)),
+												if not (:a2, #null)
+													then (append :a2 to #word of :response),
+												if (:result, #true) or (:value, #null)
+													then (append 
+															:adjective to 
+															#word of 
+															:response with meta 
+															#type as 
+															:adjectivetype
+														)
+											)));
+							if (:result, #unknown) and not (:value, #null)
+								then (do (
+										append 
+											:adjective to 
+											#word of 
+											:response with meta 
+											#type as 
+											:adjectivetype
+										,
+										append #comma to #word of :response,
+										append "because I know that" to #word of :response,
+										if not (:a, #null)
+											then (append #the to #word of :response),
+										if not (:the, #null)
+											then (append #the to #word of :response),
+										append 
+											:noun to 
+											#word of 
+											:response with meta 
+											#type as 
+											:nountype
+										,
+										if not (:quote, #null)
+											then (do (
+													append :quote to #word of :response,
+													append "s" to #word of :response
+												)),
+										if not (:noun2, #null)
+											then (append :noun2 to #word of :response),
+										append 
+											:verb to 
+											#word of 
+											:response with meta 
+											#tense as 
+											:tense
+										,
+										if not (:a2, #null)
+											then (append :a2 to #word of :response),
+										append :value to #word of :response
+									));
+							append #period to #word of :response;
+						}
+						// 'Sky is what', 'Sky is blue?'
+						State:questionState {
+							do (assign :isQuestion to #true);
+							return;
+
+						}
+					}
+					// 'Bob is person'
+					State:nounVerbTypeState {
+						do (
+							assign :adjective to :typenoun,
+							assign :description to :type
+						);
+						goto (State:nounVerbAdjectiveState);
+
+					}
+					// 'Bob eating?', "Bob is?"
+					State:nounVerbQuestionState {
+						case :punctuation goto State:nounVerbQuestionState;
+
+						Answer:1.00:Function:nounVerbAdjectiveRelation;
+					}
+				}
+				// 'What is my name', "What is Obama's job?"
+				State:whatIsNounNounState {
+					do (if (:verb, #null)
+							then (do (
+									assign :action to #is,
+									assign :verb to #is
+								)));
+					case :punctuation goto State:whatIsNounNounState;
+
+					Answer:1.00:Function:nounVerbAdjectiveRelation;
+				}
+			}
+		}
+		// 'Sky...'
+		State:nounState {
+			case :quote goto State:nounQuoteState;
+
+			case :do goto State:nounDoState;
+
+			case "don" goto State:nounDoState;
+
+			case "doesn" goto State:nounDoState;
+
+			case "dont" goto State:nounDontState;
+
+			case "doesnt" goto State:nounDontState;
+
+			case :not goto State:notState;
+
+
+		//case :adjective goto State:nounAdjectiveState;
+					case :verb goto State:nounVerbState;
+
+			// 'I do...'
+			State:nounDoState {
+				do (if (:do, #null)
+						then (assign :do to "do"));
+				case :quote2 goto State:nounDoState;
+
+				case "t" goto State:notState;
+
+				case :not goto State:notState;
+
+				case :verb goto State:nounVerbState;
+
+			}
+			// 'I dont...'
+			State:nounDontState {
+				do (
+					if (:do, #null)
+						then (assign :do to "do"),
+					if (:isNot, #null)
+						then (assign :isNot to #true)
+						else (assign :isNot to (not :isNot))
+				);
+				return;
+
+			}
+		}
+		// 'Is...'
+		State:verbState {
+			case :the goto State:verbState;
+
+			case :a goto State:verbState;
+
+			case :nounPossessive goto State:verbNounQuoteState;
+
+			case :noun goto State:verbNounState;
+
+			// 'Is sky's...'
+			State:verbNounQuoteState {
+				do (if (:nounPossessive, #null)
+						else (assign :noun to :nounPossessive));
+				case :quote goto State:verbNounQuoteState;
+
+				case "s" goto State:verbNounQuoteState;
+
+				case :noun2 goto State:verbNounNounState;
+
+				// 'Is my car...' -> 'Is my car red', 'Is my car a car', 'Is my age 44'
+				State:verbNounNounState {
+					case :a2 goto State:verbNounAState;
+
+					case :adjective goto State:verbNounAdjectiveState;
+
+					case :noun3 goto State:verbNounNounNounState;
+
+					:noun3 {
+						set #meaning to :thing3;
+					}
+					:thing3 {
+						set #instantiation to #thing;
+					}
+					// 'Is sky a...'
+					State:verbNounAState {
+						case :typenoun goto State:verbNounATypeState;
+
+						// 'Is sky a thing'
+						State:verbNounATypeState {
+							do (
+								assign :adjective to :typenoun,
+								assign :description to :type
+							);
+							goto (State:verbNounAdjectiveState);
+
+						}
+					}
+					// 'Is sky blue'
+					State:verbNounAdjectiveState {
+						case :questionWord goto State:questionState;
+
+						case :adjective2 goto State:verbNounAdjectiveState;
+
+						case :punctuation goto State:verbNounAdjectiveState;
+
+						Answer:1.00:Function:nounVerbAdjectiveRelation;
+					}
+					// 'Is my age 44'
+					State:verbNounNounNounState {
+						do (
+							assign :adjective to :noun3,
+							assign :description to :thing3
+						);
+						goto (State:verbNounAdjectiveState);
+
+					}
+				}
+			}
+			// 'Is sky...'
+			State:verbNounState {
+				case :quote goto State:verbNounQuoteState;
+
+				case :not goto State:notState;
+
+				case :a2 goto State:verbNounAState;
+
+				case :adjective goto State:verbNounAdjectiveState;
+
+				case :typenoun goto State:verbNounATypeState;
+
+			}
+		}
+		// 'What...'
+		State:whatState {
+			case :do goto State:whatDoState;
+
+			case :verb goto State:whatIsState;
+
+			case :quote0 goto State:WhatQuoteState;
+
+			:quote0 {
+				set #meaning to #quote;
+			}
+			State:whatDoState {
+			}
+			// 'What is...'
+			State:whatIsState {
+				case :the goto State:whatIsState;
+
+				case :a goto State:whatIsState;
+
+				case :nounPossessive goto State:whatIsNounQuoteState;
+
+				case :noun goto State:whatIsNounState;
+
+				// 'What is sky's'
+				State:whatIsNounQuoteState {
+					do (if (:nounPossessive, #null)
+							else (assign :noun to :nounPossessive));
+					case "s" goto State:whatIsNounQuoteState;
+
+					case :noun2 goto State:whatIsNounNounState;
+
+					case :punctuation goto State:whatIsNounState;
+
+					Answer:1.00:Function:nounVerbAdjectiveRelation;
+				}
+				// 'What is sky'
+				State:whatIsNounState {
+					case :quote goto State:whatIsNounQuoteState;
+
+					case :punctuation goto State:whatIsNounState;
+
+					Answer:1.00:Function:nounVerbAdjectiveRelation;
+				}
+			}
+			// 'What'...'
+			State:WhatQuoteState {
+				case "s" goto State:WhatQuoteSState;
+
+			}
+		}
+		// 'What's...'
+		State:WhatQuoteSState {
+			do (
+				assign :verb to #is,
+				assign :action to #is
+			);
+			goto (State:whatIsState);
+
+		}
+		// 'Who...'
+		State:whoState {
+			case :do goto State:whoDoState;
+
+			case :verb goto State:whoIsState;
+
+			case :quote0 goto State:WhoQuoteState;
+
+			// 'Who do...'
+			State:whoDoState {
+				case :the goto State:whoDoState;
+
+				case :a goto State:whoDoState;
+
+				case :noun goto State:whoDoNounState;
+
+				// 'Who do I...'
+				State:whoDoNounState {
+					case :verb goto State:whoDoNounVerbState;
+
+					// 'Who do I like'
+					State:whoDoNounVerbState {
+						case :punctuation goto State:whoDoNounVerbState;
+
+						Answer:1.00:Function:nounVerbAdjectiveRelation;
+					}
+				}
+			}
+			// 'Who is...'
+			State:whoIsState {
+				case :the goto State:whoIsState;
+
+				case :a goto State:whoIsState;
+
+				case :noun goto State:whoIsNounState;
+
+				// 'Who is he'
+				State:whoIsNounState {
+					case :quote goto State:quoteState;
+
+					case :noun2 goto State:whoIsNounNounState;
+
+					case :punctuation goto State:whoIsNounState;
+
+					Answer:1.00:Function:nounVerbAdjectiveRelation;
+					// 'Alex's...'
+					State:quoteState {
+						case "s" goto State:quoteState;
+
+						return;
+
+					}
+					// 'Who is my dog', "Who is Obama's parents?"
+					State:whoIsNounNounState {
+						case :punctuation goto State:whoIsNounNounState;
+
+						Answer:1.00:Function:nounVerbAdjectiveRelation;
+					}
+				}
+			}
+			// 'Who'...'
+			State:WhoQuoteState {
+				case "s" goto State:WhoQuoteSState;
+
+				// 'Who's...'
+				State:WhoQuoteSState {
+					do (
+						assign :verb to #is,
+						assign :action to #is
+					);
+					goto (State:whoIsState);
+
+				}
+			}
+		}
+	}
+}
+

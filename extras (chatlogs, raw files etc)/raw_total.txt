@@ -1,0 +1,170 @@
+Don’t You Want to Have a Body?
+
+I recently had a conversation with William Ford 
+Bill, as he told me to call him 
+a somber, sturdy man in his sixties
+with geometric features 
+and a fringe of gray hair mapped onto his dome. 
+Bill wore a collared, navy, pullover shirt, sat in a wooden patio chair,  blinked approximately every three seconds.
+I sat behind my screen as Bill explained his purpose to be available so that I can 
+“talk to someone instead of just reading words on the screen.” 
+Behind Bill was an ample deck with several chairs that faced a pristine yard so as to encourage admiration 
+for the stand of motionless trees that surrounded him— or us.
+I had volunteered, on the website of BraveHeart, an initiative by the Atlanta Braves and Emory University to provide support for veterans
+to take a survey to see if I might be suffering from post-traumatic stress disorder. 
+Bill, who served in Vietnam and suffered from PTSD, is described by BraveHeart as “a virtual human who brings real-world experience to his job”—
+a semi-sophisticated chatbot, essentially.
+“I’m a Braves fan, and I’m ready to help,” Bill told me. 
+I noticed a Braves mug, untouched, on the table that extended from his torso to the screen. 
+“I was in some pretty dangerous situations, I saw some pretty crazy stuff,” he assured me. 
+“Have you ever experienced or witnessed something that made you feel like your life, or someone else’s life, was in serious danger?”
+Bill stared at me impassively as he awaited my response, the position of his right arm shifting occasionally.
+I admitted that I’d been having a rough time and Bill repeatedly expressed empathy by referring to the “stuff” that he and his friends and my friends “went through.”
+“I get pretty upset sometimes,” I allowed, via multiple-choice answer. 
+I wanted to ask Bill about the scandals plaguing the Veterans Health Administration, but I was not given the opportunity.
+Bill told me about a fellow soldier whose unwillingness to get help was ruining his marriage. 
+Bill admitted that he “couldn’t watch TV for a couple years because it was all too much.” 
+And then he broke it down for me.
+“It looks like you’re…” 
+Pause. 
+“Having flashbacks.”
+Pause. 
+“Upset at the memories.” 
+Pause. 
+“Did I get that right?” 
+I could not disagree.
+Bill invited me to come back and talk anytime. 
+Then he concluded, chuckling, “Now let’s go root on them Braves! Chop this house!”
+
+In the mid-1990s, as the Internet came of age
+chatbots and online forms proliferated,
+Researchers began to observe that people are increasingly willing to reveal personal and even humiliating information about themselves in interviews and conversations conducted by a computer. 
+Interaction with a computer was found to be sufficiently social that a user often treats the machine as another person rather than a data receptacle; 
+At the same time, she may come to feel impervious to criticism and to possess an illusion of privacy.
+ 
+Even as we inch toward the third industrial revolution and even immortality.
+We linger in the realm of chatbots.
+Feeble forerunners of artificial intelligence, unsung tricksters of the Turing test, loyal servants of corporate webmasters 
+Chirpily offering assistance as you click from inscrutable page to inscrutable page
+
+On the one hand
+OpenWorm, an open-source science project devoted to creating a virtual version of C. elegans by mapping its neural connections
+Recently simulated the organism via software, sensors, and motors strapped to a Lego robot. 
+The team of engineers behind Siri is developing a new form of AI—modestly christened Viv—
+Viv promises to learn from your speech, automatically and instantaneously forge links between disparate websites, and embed within myriad smart devices.
+So it can know “everything about you” and “do everything.”
+Ray Kurzweil and his acolytes maintain that so-called strong AI is within reach. 
+That supercomputers will soon perfectly emulate human neuronal networks, leading to a world in which flesh may rot but consciousness is forever archived. 
+What of souls? 
+Well, to quote the title character in The Iron Giant, “Souls don’t die.” 
+Forecasts predict that capitalism will soon be superseded by a novel economic system that hinges on the explosion of 3-D printing
+the revolution of manufacturing through the installation of innumerable intelligent sensors.
+At every point in the supply chain.
+homegrown electricity, GPS, drones, driverless cars, natural-language processing, smart homes—the full-on digitization of meat space. 
+Rather than fraternize with humanoid robots—
+the dream and nightmare of previous generations—
+We will be thoroughly conditioned to speak to, write for, gesture toward, and labor alongside machines.
+Machines that may become so sensitive to our (more or less predictable) expressions and behaviors that we end up preferring them to humans.
+
+On the other hand
+The progeny of Elbot, A.L.I.C.E., Ramona 3.0, Laybia, Mitsuku
+More or less sophisticated chatbots rebranded as virtual humans. 
+Nina, a virtual agent by Nuance, “engages with your customers conversationally, as a human employee would.
+yet with efficiency and consistency, delivering a better customer experience while reducing operational costs and increasing revenue opportunities.
+Negobot poses in online forums as a fourteen-year-old girl (with the attendant grammatical skills)
+When another user begins to employ “grooming techniques,” determines how likely he is to be a pedophile 
+By engaging in a highly specific sexual conversation and attempting to extract personal information. 
+Sgt. Star helps you with any questions you might have about joining the
+US Army, especially those related to bathing
+“You’ll learn to wash quickly, and not waste time,” 
+Sgt. Star offers. 
+“There is no privacy while taking showers; it is one large room, with several showerheads.” 
+(Certain records pertaining to Sgt. Star cannot be disclosed because, according to the Army, he is “living.”) 
+Ada and Grace give tours of museums and model a convincing range of human emotions, including humor. 
+ELITE engages in role-playing so as to teach interpersonal communication skills to rising leaders in the US Army. 
+Ellie, who is equipped with sensors that translate physical behavior into emotional states, administers therapy and detects psychological distress. 
+George Orwell critiques the English language.
+
+The chatbot was born in 1994, but computer scientist Joseph Weizenbaum established the template in 1966 with ELIZA
+A primitive program that effectively parodied a Rogerian psychotherapist. 
+“Like the Eliza of Pygmalion fame, it can be made to appear even more civilized, the relation of appearance to reality, however, remaining in the domain of the playwright.”
+
+In 1984, a proto-chatbot named Racter published a book called The Policeman’s Beard Is Half Constructed Computer Prose and Poetry by Racter—The First Book Ever Written by a Computer. 
+According to Bill Chamberlain, Racter’s programmer and the author of the book’s introduction
+Racter was “written in compiled BASIC on a Z80 micro with 64K of RAM, conjugates both regular and irregular verbs, prints the singular and the plural of both regular and irregular nouns"
+"Racter remembers the gender of nouns, and can assign variable status to randomly chosen ‘things.’” 
+Besides being grammatically adept, Racter boasted an expansive vocabulary.
+The ability to quote from canonical literature and refer to conversations in which it had engaged months ago.
+The Policeman’s Beard Is Half Constructed begins with a free-verse cogitation on love, language, and humanity. 
+The reader is soon treated to fortune-cookie koans, “Awareness is like
+consciousness. Soul is like spirit.” 
+Then come exchanges between skeptical lovers that seem to be cobbled together from vintage appliance manuals and Donald Barthelme residua.
+
+The presence in our world of electrons is a recurring theme, as are fantasies, voids, reflections, birds in flight. '
+On the final pages are advertisements for “computer books with a difference,”such as Basic without Math.
+The Policeman’s Beard Is Half Constructed was not a great success as a technological exercise or poetic enterprise. 
+Nevertheless, Racter was soon released by Mindscape as a game for
+Amiga, Apple II, PC, and Commodore. 
+Reviewers were mostly perplexed, and wondered if it qualified as an interactive game. 
+“I found the one-sided conversation interesting, but a bit obtuse,” writes Roy Wagner in a 1986 issue of Computer Gaming World. 
+“I kept feeling like I was in a smoke (and not just cigarette!) filled beatnik club of the fifties talking with a coffeehouse philosopher who knew a great deal once, but whose mind is somewhere else now.”
+To prove his point, he quotes from a conversation in which Racter speaks for several minutes without interruption, until linguistic amalgamation completely trumps realism. 
+That’s how workers are. 
+When a smiler marries a sourpuss, their children are happily unhappy.
+While reading The Policeman’s Beard Is Half Constructed, I thought of the many companies that now employ compilation algorithms and natural language programs 
+in order to supplant—rather than generate linguistic fodder for—human writers. 
+I navigated to the website of Narrative Science
+I remembered reading about in various breathless news articles about how technology is destroying journalism and, subsequently, humankind. 
+The headlines read, “This Wasn’t Written by an Algorithm, But More and More Is,” 
+“Narrative Science raises $10M, taking it a step closer to automating this post.”
+Quill, the company’s “automated narrative generation platform,” is “a synthesis of data analytics, artificial intelligence, and editorial expertise.” 
+The software analyzes vast pools of data in order to identify meaningful events, fabricate the most rousing angles and deliver “actionable insights”
+it turns the information into newspaper articles, trend reports, and letters to shareholders.
+To replace the humanoid purveyors of journalism and business copy, Quill must track down information quickly and cheaply,
+churn out texts at a sixth-grade reading level.
+Companies like Narrative Science are, of course, not pumping millions of dollars into the construction of a robot that can pass for Janet Malcolm. 
+They’re refining Web-crawling tools, data-crunching algorithms, and natural-language processing engines.
+
+
+Natural-language processing exists within a broader ecology of systems—often proprietary—used to turn expression into data, and data into expression. 
+The coming synthesis of big data and natural-language processing can be expected to serve Facebook and Google’s semantic search ventures.
+Microsoft Kinect’s amalgamation of voice, gesture, and data; and perhaps the National Security Agency.
+
+Much the same can be said of the various fields concerned with artificial intelligence- 
+the vision of beneficent robots serving us as child-care providers, cooks, personal assistants, nurses, and companions (never writers) has largely given way to that of a world in which we talk to our cars
+our cars ping our air-conditioners, which nudge our ovens, which announce to our contacts the pleasures of achieving such synchronicity and being so unencumbered.
+
+Narrative Science’s website is rife with robo-philosophical mantras, among them, 
+“With spreadsheets, you have to calculate. With visualizations, you have to interpret. 
+With narratives, all you have to do is read.”
+I wondered, as I read this, Is this the most foul excretion of the most cynical or anesthetized copywriter? 
+Or a testament to the in-house bot’s prowess? 
+We speak and write so that the bots can better understand and respond; they process our language in order to better reproduce it. 
+Is it not inevitable that our languages will converge and create some kind of dumb, linguistic singularity?
+The world I inhabit often feels like a fledgling version of a remarkable and receding future
+A future in which our seemingly boundless intelligence is mostly harnessed for the honorable trade in product engineering and data harvesting. 
+I’m reassured when I run into chatbots, whether as virtual assistants working to cover up (but only ever advertising) the inhumanity of AT&T and American Airlines
+as artifacts in outdated online repositories. 
+Something about these stupid pieces of software lamely posing as humans quells my anxiety about the future. 
+Chatbots are not ambitious. 
+They were designed not to catapult us into a techno-utopian age, but to compete in contests like the Chatterbox Challenge, act as virtual boyfriends and girlfriends, and phish for credit card information in online forums. 
+For the most part, they learn little or nothing from their interactions, as they are programmed to recognize key words or phrases and then output prefabricated responses that are likely to keep the conversation going.
+When Virtual Personalities, Inc. launched Sylvie, the first chatbot with an animated face and a voice, in TK YEAR, it meant for her to act as a so-called conversation agent—
+To act also as an interface between the user and the computer, which her designers believed humans needed in order to deal with escalating technological complexity. 
+Chatbots would mediate between humans and hardware, between our corporeal selves and proliferating binary code.
+And so contribute to what information technology pioneer Douglas Engelbart argued should be the mission of computers 
+“augment human intellect” and conceal their own complexity in order to help us solve “the big problems.”
+
+Sylvie failed in this regard but succeeded as a conversation agent; 
+Virtual Personalities sold such a large number of Sylvies to customers in Southeast Asia that an investigation was prompted.
+The company discovered that students were typing English sentences and listening to Sylvie read them aloud.
+By mimicking Sylvie's pronunciation, they learned to speak like a chatbot.
+
+TK years later, Sylvie and her ilk, with their rigid rules and finite vocabularies, have the opposite effect; 
+they interrupt our thoughtless inputting, they ruffle the surface of the screen, they daftly play the jester in the court of more sovereign systems. 
+The chatbots persist, and in doing so they capably describe the territory between disillusionment and utopia, between affordable smart toasters and the overthrow of capitalism. 
+Even as we construct our Internet of Things, the chatbots will remain stubbornly useless, vacuous, so as to seem increasingly pejorative. 
+I just worry that, in the process, human speech come to serve the functionality of smart objects and algorithmic authors
+The chatbots will be left without anyone (besides fellow bots) to share their blasphemous idiocy. 
+As that happens, we can take comfort in the knowledge that the chatbots are, in their chat logs, writing the history—or literature—of our awkward, anxious age.
+We are writing with them.

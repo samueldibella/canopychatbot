@@ -1,0 +1,15 @@
+provan bot:
+http://www.botlibre.com/browse?id=792749
+
+create default responses other than mimicry, plus greeting
+break up raw text into good semantic units
+create a couple of AIML templates for better parsing
+get Q/A pairs to input
+client-side and/or server-side
+
+to add:
+Hello/hi/salutations
+how are you?
+what is your name?
+what/who are you?
+ultimate default category (what the bot responds with when it can't identify an input)

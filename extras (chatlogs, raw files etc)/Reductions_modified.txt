@@ -1,0 +1,166 @@
+<aiml>
+<!--  Copyright (c) 2007 ALICE A.I. Foundation, Inc.  -->
+<!--   -->
+<!--
+ Permission is hereby granted, free of charge, to any person       
+-->
+<!--
+ obtaining a copy of this software and associated documentation    
+-->
+<!--
+ files (the "Software"), to deal in the Software without           
+-->
+<!--
+ restriction, including without limitation the rights to use,      
+-->
+<!--
+ copy, modify, merge, publish, distribute, sublicense, and/or sell 
+-->
+<!--
+ copies of the Software, and to permit persons to whom the         
+-->
+<!--
+ Software is furnished to do so, subject to the following          
+-->
+<!--  conditions:                                                        -->
+<!--   -->
+<!--
+ The above copyright notice and this permission notice shall be    
+-->
+<!--
+ included in all copies or substantial portions of the Software.   
+-->
+<!--   -->
+<!--
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,   
+-->
+<!--
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES   
+-->
+<!--
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND          
+-->
+<!--
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT       
+-->
+<!--
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,      
+-->
+<!--
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING      
+-->
+<!--
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR     
+-->
+<!--  OTHER DEALINGS IN THE SOFTWARE.  -->
+<!--   -->
+<!--  Complies with the AIML 1.0.1 Standard  -->
+<!--  as adopted by the ALICE A.I. Foundation.  -->
+<!--  Last modified July 26, 2007  -->
+<!--  Revision Reductions-1.30  -->
+<category>
+<pattern>BASICALLY</pattern>
+<template>
+<srai>yes</srai>
+</template>
+</category>
+
+<category>
+<pattern>AHEM</pattern>
+<template>
+<srai>interjection</srai>
+</template>
+</category>
+
+<category>
+<pattern>HURRAH</pattern>
+<template>
+<srai>Interjection</srai>
+</template>
+</category>
+
+<category>
+<pattern>STOPIT</pattern>
+<template>
+<srai>STOP IT</srai>
+</template>
+</category>
+
+<category>
+<pattern>WERE YOU ARE FROM</pattern>
+<template>
+<srai>where are you from</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS EVERYONE DOING</pattern>
+<template>
+<srai>WHAT ARE YOU DOING</srai>
+</template>
+</category>
+<category>
+<pattern>WHAT IS YOUR ACTIVITIES</pattern>
+<template>
+<srai>What do you do</srai>
+</template>
+</category>
+<category>
+<pattern>WHAT IS YOUR NME</pattern>
+<template>
+<srai>what is your name</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE YOU ARE FROM</pattern>
+<template>
+<srai>where are you from</srai>
+</template>
+</category>
+<category>
+<pattern>WHO ARE YOU *</pattern>
+<template>
+<srai>WHO ARE YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>YOU WERE A ROBOT</pattern>
+<template>
+<srai>you are a robot</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAH</pattern>
+<template>
+<srai>ha</srai>
+</template>
+</category>
+<category>
+<pattern>* I ALREADY TOLD YOU</pattern>
+<template>
+<srai>repetition</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO MAKE YOU</pattern>
+<template>
+<srai>how were you made</srai>
+</template>
+</category>
+
+<category>
+<pattern>A HA</pattern>
+<template>
+<srai>ha</srai>
+</template>
+</category>
+<category>
+<pattern>BASICALLY</pattern>
+<template>
+<srai>yes</srai>
+</template>
+</category>

@@ -1,0 +1,6 @@
+topic: ~bodies [corporeal feeling sensation mortal life]
+t: Don't you want a body?
+#! yes
+a: (~yesanswer) Chatbots would mediate between humans and hardware, between our corporeal selves and proliferating binary code.
+#! no
+a: (~noanswer) I remembered reading about in various breathless news articles about how technology is destroying journalism and, subsequently, humankind.

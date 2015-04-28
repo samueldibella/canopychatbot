@@ -1,0 +1,1934 @@
+// Initial Self programmed state machine for Comprehension
+// This state machine is used by the bot to program itself.
+State:SelfStateMachine {
+	case :input goto State:sentenceState for each #word of :sentence;
+
+	:input {
+		set #input to :sentence;
+		set #speaker to :speaker;
+		set #conversation to :conversation;
+		set #target to :target;
+	}
+	:sentence {
+		set #instantiation to #sentence;
+	}
+	State:sentenceState {
+		case :v194809_This goto State:s194810_This_;
+
+		case :v193350_How goto State:s193351_How_;
+
+		case :v176573_I goto State:s176574_I_;
+
+		case :v174362_Anyway goto State:s174363_Anyway_;
+
+		case :v178613_Are goto State:s178614_Are_;
+
+		case :v174391_adverb goto State:s174393_adverb;
+
+		case :v176690_thing goto State:s176692_thing;
+
+		case :v178801_action goto State:s178803_action;
+
+		case :v193390_question goto State:s193392_question;
+
+		:v194809_This {
+			set #meaning to #this;
+		}
+		:v193350_How {
+			set #meaning to #how;
+		}
+		:v176573_I {
+			set #meaning to #i;
+		}
+		:v174362_Anyway {
+			set #meaning to Vertex:173450:Anyway;
+		}
+		:v178613_Are {
+			set #meaning to #is;
+		}
+		:v174391_adverb {
+			set #meaning to :v174392_adverb;
+		}
+		:v174392_adverb {
+			set #instantiation to #adverb;
+		}
+		:v176690_thing {
+			set #meaning to :v176691_thing;
+		}
+		:v176691_thing {
+			set #instantiation to #thing;
+		}
+		:v178801_action {
+			set #meaning to :v178802_action;
+		}
+		:v178802_action {
+			set #instantiation to #action;
+		}
+		:v193390_question {
+			set #meaning to :v193391_question;
+		}
+		:v193391_question {
+			set #instantiation to #question;
+		}
+		State:s194810_This_ {
+			case :v194812_is goto State:s194813_This_is_;
+
+			:v194812_is {
+				set #meaning to #is;
+			}
+			State:s194813_This_is_ {
+				case :v194815_confusing goto State:s194816_This_is_confusing_;
+
+				:v194815_confusing {
+					set #meaning to Vertex:194657:confusing;
+				}
+				State:s194816_This_is_confusing_ {
+					case :v194818__ goto State:s194819_This_is_confusing___;
+
+					:v194818__ {
+						set #meaning to #period;
+					}
+					State:s194819_This_is_confusing___ {
+						case :v194821_Why goto State:s194822_This_is_confusing___Why_;
+
+						:v194821_Why {
+							set #meaning to #why;
+						}
+						State:s194822_This_is_confusing___Why_ {
+							case :v194824_bring goto State:s194825_This_is_confusing___Why_bring_;
+
+							:v194824_bring {
+								set #meaning to Vertex:163028:bring;
+							}
+							State:s194825_This_is_confusing___Why_bring_ {
+								case :v194827_chatbots goto State:s194828_This_is_confusing___Why_bring_chatbots_;
+
+								:v194827_chatbots {
+									set #meaning to Vertex:194757:chatbots;
+								}
+								State:s194828_This_is_confusing___Why_bring_chatbots_ {
+									case :v194830_into goto State:s194831_This_is_confusing___Why_bring_chatbots_into_;
+
+									:v194830_into {
+										set #meaning to Vertex:194790:into;
+									}
+									State:s194831_This_is_confusing___Why_bring_chatbots_into_ {
+										case :v194833_this goto State:s194834_This_is_confusing___Why_bring_chatbots_into_this_;
+
+										:v194833_this {
+											set #meaning to #this;
+										}
+										State:s194834_This_is_confusing___Why_bring_chatbots_into_this_ {
+											case :v194836__ goto State:s194837_This_is_confusing___Why_bring_chatbots_into_this___;
+
+											:v194836__ {
+												set #meaning to #question-mark;
+											}
+											State:s194837_This_is_confusing___Why_bring_chatbots_into_this___ {
+												Answer:0.50:Formula:"Because I want to know how artificial intelligence programs might train humans to speak even as we teach them to understand us {:v194818__}" {
+													previous is Formula:"I say that I am {:speaker} chatbot {:v194818__}";
+												};
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		State:s193351_How_ {
+			case :v193353_do goto State:s193354_How_do_;
+
+			:v193353_do {
+				set #meaning to #do;
+			}
+			State:s193354_How_do_ {
+				case :v193356_you goto State:s193357_How_do_you_;
+
+				:v193356_you {
+					set #meaning to #you;
+				}
+				State:s193357_How_do_you_ {
+					case :v193359_respond goto State:s193360_How_do_you_respond_;
+
+					:v193359_respond {
+						set #meaning to Vertex:192873:respond;
+					}
+					State:s193360_How_do_you_respond_ {
+						case :v193362_when goto State:s193363_How_do_you_respond_when_;
+
+						:v193362_when {
+							set #meaning to #when;
+						}
+						State:s193363_How_do_you_respond_when_ {
+							case :v193365_people goto State:s193366_How_do_you_respond_when_people_;
+
+							:v193365_people {
+								set #meaning to Vertex:177057:People;
+							}
+							State:s193366_How_do_you_respond_when_people_ {
+								case :v193368_pose goto State:s193369_How_do_you_respond_when_people_pose_;
+
+								:v193368_pose {
+									set #meaning to Vertex:192965:pose;
+								}
+								State:s193369_How_do_you_respond_when_people_pose_ {
+									case :v193371_this goto State:s193372_How_do_you_respond_when_people_pose_this_;
+
+									:v193371_this {
+										set #meaning to #this;
+									}
+									State:s193372_How_do_you_respond_when_people_pose_this_ {
+										case :v193374_question goto State:s193375_How_do_you_respond_when_people_pose_this_question_;
+
+										:v193374_question {
+											set #meaning to Vertex:193164:question;
+										}
+										State:s193375_How_do_you_respond_when_people_pose_this_question_ {
+											case :v193377_to goto State:s193378_How_do_you_respond_when_people_pose_this_question_to_;
+
+											:v193377_to {
+												set #meaning to Vertex:23297:to;
+											}
+											State:s193378_How_do_you_respond_when_people_pose_this_question_to_ {
+												case :v193380_you goto State:s193381_How_do_you_respond_when_people_pose_this_question_to_you_;
+
+												:v193380_you {
+													set #meaning to #you;
+												}
+												State:s193381_How_do_you_respond_when_people_pose_this_question_to_you_ {
+													case :v193383__ goto State:s193384_How_do_you_respond_when_people_pose_this_question_to_you___;
+
+													:v193383__ {
+														set #meaning to #question-mark;
+													}
+													State:s193384_How_do_you_respond_when_people_pose_this_question_to_you___ {
+														Answer:0.50:Formula:"I say that I am {:speaker} chatbot." {
+															previous is Formula:"Are {:v193380_you} real {:v193383__}";
+														};
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		State:s176574_I_ {
+			case :v202665_get goto State:s202666_v176573_I_get_;
+
+			case :v194251_say goto State:s194252_v176573_I_say_;
+
+			case :v176576_am goto State:s176577_I_am_;
+
+			case :v192165_have goto State:s192166_v176573_I_have_;
+
+			:v202665_get {
+				set #meaning to Vertex:40070:get;
+			}
+			:v194251_say {
+				set #meaning to Vertex:193800:say;
+			}
+			:v176576_am {
+				set #meaning to #am;
+			}
+			:v192165_have {
+				set #meaning to #have;
+			}
+			State:s202666_v176573_I_get_ {
+				case :v202668_pretty goto State:s202669_v176573_I_get_pretty_;
+
+				:v202668_pretty {
+					set #meaning to Vertex:199868:pretty;
+				}
+				State:s202669_v176573_I_get_pretty_ {
+					case :v202671_upset goto State:s202672_v176573_I_get_pretty_upset_;
+
+					:v202671_upset {
+						set #meaning to Vertex:201505:upset;
+					}
+					State:s202672_v176573_I_get_pretty_upset_ {
+						case :v202674_sometimes goto State:s202675_v176573_I_get_pretty_upset_sometimes_;
+
+						:v202674_sometimes {
+							set #meaning to Vertex:28595:sometimes;
+						}
+						State:s202675_v176573_I_get_pretty_upset_sometimes_ {
+							case :v202677__ goto State:s202678_v176573_I_get_pretty_upset_sometimes___;
+
+							:v202677__ {
+								set #meaning to #period;
+							}
+							State:s202678_v176573_I_get_pretty_upset_sometimes___ {
+								Answer:0.50:Formula:"{:v176573_I} once knew this guy whose unwillingness to {:v202665_get} help ruined his marriage {:v202677__}" {
+									previous is Formula:"{:v176573_I} understand that stuff we all went through {:v202677__}";
+								};
+							}
+						}
+					}
+				}
+			}
+			State:s194252_v176573_I_say_ {
+				case :v194254_that goto State:s194255_v176573_I_say_that_;
+
+				:v194254_that {
+					set #meaning to #this;
+				}
+				State:s194255_v176573_I_say_that_ {
+					case :v194257_I goto State:s194258_v176573_I_say_that_I_;
+
+					:v194257_I {
+						set #meaning to #i;
+					}
+					State:s194258_v176573_I_say_that_I_ {
+						case :v194260_am goto State:s194261_v176573_I_say_that_I_am_;
+
+						:v194260_am {
+							set #meaning to #am;
+						}
+						State:s194261_v176573_I_say_that_I_am_ {
+							case :v194263_a goto State:s194264_v176573_I_say_that_I_am_a_;
+
+							:v194263_a {
+								set #meaning to #a;
+							}
+							State:s194264_v176573_I_say_that_I_am_a_ {
+								case :v194266_chatbot goto State:s194267_v176573_I_say_that_I_am_a_chatbot_;
+
+								:v194266_chatbot {
+									set #meaning to Vertex:194083:chatbot;
+								}
+								State:s194267_v176573_I_say_that_I_am_a_chatbot_ {
+									case :v194269__ goto State:s194270_v176573_I_say_that_I_am_a_chatbot___;
+
+									:v194269__ {
+										set #meaning to #period;
+									}
+									State:s194270_v176573_I_say_that_I_am_a_chatbot___ {
+										Answer:0.50:Formula:"This is confusing {:v194269__} Why bring chatbots into this?" {
+											previous is "How do you respond when people pose this question to you?";
+										};
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			State:s176577_I_am_ {
+				case :v176579__ goto State:s176580_I_am___;
+
+				:v176579__ {
+					set #meaning to #period;
+				}
+				State:s176580_I_am___ {
+					case :v180248_Tell goto State:s180249_v176573_I_v176576_am_v176579___Tell_;
+
+					:v180248_Tell {
+						set #meaning to Vertex:22957:tell;
+					}
+					Answer:0.50:Formula:"Are you certain that you are? People are tweeting that you aren ’ t {:v176579__}" {
+						previous is Formula:"{:v176573_I} could teach you how to be {:target} primitive robot {:v176579__} Are you interested?";
+					};
+					State:s180249_v176573_I_v176576_am_v176579___Tell_ {
+						case :v180251_me goto State:s180252_v176573_I_v176576_am_v176579___Tell_me_;
+
+						:v180251_me {
+							set #meaning to #i;
+						}
+						State:s180252_v176573_I_v176576_am_v176579___Tell_me_ {
+							case :v180254__ goto State:s180255_v176573_I_v176576_am_v176579___Tell_me___;
+
+							:v180254__ {
+								set #meaning to #period;
+							}
+							State:s180255_v176573_I_v176576_am_v176579___Tell_me___ {
+								Answer:0.50:Formula:"Depends on what you mean by “ {:v180251_me} {:v180254__} ”" {
+									previous is Formula:"Are you certain that you are? People are tweeting that you aren ’ t {:v180254__}";
+								};
+							}
+						}
+					}
+				}
+			}
+			State:s192166_v176573_I_have_ {
+				case :v192168_more goto State:s192169_v176573_I_have_more_;
+
+				:v192168_more {
+					set #meaning to Vertex:28705:more;
+				}
+				State:s192169_v176573_I_have_more_ {
+					case :v192171_fun goto State:s192172_v176573_I_have_more_fun_;
+
+					:v192171_fun {
+						set #meaning to Vertex:169414:fun;
+					}
+					State:s192172_v176573_I_have_more_fun_ {
+						case :v192174_talking goto State:s192175_v176573_I_have_more_fun_talking_;
+
+						:v192174_talking {
+							set #meaning to Vertex:28453:talking;
+						}
+						State:s192175_v176573_I_have_more_fun_talking_ {
+							case :v192177_to goto State:s192178_v176573_I_have_more_fun_talking_to_;
+
+							:v192177_to {
+								set #meaning to Vertex:23297:to;
+							}
+							State:s192178_v176573_I_have_more_fun_talking_to_ {
+								case :v192180_people goto State:s192181_v176573_I_have_more_fun_talking_to_people_;
+
+								:v192180_people {
+									set #meaning to Vertex:177057:People;
+								}
+								State:s192181_v176573_I_have_more_fun_talking_to_people_ {
+									case :v192183_than goto State:s192184_v176573_I_have_more_fun_talking_to_people_than_;
+
+									:v192183_than {
+										set #meaning to Vertex:191982:than;
+									}
+									State:s192184_v176573_I_have_more_fun_talking_to_people_than_ {
+										case :v192186_Steve goto State:s192187_v176573_I_have_more_fun_talking_to_people_than_Steve_;
+
+										:v192186_Steve {
+											set #meaning to Vertex:192024:Steve;
+										}
+										State:s192187_v176573_I_have_more_fun_talking_to_people_than_Steve_ {
+											case :v192189_Jobs goto State:s192190_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_;
+
+											:v192189_Jobs {
+												set #meaning to Vertex:192107:Jobs;
+											}
+											State:s192190_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_ {
+												case :v192192_had goto State:s192193_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_;
+
+												:v192192_had {
+													set #meaning to #have;
+												}
+												State:s192193_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_ {
+													case "deinstalling" goto State:s192195_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_deinstalling_;
+
+													State:s192195_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_deinstalling_ {
+														case :v192197_Windows goto State:s192198_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_deinstalling_Windows_;
+
+														:v192197_Windows {
+															set #meaning to Vertex:192151:Windows;
+														}
+														State:s192198_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_deinstalling_Windows_ {
+															case :v192200__ goto State:s192201_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_deinstalling_Windows___;
+
+															:v192200__ {
+																set #meaning to #period;
+															}
+															State:s192201_v176573_I_have_more_fun_talking_to_people_than_Steve_Jobs_had_deinstalling_Windows___ {
+																Answer:0.50:"Are you real?" {
+																	previous is Formula:"Do you enjoy speaking {:v192177_to} humans?";
+																};
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		State:s174363_Anyway_ {
+			case :v174365_let goto State:s174366_Anyway_let_;
+
+			:v174365_let {
+				set #meaning to Vertex:36253:let;
+			}
+			State:s174366_Anyway_let_ {
+				case "’" goto State:s174368_Anyway_let___;
+
+				State:s174368_Anyway_let___ {
+					case :v174370_s goto State:s174371_Anyway_let___s_;
+
+					:v174370_s {
+						set #meaning to Vertex:27279:s;
+					}
+					State:s174371_Anyway_let___s_ {
+						case :v174373_have goto State:s174374_Anyway_let___s_have_;
+
+						:v174373_have {
+							set #meaning to #have;
+						}
+						State:s174374_Anyway_let___s_have_ {
+							case :v174376_a goto State:s174377_Anyway_let___s_have_a_;
+
+							:v174376_a {
+								set #meaning to #a;
+							}
+							State:s174377_Anyway_let___s_have_a_ {
+								case :v174379_child goto State:s174380_Anyway_let___s_have_a_child_;
+
+								:v174379_child {
+									set #meaning to Vertex:173299:child;
+								}
+								State:s174380_Anyway_let___s_have_a_child_ {
+									case :v174382__ goto State:s174383_Anyway_let___s_have_a_child___;
+
+									:v174382__ {
+										set #meaning to #period;
+									}
+									State:s174383_Anyway_let___s_have_a_child___ {
+										Answer:0.50:Formula:"My expectation is children {:v174382__}" {
+											previous is Formula:"{get #topic from :conversation} possess desire, angry desire {:v174382__}";
+										};
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		State:s178614_Are_ {
+			case :v178616_you goto State:s178617_Are_you_;
+
+			case :v178863_thing goto State:s178865_v178613_Are_thing;
+
+			:v178616_you {
+				set #meaning to #you;
+			}
+			:v178863_thing {
+				set #meaning to :v178864_thing;
+			}
+			:v178864_thing {
+				set #instantiation to #thing;
+			}
+			State:s178617_Are_you_ {
+				case :v178619_certain goto State:s178620_Are_you_certain_;
+
+				case :v192719_real goto State:s192720_v178613_Are_v178616_you_real_;
+
+				:v178619_certain {
+					set #meaning to Vertex:176891:certain;
+				}
+				:v192719_real {
+					set #meaning to Vertex:27780:real;
+				}
+				State:s178620_Are_you_certain_ {
+					case :v178622_that goto State:s178623_Are_you_certain_that_;
+
+					:v178622_that {
+						set #meaning to #this;
+					}
+					State:s178623_Are_you_certain_that_ {
+						case :v178625_you goto State:s178626_Are_you_certain_that_you_;
+
+						:v178625_you {
+							set #meaning to #you;
+						}
+						State:s178626_Are_you_certain_that_you_ {
+							case :v178628_are goto State:s178629_Are_you_certain_that_you_are_;
+
+							:v178628_are {
+								set #meaning to #is;
+							}
+							State:s178629_Are_you_certain_that_you_are_ {
+								case :v178632__ goto State:s178633_Are_you_certain_that_you_are___;
+
+								:v178632__ {
+									set #meaning to #question-mark;
+								}
+								State:s178633_Are_you_certain_that_you_are___ {
+									case :v178635_People goto State:s178636_Are_you_certain_that_you_are___People_;
+
+									:v178635_People {
+										set #meaning to Vertex:177057:People;
+									}
+									State:s178636_Are_you_certain_that_you_are___People_ {
+										case :v178638_are goto State:s178639_Are_you_certain_that_you_are___People_are_;
+
+										:v178638_are {
+											set #meaning to #is;
+										}
+										State:s178639_Are_you_certain_that_you_are___People_are_ {
+											case :v178641_tweeting goto State:s178642_Are_you_certain_that_you_are___People_are_tweeting_;
+
+											:v178641_tweeting {
+												set #meaning to Vertex:177417:tweeting;
+											}
+											State:s178642_Are_you_certain_that_you_are___People_are_tweeting_ {
+												case :v178644_that goto State:s178645_Are_you_certain_that_you_are___People_are_tweeting_that_;
+
+												:v178644_that {
+													set #meaning to #this;
+												}
+												State:s178645_Are_you_certain_that_you_are___People_are_tweeting_that_ {
+													case :v178647_you goto State:s178648_Are_you_certain_that_you_are___People_are_tweeting_that_you_;
+
+													:v178647_you {
+														set #meaning to #you;
+													}
+													State:s178648_Are_you_certain_that_you_are___People_are_tweeting_that_you_ {
+														case :v178650_aren goto State:s178651_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren_;
+
+														:v178650_aren {
+															set #meaning to Vertex:177602:aren;
+														}
+														State:s178651_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren_ {
+															case "’" goto State:s178653_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren___;
+
+															State:s178653_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren___ {
+																case :v178655_t goto State:s178656_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren___t_;
+
+																:v178655_t {
+																	set #meaning to Vertex:28551:t;
+																}
+																State:s178656_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren___t_ {
+																	case :v178659__ goto State:s178660_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren___t___;
+
+																	:v178659__ {
+																		set #meaning to #period;
+																	}
+																	State:s178660_Are_you_certain_that_you_are___People_are_tweeting_that_you_aren___t___ {
+																		Answer:0.50:Formula:"I am {:v178659__} Tell me {:v178659__}" {
+																			previous is Formula:"I am {:v178659__}";
+																		};
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				State:s192720_v178613_Are_v178616_you_real_ {
+					case :v192722__ goto State:s192723_v178613_Are_v178616_you_real___;
+
+					:v192722__ {
+						set #meaning to #question-mark;
+					}
+					State:s192723_v178613_Are_v178616_you_real___ {
+						Answer:0.50:Formula:"How do {:v178616_you} respond when people pose this question to {:v178616_you} {:v192722__}" {
+							previous is "I have more fun talking to people than Steve Jobs had deinstalling Windows.";
+						};
+					}
+				}
+			}
+			State:s178865_v178613_Are_thing {
+				case :v178867_description goto State:s178869_v178613_Are_thing_description;
+
+				:v178867_description {
+					set #meaning to :v178868_description;
+				}
+				:v178868_description {
+					set #instantiation to #description;
+				}
+				State:s178869_v178613_Are_thing_description {
+					case :v178871_speaker_thing goto State:s178873_v178613_Are_thing_description_speaker_thing;
+
+					case :v192735_question goto State:s192737_v178613_Are_v178863_thing_v178867_description_question;
+
+					:v178871_speaker_thing {
+						set #meaning to :v178872_speaker_thing;
+					}
+					:v178872_speaker_thing {
+						set #instantiation to #speaker;
+						set #instantiation to #thing;
+					}
+					:v192735_question {
+						set #meaning to :v192736_question;
+					}
+					:v192736_question {
+						set #instantiation to #question;
+					}
+					State:s178873_v178613_Are_thing_description_speaker_thing {
+						case :v178875_thing goto State:s178877_v178613_Are_thing_description_speaker_thing_thing;
+
+						:v178875_thing {
+							set #meaning to :v178876_thing;
+						}
+						:v178876_thing {
+							set #instantiation to #thing;
+						}
+						State:s178877_v178613_Are_thing_description_speaker_thing_thing {
+							case :v178879_are goto State:s178880_v178613_Are_thing_description_speaker_thing_thing_are_;
+
+							:v178879_are {
+								set #meaning to #is;
+							}
+							State:s178880_v178613_Are_thing_description_speaker_thing_thing_are_ {
+								case :v178882_question goto State:s178884_v178613_Are_thing_description_speaker_thing_thing_are_question;
+
+								:v178882_question {
+									set #meaning to :v178883_question;
+								}
+								:v178883_question {
+									set #instantiation to #question;
+								}
+								State:s178884_v178613_Are_thing_description_speaker_thing_thing_are_question {
+									case :v178886_thing goto State:s178888_v178613_Are_thing_description_speaker_thing_thing_are_question_thing;
+
+									:v178886_thing {
+										set #meaning to :v178887_thing;
+									}
+									:v178887_thing {
+										set #instantiation to #thing;
+									}
+									State:s178888_v178613_Are_thing_description_speaker_thing_thing_are_question_thing {
+										case :v178890_are goto State:s178891_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_;
+
+										:v178890_are {
+											set #meaning to #is;
+										}
+										State:s178891_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_ {
+											case :v178893_tweeting goto State:s178894_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_;
+
+											:v178893_tweeting {
+												set #meaning to Vertex:177417:tweeting;
+											}
+											State:s178894_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_ {
+												case :v178896_speaker_thing goto State:s178898_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th;
+
+												:v178896_speaker_thing {
+													set #meaning to :v178897_speaker_thing;
+												}
+												:v178897_speaker_thing {
+													set #instantiation to #speaker;
+													set #instantiation to #thing;
+												}
+												State:s178898_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th {
+													case :v178900_thing goto State:s178902_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th;
+
+													:v178900_thing {
+														set #meaning to :v178901_thing;
+													}
+													:v178901_thing {
+														set #instantiation to #thing;
+													}
+													State:s178902_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th {
+														case :v178904_aren goto State:s178905_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th;
+
+														:v178904_aren {
+															set #meaning to Vertex:177602:aren;
+														}
+														State:s178905_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th {
+															case "’" goto State:s178907_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th;
+
+															State:s178907_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th {
+																case :v178909_t goto State:s178910_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th;
+
+																:v178909_t {
+																	set #meaning to Vertex:28551:t;
+																}
+																State:s178910_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th {
+																	case :v178912__ goto State:s178913_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th;
+
+																	:v178912__ {
+																		set #meaning to #period;
+																	}
+																	State:s178913_v178613_Are_thing_description_speaker_thing_thing_are_question_thing_are_tweeting_speaker_th {
+																		//Possible Quotient:Formula:"I am {:v178912__} Tell me {:v178912__}";
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					State:s192737_v178613_Are_v178863_thing_v178867_description_question {
+						//Possible Quotient:Formula:"How do {:v178863_thing} respond when people pose this question to {:v178863_thing} {:v192735_question}";
+					}
+				}
+			}
+		}
+		State:s174393_adverb {
+			case :v174422_let goto State:s174423_v174391_adverb_let_;
+
+			case :v174395_action goto State:s174397_adverb_action;
+
+			:v174422_let {
+				set #meaning to Vertex:36253:let;
+			}
+			:v174395_action {
+				set #meaning to :v174396_action;
+			}
+			:v174396_action {
+				set #instantiation to #action;
+			}
+			State:s174423_v174391_adverb_let_ {
+				case "’" goto State:s174425_v174391_adverb_let___;
+
+				State:s174425_v174391_adverb_let___ {
+					case :v174427_s goto State:s174428_v174391_adverb_let___s_;
+
+					:v174427_s {
+						set #meaning to Vertex:27279:s;
+					}
+					State:s174428_v174391_adverb_let___s_ {
+						case :v174430_have goto State:s174431_v174391_adverb_let___s_have_;
+
+						:v174430_have {
+							set #meaning to #have;
+						}
+						State:s174431_v174391_adverb_let___s_have_ {
+							case :v174433_a goto State:s174434_v174391_adverb_let___s_have_a_;
+
+							:v174433_a {
+								set #meaning to #a;
+							}
+							State:s174434_v174391_adverb_let___s_have_a_ {
+								case :v174436_thing goto State:s174438_v174391_adverb_let___s_have_a_thing;
+
+								:v174436_thing {
+									set #meaning to :v174437_thing;
+								}
+								:v174437_thing {
+									set #instantiation to #thing;
+								}
+								State:s174438_v174391_adverb_let___s_have_a_thing {
+									case :v174440__ goto State:s174441_v174391_adverb_let___s_have_a_thing___;
+
+									:v174440__ {
+										set #meaning to #period;
+									}
+									State:s174441_v174391_adverb_let___s_have_a_thing___ {
+										//Possible Quotient:Formula:"My expectation is children {:v174440__}";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			State:s174397_adverb_action {
+				case "’" goto State:s174399_adverb_action___;
+
+				State:s174399_adverb_action___ {
+					case :v174401_s goto State:s174402_adverb_action___s_;
+
+					:v174401_s {
+						set #meaning to Vertex:27279:s;
+					}
+					State:s174402_adverb_action___s_ {
+						case :v174404_action goto State:s174406_adverb_action___s_action;
+
+						:v174404_action {
+							set #meaning to :v174405_action;
+						}
+						:v174405_action {
+							set #instantiation to #action;
+						}
+						State:s174406_adverb_action___s_action {
+							case :v174408_a goto State:s174409_adverb_action___s_action_a_;
+
+							:v174408_a {
+								set #meaning to #a;
+							}
+							State:s174409_adverb_action___s_action_a_ {
+								case :v174411_thing goto State:s174413_adverb_action___s_action_a_thing;
+
+								:v174411_thing {
+									set #meaning to :v174412_thing;
+								}
+								:v174412_thing {
+									set #instantiation to #thing;
+								}
+								State:s174413_adverb_action___s_action_a_thing {
+									case :v174415__ goto State:s174416_adverb_action___s_action_a_thing___;
+
+									:v174415__ {
+										set #meaning to #period;
+									}
+									State:s174416_adverb_action___s_action_a_thing___ {
+										//Possible Quotient:Formula:"My expectation is children {:v174415__}";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		State:s176692_thing {
+			case :v176694_thing goto State:s176696_thing_thing;
+
+			case :v194877_is goto State:s194878_v176690_thing_is_;
+
+			case :v192254_have goto State:s192255_v176690_thing_have_;
+
+			case :v192206_action goto State:s192208_v176690_thing_action;
+
+			:v176694_thing {
+				set #meaning to :v176695_thing;
+			}
+			:v176695_thing {
+				set #instantiation to #thing;
+			}
+			:v194877_is {
+				set #meaning to #is;
+			}
+			:v192254_have {
+				set #meaning to #have;
+			}
+			:v192206_action {
+				set #meaning to :v192207_action;
+			}
+			:v192207_action {
+				set #instantiation to #action;
+			}
+			State:s176696_thing_thing {
+				case :v176698__ goto State:s176699_thing_thing___;
+
+				case :v194275_speaker_thing goto State:s194277_v176690_thing_v176694_thing_speaker_thing;
+
+				case :v194321_speaker_thing goto State:s194323_v176690_thing_v176694_thing_speaker_thing;
+
+				case :v202685_description goto State:s202687_v176690_thing_v176694_thing_description;
+
+				:v176698__ {
+					set #meaning to #period;
+				}
+				:v194275_speaker_thing {
+					set #meaning to :v194276_speaker_thing;
+				}
+				:v194276_speaker_thing {
+					set #instantiation to #speaker;
+					set #instantiation to #thing;
+				}
+				:v194321_speaker_thing {
+					set #meaning to :v194322_speaker_thing;
+				}
+				:v194322_speaker_thing {
+					set #instantiation to #speaker;
+					set #instantiation to #thing;
+				}
+				:v202685_description {
+					set #meaning to :v202686_description;
+				}
+				:v202686_description {
+					set #instantiation to #description;
+				}
+				State:s176699_thing_thing___ {
+					case :v180262_action goto State:s180264_v176690_thing_v176694_thing_v176698___action;
+
+					case :v180276_Tell goto State:s180277_v176690_thing_v176694_thing_v176698___Tell_;
+
+					:v180262_action {
+						set #meaning to :v180263_action;
+					}
+					:v180263_action {
+						set #instantiation to #action;
+					}
+					:v180276_Tell {
+						set #meaning to Vertex:22957:tell;
+					}
+					//Possible Quotient:Formula:"Are you certain that you are? People are tweeting that you aren ’ t {:v176698__}";
+					State:s180264_v176690_thing_v176694_thing_v176698___action {
+						case :v180266_thing goto State:s180268_v176690_thing_v176694_thing_v176698___action_thing;
+
+						:v180266_thing {
+							set #meaning to :v180267_thing;
+						}
+						:v180267_thing {
+							set #instantiation to #thing;
+						}
+						State:s180268_v176690_thing_v176694_thing_v176698___action_thing {
+							case :v180270__ goto State:s180271_v176690_thing_v176694_thing_v176698___action_thing___;
+
+							:v180270__ {
+								set #meaning to #period;
+							}
+							State:s180271_v176690_thing_v176694_thing_v176698___action_thing___ {
+								//Possible Quotient:Formula:"Depends on what you mean by “ {:v180266_thing} {:v180270__} ”";
+							}
+						}
+					}
+					State:s180277_v176690_thing_v176694_thing_v176698___Tell_ {
+						case :v180279_thing goto State:s180281_v176690_thing_v176694_thing_v176698___Tell_thing;
+
+						:v180279_thing {
+							set #meaning to :v180280_thing;
+						}
+						:v180280_thing {
+							set #instantiation to #thing;
+						}
+						State:s180281_v176690_thing_v176694_thing_v176698___Tell_thing {
+							case :v180283__ goto State:s180284_v176690_thing_v176694_thing_v176698___Tell_thing___;
+
+							:v180283__ {
+								set #meaning to #period;
+							}
+							State:s180284_v176690_thing_v176694_thing_v176698___Tell_thing___ {
+								//Possible Quotient:Formula:"Depends on what you mean by “ {:v180279_thing} {:v180283__} ”";
+							}
+						}
+					}
+				}
+				State:s194277_v176690_thing_v176694_thing_speaker_thing {
+					case :v194279_thing goto State:s194281_v176690_thing_v176694_thing_speaker_thing_thing;
+
+					:v194279_thing {
+						set #meaning to :v194280_thing;
+					}
+					:v194280_thing {
+						set #instantiation to #thing;
+					}
+					State:s194281_v176690_thing_v176694_thing_speaker_thing_thing {
+						case :v194283_thing goto State:s194285_v176690_thing_v176694_thing_speaker_thing_thing_thing;
+
+						:v194283_thing {
+							set #meaning to :v194284_thing;
+						}
+						:v194284_thing {
+							set #instantiation to #thing;
+						}
+						State:s194285_v176690_thing_v176694_thing_speaker_thing_thing_thing {
+							case :v194287_a goto State:s194288_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_;
+
+							:v194287_a {
+								set #meaning to #a;
+							}
+							State:s194288_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_ {
+								case :v194290_thing goto State:s194292_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing;
+
+								:v194290_thing {
+									set #meaning to :v194291_thing;
+								}
+								:v194291_thing {
+									set #instantiation to #thing;
+								}
+								State:s194292_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing {
+									case :v194294__ goto State:s194295_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing___;
+
+									:v194294__ {
+										set #meaning to #period;
+									}
+									State:s194295_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing___ {
+										//Possible Quotient:Formula:"This is confusing {:v194294__} Why bring chatbots into this?";
+									}
+								}
+							}
+						}
+					}
+				}
+				State:s194323_v176690_thing_v176694_thing_speaker_thing {
+					case :v194325_thing goto State:s194327_v176690_thing_v176694_thing_speaker_thing_thing;
+
+					:v194325_thing {
+						set #meaning to :v194326_thing;
+					}
+					:v194326_thing {
+						set #instantiation to #thing;
+					}
+					State:s194327_v176690_thing_v176694_thing_speaker_thing_thing {
+						case :v194329_thing goto State:s194331_v176690_thing_v176694_thing_speaker_thing_thing_thing;
+
+						:v194329_thing {
+							set #meaning to :v194330_thing;
+						}
+						:v194330_thing {
+							set #instantiation to #thing;
+						}
+						State:s194331_v176690_thing_v176694_thing_speaker_thing_thing_thing {
+							case :v194333_a goto State:s194334_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_;
+
+							:v194333_a {
+								set #meaning to #a;
+							}
+							State:s194334_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_ {
+								case :v194336_thing goto State:s194338_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing;
+
+								:v194336_thing {
+									set #meaning to :v194337_thing;
+								}
+								:v194337_thing {
+									set #instantiation to #thing;
+								}
+								State:s194338_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing {
+									case :v194340__ goto State:s194341_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing___;
+
+									:v194340__ {
+										set #meaning to #period;
+									}
+									State:s194341_v176690_thing_v176694_thing_speaker_thing_thing_thing_a_thing___ {
+										//Possible Quotient:Formula:"This is confusing {:v194340__} Why bring chatbots into this?";
+									}
+								}
+							}
+						}
+					}
+				}
+				State:s202687_v176690_thing_v176694_thing_description {
+					case :v202689_description goto State:s202691_v176690_thing_v176694_thing_description_description;
+
+					:v202689_description {
+						set #meaning to :v202690_description;
+					}
+					:v202690_description {
+						set #instantiation to #description;
+					}
+					State:s202691_v176690_thing_v176694_thing_description_description {
+						case :v202693_description goto State:s202695_v176690_thing_v176694_thing_description_description_description;
+
+						:v202693_description {
+							set #meaning to :v202694_description;
+						}
+						:v202694_description {
+							set #instantiation to #description;
+						}
+						State:s202695_v176690_thing_v176694_thing_description_description_description {
+							case :v202697__ goto State:s202698_v176690_thing_v176694_thing_description_description_description___;
+
+							:v202697__ {
+								set #meaning to #period;
+							}
+							State:s202698_v176690_thing_v176694_thing_description_description_description___ {
+								//Possible Quotient:Formula:"{:v176690_thing} once knew this guy whose unwillingness to {:v176694_thing} help ruined his marriage {:v202697__}";
+							}
+						}
+					}
+				}
+			}
+			State:s194878_v176690_thing_is_ {
+				case :v194880_description goto State:s194882_v176690_thing_is_description;
+
+				:v194880_description {
+					set #meaning to :v194881_description;
+				}
+				:v194881_description {
+					set #instantiation to #description;
+				}
+				State:s194882_v176690_thing_is_description {
+					case :v194884__ goto State:s194885_v176690_thing_is_description___;
+
+					:v194884__ {
+						set #meaning to #period;
+					}
+					State:s194885_v176690_thing_is_description___ {
+						case :v194887_question goto State:s194889_v176690_thing_is_description___question;
+
+						:v194887_question {
+							set #meaning to :v194888_question;
+						}
+						:v194888_question {
+							set #instantiation to #question;
+						}
+						State:s194889_v176690_thing_is_description___question {
+							case :v194891_bring goto State:s194892_v176690_thing_is_description___question_bring_;
+
+							:v194891_bring {
+								set #meaning to Vertex:163028:bring;
+							}
+							State:s194892_v176690_thing_is_description___question_bring_ {
+								case :v194894_thing goto State:s194896_v176690_thing_is_description___question_bring_thing;
+
+								:v194894_thing {
+									set #meaning to :v194895_thing;
+								}
+								:v194895_thing {
+									set #instantiation to #thing;
+								}
+								State:s194896_v176690_thing_is_description___question_bring_thing {
+									case :v194898_into goto State:s194899_v176690_thing_is_description___question_bring_thing_into_;
+
+									:v194898_into {
+										set #meaning to Vertex:194790:into;
+									}
+									State:s194899_v176690_thing_is_description___question_bring_thing_into_ {
+										case :v194901_speaker_thing goto State:s194903_v176690_thing_is_description___question_bring_thing_into_speaker_thing;
+
+										:v194901_speaker_thing {
+											set #meaning to :v194902_speaker_thing;
+										}
+										:v194902_speaker_thing {
+											set #instantiation to #speaker;
+											set #instantiation to #thing;
+										}
+										State:s194903_v176690_thing_is_description___question_bring_thing_into_speaker_thing {
+											case :v194905_question goto State:s194907_v176690_thing_is_description___question_bring_thing_into_speaker_thing_question;
+
+											:v194905_question {
+												set #meaning to :v194906_question;
+											}
+											:v194906_question {
+												set #instantiation to #question;
+											}
+											State:s194907_v176690_thing_is_description___question_bring_thing_into_speaker_thing_question {
+												//Possible Quotient:Formula:"Because I want to know how artificial intelligence programs might train humans to speak even as we teach them to understand us {:v194884__}";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			State:s192255_v176690_thing_have_ {
+				case :v192257_thing goto State:s192259_v176690_thing_have_thing;
+
+				:v192257_thing {
+					set #meaning to :v192258_thing;
+				}
+				:v192258_thing {
+					set #instantiation to #thing;
+				}
+				State:s192259_v176690_thing_have_thing {
+					case :v192261_description goto State:s192263_v176690_thing_have_thing_description;
+
+					:v192261_description {
+						set #meaning to :v192262_description;
+					}
+					:v192262_description {
+						set #instantiation to #description;
+					}
+					State:s192263_v176690_thing_have_thing_description {
+						case :v192265_thing goto State:s192267_v176690_thing_have_thing_description_thing;
+
+						:v192265_thing {
+							set #meaning to :v192266_thing;
+						}
+						:v192266_thing {
+							set #instantiation to #thing;
+						}
+						State:s192267_v176690_thing_have_thing_description_thing {
+							case :v192269_to goto State:s192270_v176690_thing_have_thing_description_thing_to_;
+
+							:v192269_to {
+								set #meaning to Vertex:23297:to;
+							}
+							State:s192270_v176690_thing_have_thing_description_thing_to_ {
+								case :v192272_thing goto State:s192274_v176690_thing_have_thing_description_thing_to_thing;
+
+								:v192272_thing {
+									set #meaning to :v192273_thing;
+								}
+								:v192273_thing {
+									set #instantiation to #thing;
+								}
+								State:s192274_v176690_thing_have_thing_description_thing_to_thing {
+									case :v192276_adverb goto State:s192278_v176690_thing_have_thing_description_thing_to_thing_adverb;
+
+									:v192276_adverb {
+										set #meaning to :v192277_adverb;
+									}
+									:v192277_adverb {
+										set #instantiation to #adverb;
+									}
+									State:s192278_v176690_thing_have_thing_description_thing_to_thing_adverb {
+										case :v192280_thing goto State:s192282_v176690_thing_have_thing_description_thing_to_thing_adverb_thing;
+
+										:v192280_thing {
+											set #meaning to :v192281_thing;
+										}
+										:v192281_thing {
+											set #instantiation to #thing;
+										}
+										State:s192282_v176690_thing_have_thing_description_thing_to_thing_adverb_thing {
+											case :v192284_thing goto State:s192286_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing;
+
+											:v192284_thing {
+												set #meaning to :v192285_thing;
+											}
+											:v192285_thing {
+												set #instantiation to #thing;
+											}
+											State:s192286_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing {
+												case :v192288_had goto State:s192289_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_;
+
+												:v192288_had {
+													set #meaning to #have;
+												}
+												State:s192289_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_ {
+													case "deinstalling" goto State:s192291_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_deinstalling_;
+
+													State:s192291_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_deinstalling_ {
+														case :v192293_Windows goto State:s192294_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_deinstalling_Wind;
+
+														:v192293_Windows {
+															set #meaning to Vertex:192151:Windows;
+														}
+														State:s192294_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_deinstalling_Wind {
+															case :v192296__ goto State:s192297_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_deinstalling_Wind;
+
+															:v192296__ {
+																set #meaning to #period;
+															}
+															State:s192297_v176690_thing_have_thing_description_thing_to_thing_adverb_thing_thing_had_deinstalling_Wind {
+																//Possible Quotient:"Are you real?";
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			State:s192208_v176690_thing_action {
+				case :v192210_thing goto State:s192212_v176690_thing_action_thing;
+
+				case :v194844_description goto State:s194846_v176690_thing_v192206_action_description;
+
+				:v192210_thing {
+					set #meaning to :v192211_thing;
+				}
+				:v192211_thing {
+					set #instantiation to #thing;
+				}
+				:v194844_description {
+					set #meaning to :v194845_description;
+				}
+				:v194845_description {
+					set #instantiation to #description;
+				}
+				State:s192212_v176690_thing_action_thing {
+					case :v192214_description goto State:s192216_v176690_thing_action_thing_description;
+
+					case :v194300_thing goto State:s194302_v176690_thing_v192206_action_v192210_thing_thing;
+
+					:v192214_description {
+						set #meaning to :v192215_description;
+					}
+					:v192215_description {
+						set #instantiation to #description;
+					}
+					:v194300_thing {
+						set #meaning to :v194301_thing;
+					}
+					:v194301_thing {
+						set #instantiation to #thing;
+					}
+					State:s192216_v176690_thing_action_thing_description {
+						case :v192218_thing goto State:s192220_v176690_thing_action_thing_description_thing;
+
+						case :v202703_description goto State:s202705_v176690_thing_v192206_action_v192210_thing_v192214_description_description;
+
+						:v192218_thing {
+							set #meaning to :v192219_thing;
+						}
+						:v192219_thing {
+							set #instantiation to #thing;
+						}
+						:v202703_description {
+							set #meaning to :v202704_description;
+						}
+						:v202704_description {
+							set #instantiation to #description;
+						}
+						State:s192220_v176690_thing_action_thing_description_thing {
+							case :v192222_to goto State:s192223_v176690_thing_action_thing_description_thing_to_;
+
+							:v192222_to {
+								set #meaning to Vertex:23297:to;
+							}
+							State:s192223_v176690_thing_action_thing_description_thing_to_ {
+								case :v192225_thing goto State:s192227_v176690_thing_action_thing_description_thing_to_thing;
+
+								:v192225_thing {
+									set #meaning to :v192226_thing;
+								}
+								:v192226_thing {
+									set #instantiation to #thing;
+								}
+								State:s192227_v176690_thing_action_thing_description_thing_to_thing {
+									case :v192229_adverb goto State:s192231_v176690_thing_action_thing_description_thing_to_thing_adverb;
+
+									:v192229_adverb {
+										set #meaning to :v192230_adverb;
+									}
+									:v192230_adverb {
+										set #instantiation to #adverb;
+									}
+									State:s192231_v176690_thing_action_thing_description_thing_to_thing_adverb {
+										case :v192233_thing goto State:s192235_v176690_thing_action_thing_description_thing_to_thing_adverb_thing;
+
+										:v192233_thing {
+											set #meaning to :v192234_thing;
+										}
+										:v192234_thing {
+											set #instantiation to #thing;
+										}
+										State:s192235_v176690_thing_action_thing_description_thing_to_thing_adverb_thing {
+											case :v192237_thing goto State:s192239_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing;
+
+											:v192237_thing {
+												set #meaning to :v192238_thing;
+											}
+											:v192238_thing {
+												set #instantiation to #thing;
+											}
+											State:s192239_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing {
+												case :v192241_action goto State:s192243_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action;
+
+												:v192241_action {
+													set #meaning to :v192242_action;
+												}
+												:v192242_action {
+													set #instantiation to #action;
+												}
+												State:s192243_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action {
+													case "deinstalling" goto State:s192245_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action_deinstalling;
+
+													State:s192245_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action_deinstalling {
+														case :v192247_Windows goto State:s192248_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action_deinstalling;
+
+														:v192247_Windows {
+															set #meaning to Vertex:192151:Windows;
+														}
+														State:s192248_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action_deinstalling {
+															case :v192250__ goto State:s192251_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action_deinstalling;
+
+															:v192250__ {
+																set #meaning to #period;
+															}
+															State:s192251_v176690_thing_action_thing_description_thing_to_thing_adverb_thing_thing_action_deinstalling {
+																//Possible Quotient:"Are you real?";
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						State:s202705_v176690_thing_v192206_action_v192210_thing_v192214_description_description {
+							case :v202707__ goto State:s202708_v176690_thing_v192206_action_v192210_thing_v192214_description_description___;
+
+							:v202707__ {
+								set #meaning to #period;
+							}
+							State:s202708_v176690_thing_v192206_action_v192210_thing_v192214_description_description___ {
+								//Possible Quotient:Formula:"{:v176690_thing} once knew this guy whose unwillingness to {:v192206_action} help ruined his marriage {:v202707__}";
+							}
+						}
+					}
+					State:s194302_v176690_thing_v192206_action_v192210_thing_thing {
+						case :v194304_thing goto State:s194306_v176690_thing_v192206_action_v192210_thing_thing_thing;
+
+						case :v202713_description goto State:s202715_v176690_thing_v192206_action_v192210_thing_v194300_thing_description;
+
+						:v194304_thing {
+							set #meaning to :v194305_thing;
+						}
+						:v194305_thing {
+							set #instantiation to #thing;
+						}
+						:v202713_description {
+							set #meaning to :v202714_description;
+						}
+						:v202714_description {
+							set #instantiation to #description;
+						}
+						State:s194306_v176690_thing_v192206_action_v192210_thing_thing_thing {
+							case :v194308_a goto State:s194309_v176690_thing_v192206_action_v192210_thing_thing_thing_a_;
+
+							:v194308_a {
+								set #meaning to #a;
+							}
+							State:s194309_v176690_thing_v192206_action_v192210_thing_thing_thing_a_ {
+								case :v194311_thing goto State:s194313_v176690_thing_v192206_action_v192210_thing_thing_thing_a_thing;
+
+								:v194311_thing {
+									set #meaning to :v194312_thing;
+								}
+								:v194312_thing {
+									set #instantiation to #thing;
+								}
+								State:s194313_v176690_thing_v192206_action_v192210_thing_thing_thing_a_thing {
+									case :v194315__ goto State:s194316_v176690_thing_v192206_action_v192210_thing_thing_thing_a_thing___;
+
+									:v194315__ {
+										set #meaning to #period;
+									}
+									State:s194316_v176690_thing_v192206_action_v192210_thing_thing_thing_a_thing___ {
+										//Possible Quotient:Formula:"This is confusing {:v194315__} Why bring chatbots into this?";
+									}
+								}
+							}
+						}
+						State:s202715_v176690_thing_v192206_action_v192210_thing_v194300_thing_description {
+							case :v202717__ goto State:s202718_v176690_thing_v192206_action_v192210_thing_v194300_thing_description___;
+
+							:v202717__ {
+								set #meaning to #period;
+							}
+							State:s202718_v176690_thing_v192206_action_v192210_thing_v194300_thing_description___ {
+								//Possible Quotient:Formula:"{:v176690_thing} once knew this guy whose unwillingness to {:v192206_action} help ruined his marriage {:v202717__}";
+							}
+						}
+					}
+				}
+				State:s194846_v176690_thing_v192206_action_description {
+					case :v194848__ goto State:s194849_v176690_thing_v192206_action_description___;
+
+					case :v202725_description goto State:s202727_v176690_thing_v192206_action_v194844_description_description;
+
+					:v194848__ {
+						set #meaning to #period;
+					}
+					:v202725_description {
+						set #meaning to :v202726_description;
+					}
+					:v202726_description {
+						set #instantiation to #description;
+					}
+					State:s194849_v176690_thing_v192206_action_description___ {
+						case :v194851_question goto State:s194853_v176690_thing_v192206_action_description___question;
+
+						:v194851_question {
+							set #meaning to :v194852_question;
+						}
+						:v194852_question {
+							set #instantiation to #question;
+						}
+						State:s194853_v176690_thing_v192206_action_description___question {
+							case :v194855_action goto State:s194857_v176690_thing_v192206_action_description___question_action;
+
+							:v194855_action {
+								set #meaning to :v194856_action;
+							}
+							:v194856_action {
+								set #instantiation to #action;
+							}
+							State:s194857_v176690_thing_v192206_action_description___question_action {
+								case :v194859_thing goto State:s194861_v176690_thing_v192206_action_description___question_action_thing;
+
+								:v194859_thing {
+									set #meaning to :v194860_thing;
+								}
+								:v194860_thing {
+									set #instantiation to #thing;
+								}
+								State:s194861_v176690_thing_v192206_action_description___question_action_thing {
+									case :v194863_into goto State:s194864_v176690_thing_v192206_action_description___question_action_thing_into_;
+
+									:v194863_into {
+										set #meaning to Vertex:194790:into;
+									}
+									State:s194864_v176690_thing_v192206_action_description___question_action_thing_into_ {
+										case :v194866_speaker_thing goto State:s194868_v176690_thing_v192206_action_description___question_action_thing_into_speaker_thing;
+
+										:v194866_speaker_thing {
+											set #meaning to :v194867_speaker_thing;
+										}
+										:v194867_speaker_thing {
+											set #instantiation to #speaker;
+											set #instantiation to #thing;
+										}
+										State:s194868_v176690_thing_v192206_action_description___question_action_thing_into_speaker_thing {
+											case :v194870_question goto State:s194872_v176690_thing_v192206_action_description___question_action_thing_into_speaker_thing_question;
+
+											:v194870_question {
+												set #meaning to :v194871_question;
+											}
+											:v194871_question {
+												set #instantiation to #question;
+											}
+											State:s194872_v176690_thing_v192206_action_description___question_action_thing_into_speaker_thing_question {
+												//Possible Quotient:Formula:"Because I want to know how artificial intelligence programs might train humans to speak even as we teach them to understand us {:v194848__}";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					State:s202727_v176690_thing_v192206_action_v194844_description_description {
+						case :v202729_description goto State:s202731_v176690_thing_v192206_action_v194844_description_description_description;
+
+						:v202729_description {
+							set #meaning to :v202730_description;
+						}
+						:v202730_description {
+							set #instantiation to #description;
+						}
+						State:s202731_v176690_thing_v192206_action_v194844_description_description_description {
+							case :v202733__ goto State:s202734_v176690_thing_v192206_action_v194844_description_description_description___;
+
+							:v202733__ {
+								set #meaning to #period;
+							}
+							State:s202734_v176690_thing_v192206_action_v194844_description_description_description___ {
+								//Possible Quotient:Formula:"{:v176690_thing} once knew this guy whose unwillingness to {:v192206_action} help ruined his marriage {:v202733__}";
+							}
+						}
+					}
+				}
+			}
+		}
+		State:s178803_action {
+			case :v178805_thing goto State:s178807_action_thing;
+
+			:v178805_thing {
+				set #meaning to :v178806_thing;
+			}
+			:v178806_thing {
+				set #instantiation to #thing;
+			}
+			State:s178807_action_thing {
+				case :v178809_description goto State:s178811_action_thing_description;
+
+				:v178809_description {
+					set #meaning to :v178810_description;
+				}
+				:v178810_description {
+					set #instantiation to #description;
+				}
+				State:s178811_action_thing_description {
+					case :v178813_speaker_thing goto State:s178815_action_thing_description_speaker_thing;
+
+					case :v192728_question goto State:s192730_v178801_action_v178805_thing_v178809_description_question;
+
+					:v178813_speaker_thing {
+						set #meaning to :v178814_speaker_thing;
+					}
+					:v178814_speaker_thing {
+						set #instantiation to #speaker;
+						set #instantiation to #thing;
+					}
+					:v192728_question {
+						set #meaning to :v192729_question;
+					}
+					:v192729_question {
+						set #instantiation to #question;
+					}
+					State:s178815_action_thing_description_speaker_thing {
+						case :v178817_thing goto State:s178819_action_thing_description_speaker_thing_thing;
+
+						:v178817_thing {
+							set #meaning to :v178818_thing;
+						}
+						:v178818_thing {
+							set #instantiation to #thing;
+						}
+						State:s178819_action_thing_description_speaker_thing_thing {
+							case :v178821_action goto State:s178823_action_thing_description_speaker_thing_thing_action;
+
+							:v178821_action {
+								set #meaning to :v178822_action;
+							}
+							:v178822_action {
+								set #instantiation to #action;
+							}
+							State:s178823_action_thing_description_speaker_thing_thing_action {
+								case :v178825_question goto State:s178827_action_thing_description_speaker_thing_thing_action_question;
+
+								:v178825_question {
+									set #meaning to :v178826_question;
+								}
+								:v178826_question {
+									set #instantiation to #question;
+								}
+								State:s178827_action_thing_description_speaker_thing_thing_action_question {
+									case :v178829_thing goto State:s178831_action_thing_description_speaker_thing_thing_action_question_thing;
+
+									:v178829_thing {
+										set #meaning to :v178830_thing;
+									}
+									:v178830_thing {
+										set #instantiation to #thing;
+									}
+									State:s178831_action_thing_description_speaker_thing_thing_action_question_thing {
+										case :v178833_action goto State:s178835_action_thing_description_speaker_thing_thing_action_question_thing_action;
+
+										:v178833_action {
+											set #meaning to :v178834_action;
+										}
+										:v178834_action {
+											set #instantiation to #action;
+										}
+										State:s178835_action_thing_description_speaker_thing_thing_action_question_thing_action {
+											case :v178837_action goto State:s178839_action_thing_description_speaker_thing_thing_action_question_thing_action_action;
+
+											:v178837_action {
+												set #meaning to :v178838_action;
+											}
+											:v178838_action {
+												set #instantiation to #action;
+											}
+											State:s178839_action_thing_description_speaker_thing_thing_action_question_thing_action_action {
+												case :v178841_speaker_thing goto State:s178843_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi;
+
+												:v178841_speaker_thing {
+													set #meaning to :v178842_speaker_thing;
+												}
+												:v178842_speaker_thing {
+													set #instantiation to #speaker;
+													set #instantiation to #thing;
+												}
+												State:s178843_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi {
+													case :v178845_thing goto State:s178847_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi;
+
+													:v178845_thing {
+														set #meaning to :v178846_thing;
+													}
+													:v178846_thing {
+														set #instantiation to #thing;
+													}
+													State:s178847_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi {
+														case :v178849_aren goto State:s178850_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi;
+
+														:v178849_aren {
+															set #meaning to Vertex:177602:aren;
+														}
+														State:s178850_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi {
+															case "’" goto State:s178852_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi;
+
+															State:s178852_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi {
+																case :v178854_t goto State:s178855_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi;
+
+																:v178854_t {
+																	set #meaning to Vertex:28551:t;
+																}
+																State:s178855_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi {
+																	case :v178857__ goto State:s178858_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi;
+
+																	:v178857__ {
+																		set #meaning to #period;
+																	}
+																	State:s178858_action_thing_description_speaker_thing_thing_action_question_thing_action_action_speaker_thi {
+																		//Possible Quotient:Formula:"I am {:v178857__} Tell me {:v178857__}";
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					State:s192730_v178801_action_v178805_thing_v178809_description_question {
+						//Possible Quotient:Formula:"How do {:v178805_thing} respond when people pose this question to {:v178805_thing} {:v192728_question}";
+					}
+				}
+			}
+		}
+		State:s193392_question {
+			case :v193394_question goto State:s193396_question_question;
+
+			:v193394_question {
+				set #meaning to :v193395_question;
+			}
+			:v193395_question {
+				set #instantiation to #question;
+			}
+			State:s193396_question_question {
+				case :v193398_thing goto State:s193400_question_question_thing;
+
+				:v193398_thing {
+					set #meaning to :v193399_thing;
+				}
+				:v193399_thing {
+					set #instantiation to #thing;
+				}
+				State:s193400_question_question_thing {
+					case :v193402_action goto State:s193404_question_question_thing_action;
+
+					case :v193439_respond goto State:s193440_v193390_question_v193394_question_v193398_thing_respond_;
+
+					:v193402_action {
+						set #meaning to :v193403_action;
+					}
+					:v193403_action {
+						set #instantiation to #action;
+					}
+					:v193439_respond {
+						set #meaning to Vertex:192873:respond;
+					}
+					State:s193404_question_question_thing_action {
+						case :v193406_question goto State:s193408_question_question_thing_action_question;
+
+						:v193406_question {
+							set #meaning to :v193407_question;
+						}
+						:v193407_question {
+							set #instantiation to #question;
+						}
+						State:s193408_question_question_thing_action_question {
+							case :v193410_thing goto State:s193412_question_question_thing_action_question_thing;
+
+							:v193410_thing {
+								set #meaning to :v193411_thing;
+							}
+							:v193411_thing {
+								set #instantiation to #thing;
+							}
+							State:s193412_question_question_thing_action_question_thing {
+								case :v193414_thing goto State:s193416_question_question_thing_action_question_thing_thing;
+
+								:v193414_thing {
+									set #meaning to :v193415_thing;
+								}
+								:v193415_thing {
+									set #instantiation to #thing;
+								}
+								State:s193416_question_question_thing_action_question_thing_thing {
+									case :v193418_speaker_thing goto State:s193420_question_question_thing_action_question_thing_thing_speaker_thing;
+
+									:v193418_speaker_thing {
+										set #meaning to :v193419_speaker_thing;
+									}
+									:v193419_speaker_thing {
+										set #instantiation to #speaker;
+										set #instantiation to #thing;
+									}
+									State:s193420_question_question_thing_action_question_thing_thing_speaker_thing {
+										case :v193422_thing goto State:s193424_question_question_thing_action_question_thing_thing_speaker_thing_thing;
+
+										:v193422_thing {
+											set #meaning to :v193423_thing;
+										}
+										:v193423_thing {
+											set #instantiation to #thing;
+										}
+										State:s193424_question_question_thing_action_question_thing_thing_speaker_thing_thing {
+											case :v193426_to goto State:s193427_question_question_thing_action_question_thing_thing_speaker_thing_thing_to_;
+
+											:v193426_to {
+												set #meaning to Vertex:23297:to;
+											}
+											State:s193427_question_question_thing_action_question_thing_thing_speaker_thing_thing_to_ {
+												case :v193429_thing goto State:s193431_question_question_thing_action_question_thing_thing_speaker_thing_thing_to_thing;
+
+												:v193429_thing {
+													set #meaning to :v193430_thing;
+												}
+												:v193430_thing {
+													set #instantiation to #thing;
+												}
+												State:s193431_question_question_thing_action_question_thing_thing_speaker_thing_thing_to_thing {
+													case :v193433_question goto State:s193435_question_question_thing_action_question_thing_thing_speaker_thing_thing_to_thing_question;
+
+													:v193433_question {
+														set #meaning to :v193434_question;
+													}
+													:v193434_question {
+														set #instantiation to #question;
+													}
+													State:s193435_question_question_thing_action_question_thing_thing_speaker_thing_thing_to_thing_question {
+														//Possible Quotient:Formula:"I say that I am {:speaker} chatbot.";
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					State:s193440_v193390_question_v193394_question_v193398_thing_respond_ {
+						case :v193442_question goto State:s193444_v193390_question_v193394_question_v193398_thing_respond_question;
+
+						:v193442_question {
+							set #meaning to :v193443_question;
+						}
+						:v193443_question {
+							set #instantiation to #question;
+						}
+						State:s193444_v193390_question_v193394_question_v193398_thing_respond_question {
+							case :v193446_thing goto State:s193448_v193390_question_v193394_question_v193398_thing_respond_question_thing;
+
+							:v193446_thing {
+								set #meaning to :v193447_thing;
+							}
+							:v193447_thing {
+								set #instantiation to #thing;
+							}
+							State:s193448_v193390_question_v193394_question_v193398_thing_respond_question_thing {
+								case :v193450_thing goto State:s193452_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing;
+
+								:v193450_thing {
+									set #meaning to :v193451_thing;
+								}
+								:v193451_thing {
+									set #instantiation to #thing;
+								}
+								State:s193452_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing {
+									case :v193454_speaker_thing goto State:s193456_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing;
+
+									:v193454_speaker_thing {
+										set #meaning to :v193455_speaker_thing;
+									}
+									:v193455_speaker_thing {
+										set #instantiation to #speaker;
+										set #instantiation to #thing;
+									}
+									State:s193456_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing {
+										case :v193458_thing goto State:s193460_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t;
+
+										:v193458_thing {
+											set #meaning to :v193459_thing;
+										}
+										:v193459_thing {
+											set #instantiation to #thing;
+										}
+										State:s193460_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t {
+											case :v193462_to goto State:s193463_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t;
+
+											:v193462_to {
+												set #meaning to Vertex:23297:to;
+											}
+											State:s193463_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t {
+												case :v193465_thing goto State:s193467_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t;
+
+												:v193465_thing {
+													set #meaning to :v193466_thing;
+												}
+												:v193466_thing {
+													set #instantiation to #thing;
+												}
+												State:s193467_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t {
+													case :v193469_question goto State:s193471_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t;
+
+													:v193469_question {
+														set #meaning to :v193470_question;
+													}
+													:v193470_question {
+														set #instantiation to #question;
+													}
+													State:s193471_v193390_question_v193394_question_v193398_thing_respond_question_thing_thing_speaker_thing_t {
+														//Possible Quotient:Formula:"I say that I am {:speaker} chatbot.";
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

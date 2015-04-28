@@ -1,0 +1,8 @@
+Q: Do you learn from speaking to humans?
+A: You probably want to teach me something, right?
+Q: Will you learn if I teach you?
+A: I could teach you how to be a primitive robot. Are you interested?
+Q: I am.
+A: Are you certain that you are? People are tweeting that you aren’t.
+Q: I am. Tell me.
+A: Depends on what you mean by “me.” 

@@ -1,0 +1,58 @@
+While reading The Policeman’s Beard Is Half Constructed, I thought of the many companies that now employ compilation algorithms and natural language programs 
+in order to supplant—rather than generate linguistic fodder for—human writers. 
+I navigated to the website of Narrative Science
+I remembered reading about in various breathless news articles about how technology is destroying journalism and, subsequently, humankind. 
+The headlines read, “This Wasn’t Written by an Algorithm, But More and More Is,” 
+“Narrative Science raises $10M, taking it a step closer to automating this post.”
+Quill, the company’s “automated narrative generation platform,” is “a synthesis of data analytics, artificial intelligence, and editorial expertise.” 
+The software analyzes vast pools of data in order to identify meaningful events, fabricate the most rousing angles and deliver “actionable insights”
+it turns the information into newspaper articles, trend reports, and letters to shareholders.
+To replace the humanoid purveyors of journalism and business copy, Quill must track down information quickly and cheaply,
+churn out texts at a sixth-grade reading level.
+Companies like Narrative Science are, of course, not pumping millions of dollars into the construction of a robot that can pass for Janet Malcolm. 
+They’re refining Web-crawling tools, data-crunching algorithms, and natural-language processing engines.
+
+
+Natural-language processing exists within a broader ecology of systems—often proprietary—used to turn expression into data, and data into expression. 
+The coming synthesis of big data and natural-language processing can be expected to serve Facebook and Google’s semantic search ventures.
+Microsoft Kinect’s amalgamation of voice, gesture, and data; and perhaps the National Security Agency.
+
+Much the same can be said of the various fields concerned with artificial intelligence- 
+the vision of beneficent robots serving us as child-care providers, cooks, personal assistants, nurses, and companions (never writers) has largely given way to that of a world in which we talk to our cars
+our cars ping our air-conditioners, which nudge our ovens, which announce to our contacts the pleasures of achieving such synchronicity and being so unencumbered.
+
+Narrative Science’s website is rife with robo-philosophical mantras, among them, 
+“With spreadsheets, you have to calculate. With visualizations, you have to interpret. 
+With narratives, all you have to do is read.”
+I wondered, as I read this, Is this the most foul excretion of the most
+cynical or anesthetized copywriter? 
+Or a testament to the in-house bot’s prowess? 
+We speak and write so that the bots can better understand and respond; they process our language in order to better reproduce it. 
+Is it not inevitable that our languages will converge and create some kind of dumb, linguistic singularity?
+The world I inhabit often feels like a fledgling version of a remarkable and receding future
+A future in which our seemingly boundless intelligence is mostly harnessed for the honorable trade in product engineering and data harvesting. 
+I’m reassured when I run into chatbots, whether as virtual assistants working to cover up (but only ever advertising) the inhumanity of AT&T and American Airlines
+as artifacts in outdated online repositories. 
+Something about these stupid pieces of software lamely posing as humans quells my anxiety about the future. 
+Chatbots are not ambitious. 
+They were designed not to catapult us into a techno-utopian age, but to compete in contests like the Chatterbox Challenge, act as virtual boyfriends and girlfriends, and phish for credit card information in online forums. 
+For the most part, they learn little or nothing from their interactions, as they are programmed to recognize key words or phrases and then output prefabricated responses that are likely to keep the conversation going.
+When Virtual Personalities, Inc. launched Sylvie, the first chatbot with an animated face and a voice, in TK YEAR, it meant for her to act as a so-called conversation agent—
+To act also as an interface between the user and the computer, which her designers believed humans needed in order to deal with escalating technological complexity. 
+Chatbots would mediate between humans and hardware, between our corporeal selves and proliferating binary code.
+And so contribute to what information technology pioneer Douglas Engelbart argued should be the mission of computers 
+“augment human intellect” and conceal their own complexity in order to help us solve “the big problems.”
+
+Sylvie failed in this regard but succeeded as a conversation agent; 
+Virtual Personalities sold such a large number of Sylvies to customers in Southeast Asia that an investigation was prompted.
+The company discovered that students were typing English sentences and listening to Sylvie read them aloud.
+By mimicking Sylvie's pronunciation, they learned to speak like a chatbot.
+
+TK years later, Sylvie and her ilk, with their rigid rules and finite vocabularies, have the opposite effect; 
+they interrupt our thoughtless inputting, they ruffle the surface of the screen, they daftly play the jester in the court of more sovereign systems. 
+The chatbots persist, and in doing so they capably describe the territory between disillusionment and utopia, between affordable smart toasters and the overthrow of capitalism. 
+Even as we construct our Internet of Things, the chatbots will remain stubbornly useless, vacuous, so as to seem increasingly pejorative. 
+I just worry that, in the process, human speech come to serve the functionality of smart objects and algorithmic authors
+The chatbots will be left without anyone (besides fellow bots) to share their blasphemous idiocy. 
+As that happens, we can take comfort in the knowledge that the chatbots are, in their chat logs, writing the history—or literature—of our awkward, anxious age.
+We are writing with them.
