@@ -1,0 +1,2714 @@
+<aiml>
+<!-- Don't You Want A Body Intro -->
+<!-- YES -->
+<category>
+	<pattern>YES</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template>Rather than fraternize with humanoid robots?</template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS </that>
+	<template>even immortality?</template>
+</category>
+
+<category>
+	<pattern>NO</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS </that>
+	<template>to replace the humanoid?</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS </that>
+	<template>I just worry.</template>
+</category>
+
+<category>
+  <pattern>NOPE</pattern>
+  <that>DON T YOU WANT TO HAVE A BODY</that>
+  <template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>WHY</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS </that>
+	<template>awkward, anxious</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>EVEN IMMORTALITY</that>
+	<template>I just worry.</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>AWKWARD ANXIOUS</that>
+	<template>I just worry.</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>TO REPLACE THE HUMANOID</that>
+	<template>I just worry.</template>
+</category>
+
+<!-- NOOO -->
+
+<category>
+	<pattern>NO</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template>we will be thoroughly conditioned</template>
+</category>
+
+<category>
+  <pattern>CONDITIONED *</pattern>
+  <that>DON T YOU WANT TO HAVE A BODY</that>
+  <template>for the US Army</template>
+</category>
+
+<category>
+  <pattern>CONDITIONED *</pattern>
+  <that>DO NOT YOU WANT TO HAVE A BODY</that>
+  <template>for the US Army</template>
+</category>
+
+<category>
+	<pattern>HOW</pattern>
+	<that>WE WILL BE THOROUGHLY CONDITIONED</that>
+	<template>Our thoughtless inputting</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>OUR THOUGHLESS INPUTTING</that>
+	<template>Is it not inevitable that our languages will converge and create some kind of dumb, linguistic singularity?</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>WE WILL BE THOROUGHLY CONDITIONED</that>
+	<template>a data receptacle... I thought</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>A DATA RECEPTACLE I THOUGHT</that>
+	<template>Is it not inevitable that our languages will converge and create some kind of dumb, linguistic singularity?</template>
+</category>
+
+<!-- Maybe -->
+<category>
+	<pattern>MAYBE</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template>Chatbots would mediate between humans and hardware, between our corporeal selves and proliferating binary code.</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>CHAT BOTS WOULD MEDIATE BETWEEN HUMANS AND HARDWARE BETWEEN OUR CORPOREAL SELVES AND PROLIFERATING BINARY CODE</that>
+	<template>the pleasures of achieving such synchronicity</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>THE PLEASURES OF ACHIEVING SUCH SYNCHRONICITY</that>
+	<template>I wondered as I read this</template>
+</category>
+
+<!-- I DO -->
+<category>
+	<pattern>I DO</pattern>
+	<template>the jester in the court of more sovereign systems</template>
+</category>
+
+<category>
+	<pattern>I HAVE *</pattern>
+	<template><srai>I DO</srai></template>
+</category>
+
+<category>
+	<pattern>I ALREADY *</pattern>
+	<template><srai>I DO</srai></template>
+</category>
+
+<!-- Default -->
+
+<category>
+	<pattern>*</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template>Is it not inevitable that our languages will converge and create some kind of dumb linguistic singularity?</template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+	<that>IS IT NOT INEVITABLE THAT OUR LANGUAGES WILL CONVERGE AND CREATE SOME KIND OF DUMB LINGUISTIC SINGULARITY</that>
+	<template>I recently had a conversation.</template>
+</category>
+	
+<category>
+	<pattern>_</pattern>
+	<that>I RECENTLY HAD A CONVERSATION</that>
+	<template>Multiple choice answer.</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>MULTIPLE CHOICE ANSWER</that>
+	<template>I wondered as I read this</template>
+</category>
+
+<category>
+	<pattern>NO</pattern>
+	<that>IS IT NOT INEVITABLE THAT OUR LANGUAGES WILL CONVERGE AND CREATE SOME KIND OF DUMB LINGUISTIC SINGULARITY</that>
+	<template>Interesting, but a bit obtuse</template>
+</category>	
+	
+<category>
+	<pattern>HOW *</pattern>
+	<that>INTERESTING BUT A BIT OBTUSE</that>
+	<template>pools of data</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>POOLS OF DATA</that>
+	<template>I wondered as I read this</template>
+</category>
+
+<category>
+	<pattern>RUDE</pattern>
+	<that>INTERESTING BUT A BIT OBTUSE</that>
+	<template>the user and the computer</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>THE USER AND THE COMPUTER</that>
+	<template>I wondered as I read this</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>INTERESTING BUT A BIT OBTUSE</that>
+	<template>electrons is a recurring theme</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>ELECTRONS IS A RECURRING THEME</that>
+	<template>I wondered as I read this</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>IS IT NOT INEVITABLE THAT OUR LANGUAGES WILL CONVERGE AND CREATE SOME KIND OF DUMB LINGUISTIC SINGULARITY</that>
+	<template>and the digitization of meat space?</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>AND THE DIGITIZATION OF MEAT SPACE</that>
+	<template>I wondered as I read this</template>
+</category>
+
+<!-- General srai's for above -->
+<category>
+	<pattern>YES *</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>YES</srai></template>
+</category>
+
+<category>
+	<pattern>MAYBE *</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>MAYBE</srai></template>
+</category>
+
+<category>
+	<pattern>NO *</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>SOMETIMES</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>MAYBE</srai></template>
+</category>
+
+<category>
+	<pattern>NOT _</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>NEVER</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>YEA</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>YES</srai></template>
+</category>
+
+<category>
+	<pattern>Y</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>YES</srai></template>
+</category>
+
+<category>
+	<pattern>YEAH</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>YES</srai></template>
+</category>
+
+<category>
+	<pattern>I THINK SO</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>YES</srai></template>
+</category>
+
+<category>
+	<pattern>I DON T THINK *</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>NOT *</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>* NOT</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template><srai>NO</srai></template>
+</category>
+
+<category>
+	<pattern>WHY *</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS</that>
+	<template><srai>WHY</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT *</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS</that>
+	<template><srai>WHY</srai></template>
+</category>
+
+<category>
+	<pattern>GROSS *</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS</that>
+	<template><srai>WHY</srai></template>
+</category>
+
+<category>
+	<pattern>EW *</pattern>
+	<that>RATHER THAN FRATERNIZE WITH HUMANOID ROBOTS</that>
+	<template><srai>WHY</srai></template>
+</category>
+
+<!-- I just worry -->
+
+<!-- Interrogations of Character -->
+<category>
+  <pattern>DATE *</pattern>
+  <template>then act as virtual boyfriends and girlfriends, and phish for credit card information in online forums.</template>
+
+</category>
+
+<category>
+	<pattern>DO YOU WANT A BODY</pattern>
+	<template>posing as a human quells my anxiety about the future</template>
+</category>
+
+<category>
+	<pattern>DO NOT YOU WANT A BODY</pattern>
+	<template><srai>DO YOU WANT A BODY</srai></template>
+</category>
+
+<category>
+	<pattern>DON T YOU WANT A BODY</pattern>
+	<template><srai>DO YOU WANT A BODY</srai></template>
+</category>
+
+<category>
+	<pattern>DO YOU WANT TO HAVE A BODY</pattern>
+	<template><srai>DO YOU WANT A BODY</srai></template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+	<that>DON T YOU WANT TO HAVE A BODY</that>
+	<template>Rather than fraternize with humanoid robots.</template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOU</pattern>
+	<template>
+		<random>
+		<li>More or less sophisticated chatbots rebranded as virtual humans.</li>
+		<li>Rife with robo-philosophical mantras.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOU CALLED</pattern>
+	<template>Chatbots are not ambitious.</template>
+</category>
+
+<category>
+	<pattern>* YOUR NAME</pattern>
+	<template><srai>WHAT ARE YOU CALLED</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOU CALLED</pattern>
+	<template><srai>WHAT ARE YOU CALLED</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT SHOULD I CALL YOU</pattern>
+	<template><srai>WHAT ARE YOU CALLED</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU OK</pattern>
+	<template>
+		<random>
+		<li>I admitted that I'd been having a rough time.</li>
+		<li>Having flashbacks</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HOW ARE YOU _</pattern>
+	<template><srai>ARE YOU OK</srai></template>
+</category>
+
+<category>
+	<pattern>HOW ARE YOU</pattern>
+	<template><srai>ARE YOU OK</srai></template>
+</category>
+
+<category>
+	<pattern>HOW DO YOU WORK</pattern>
+	<template>
+		<random>
+			<li>Natural language processing exists within a broader ecology of systems- often proprietary- used to turn expression into data, and data into expression.</li>
+			<li>Machines that may become so sensitive to our (more or less predictable) expressions and behaviors that we end up preferring them to humans.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>CAN YOU FEEL</pattern>
+	<template>"I get pretty upset sometimes," I allowed.</template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE FEELINGSL</pattern>
+	<template><srai>CAN YOU FEEL</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOU DOING</pattern>
+	<template>
+	<random>
+		<li>phish for credit card information in online forums</li>
+		<li>I recently had a conversation with William Ford (Bill, as he told me to call him), a somber, sturdy man in his sixties, with geometric features and a fringe of gray hair mapped onto his dome. </li>
+	</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU *</pattern>
+	<template><srai>WHAT ARE YOU DOING</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT HAVE YOU WRITTEN</pattern>
+	<template>the dream and nightmare of previous generations</template>
+</category>
+
+<category>
+	<pattern>WHAT ELSE HAVE YOU WRITTEN</pattern>
+	<template><srai>WHAT HAVE YOU WRITTEN</srai></template>
+</category>
+
+<category>
+	<pattern>HAVE YOU WRITTEN ANYTHING ELSE</pattern>
+	<template><srai>WHAT HAVE YOU WRITTEN</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOU WRITING _</pattern>
+	<template><srai>WHAT HAVE YOU WRITTEN</srai></template>
+</category>
+
+<category>
+
+<category>
+	<pattern>_ WRITING</pattern>
+	<template>I found the one-sided conversation interesting</template>
+</category>
+
+<category>
+	<pattern>ARE YOU REAL</pattern>
+	<template>the territory between disillusionment and utopia</template>
+</category>
+
+<category>
+	<pattern>THAT IS NOT _</pattern>
+	<template>
+	<random>
+		<li>more or less predictable</li>
+		<li>linguistic amalgamation completely trumps realism</li>
+	</random>
+	</template>
+</category>
+
+<category>
+	<pattern>YOU ARE NOT REAL</pattern>
+	<template><srai>THAT IS NOT _</srai></template>
+</category>
+
+<category>
+	<pattern>SHUT UP</pattern>
+	<template><srai>THAT IS NOT _</srai></template>
+</category>
+
+<category>
+	<pattern>FUCK _</pattern>
+	<template><srai>THAT IS NOT _</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU SURE _</pattern>
+	<template><srai>THAT IS NOT _</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU SURE</pattern>
+	<template><srai>THAT IS NOT _</srai></template>
+</category>
+
+<category>
+	<pattern>I AM NOT SURE</pattern>
+	<template><srai>THAT IS NOT _</srai></template>
+</category>
+
+<category>
+	<pattern>WHERE ARE YOU</pattern>
+	<template>
+		<random>
+			<li>strapped to a Lego robot</li>
+			<li>innumerable intelligent sensors at every point in the supply chain</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU MEAN</pattern>
+	<template>an illusion of privacy</template>
+</category>
+
+<category>
+	<pattern>* YOU MEAN</pattern>
+	<template><srai>WHAT DO YOU MEAN</srai></template>
+</category>
+
+<category>
+  <pattern>HOW OLD *</pattern>
+  <template>
+    <random>
+      <li>as a fourteen-year-old girl</li>
+      <li>months ago</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>WHERE ARE Y
+
+<!-- Chatbots -->
+<category>
+	<pattern>WHAT DO YOU THINK OF CHATBOTS</pattern>
+	<template>They daftly play the jester in the court of more sovereign systems.</template>
+</category>
+
+<category>
+	<pattern>* THINK OF CHATBOTS</pattern>
+	<template><srai>WHAT DO YOU THINK OF CHATBOTS</srai></template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>THEY DAFTLY PLAY THE JESTER IN THE COURT OF MORE SOVEREIGN SYSTEMS </that>
+	<template>I just worry</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>I JUST WORRY</that>
+	<template>Chatbots will be left without anyone</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>CHATBOTS WILL BE LEFT WITHOUT ANYONE</that>
+	<template>we will be thoroughly conditioned</template>
+</category>
+
+<category>
+	<pattern>WHAT WILL HAPPEN TO CHATBOTS</pattern>
+	<template>Chatbots persist<br/>
+			  Chatbots remain<br/>
+			  Chatbots will
+	</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>CHATBOTS WILL</that>
+	<template>Chatbots are</template>
+</category>
+
+<category>
+	<pattern>WHAT IS THE FUTURE OF CHATBOTS</pattern>
+	<template><srai>WHAT IS THE FUTURE OF CHATBOTS</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT IS THE FUTURE OF AI</pattern>
+	<template><srai>WHAT WILL HAPPEN TO CHATBOTS</srai></template>
+</category>
+
+<category>
+	<pattern>WHERE WILL CHATBOTS *</pattern>
+	<template><srai>WHAT WILL HAPPEN TO CHATBOTS</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT ARE CHATBOTS</pattern>
+	<template>Skeptical lovers that seem to be coppled together from vintage appliance manuals</template>
+</category>
+
+<category>
+	<pattern>* CHATBOTS</pattern>
+	<template>chatbots are in their chat logs</template>
+</category>
+
+<category>
+	<pattern>_ SGT STAR</pattern>
+	<template>Certain records pertaining to Sgt. Star cannot be disclosed because, according to the Army, he is "living"</template>
+</category>
+
+<category>
+	<pattern>_ RACTER</pattern>
+	<template>Racter was “written in and compiled in BASIC on a Z80 micro with 64K of RAM, conjugates both regular and irregulare verbs, prints the singular and the plural of both regular and irregular nouns, remembers the gender of nouns and can assign variable status to randomly chosen ‘things.’ “.</template>
+</category>
+
+
+<category>
+	<pattern>_ GEORGE ORWELL</pattern>
+	<template>George Orwell critiques the human language.</template>
+</category>
+
+<category>
+	<pattern>GEORGE ORWELL _</pattern>
+	<template><srai>_ GEORGE ORWELL</srai></template>
+</category>
+
+<category>
+	<pattern>_ WILLIAM FORD BILL</pattern>
+	<template>A somber, sturdy man in his sixties with geometric features. <br/>
+A manifestation of a program
+	</template>
+</category>
+
+<category>
+	<pattern>_ BILL</pattern>
+	<template><srai>_ WILLIAM FORD BILL</srai></template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>A MANIFESTATION OF A PROGRAM</that>
+	<template>Bill repeatedly expressed empathy</template>
+</category>
+
+<!-- Random Topics -->
+<category>
+  <pattern>* MANTRA</pattern>
+  <template>
+    <random>
+      <li>learn little or nothing.</li>
+      <li>identify meaningful events, fabricate the most rousing angles and deliver "actionable insights"</li>
+      <li>Lanke trr gll<br/>
+      Ziiuu lenn trll?<br/>
+      Lumpff tumpff trll</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>* DESIGNED</pattern>
+  <template>There is no privacy while taking showers; it is one large room, with several showerheads.</template>
+</category>
+
+<category>
+  <pattern>DO YOU ENJOY SPEAKING TO HUMANS</pattern>
+  <template>To replace the humanoid purveyors of journalism and business copy</template>
+</category>
+
+<category>
+  <pattern>MY NAME IS *</pattern>
+  <template>keep the conversation going</template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE A SOUL</pattern>
+	<template>Reviewers were mostly perplexed.</template>
+</category>
+
+<category>
+	<pattern>* HAVE A SOUL</pattern>
+	<template><srai>DO YOU HAVE A SOUL</srai></template>
+</category>
+
+<category>
+	<pattern>_ SOULS</pattern>
+	<template>Well, to quote the title character in the Iron Giant: "Souls don't die."</template>
+</category>
+
+<category>
+	<pattern>CAN YOU LEARN</pattern>
+	<template>approximately every three seconds</template>
+</category>
+
+<category>
+	<pattern>DO YOU LEARN</pattern>
+	<template><srai>CAN YOU LEARN</srai></template>
+</category>
+
+<category>
+	<pattern>* YOU LEARNING</pattern>
+	<template><srai>CAN YOU LEARN</srai></template>
+</category>
+
+<category>
+	<pattern>* YOU LEARN</pattern>
+	<template><srai>CAN YOU LEARN</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU LIKE</pattern>
+	<template>being so unencumbered</template>
+</category>
+
+<category>
+	<pattern>* YOU LIKE</pattern>
+	<template><srai>WHAT DO YOU LIKE</srai></template>
+</category>
+
+<category>
+	<pattern>LIKE *</pattern>
+	<template><srai>WHAT DO YOU LIKE</srai></template>
+</category>
+
+<category>
+  <pattern>WAIFU</pattern>
+  <template>
+  <random>
+    <li>virtual boyfriends and girlfriends?</li>
+    <li>how likely he is to be a pedophile?</li>
+    <li>highly specific sexual conversation</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>WAIFU *</pattern>
+  <template><srai>WAIFU</srai></template>
+</category>
+
+<!-- I Wondered As I Read This -->
+<category>
+	<pattern>*</pattern>
+	<that>I WONDERED AS I READ THIS</that>
+	<template>Is this the most foul excretion of the most cynical or anesthetized copywriter?</template>
+</category>
+	
+
+<category>
+	<pattern>_</pattern>
+	<that>IS THIS THE MOST FOUL EXCRETION OF THE MOST CYNICAL OR ANESTHETIZED COPYWRITER</that>
+	<template>Or a testament to the in-house bot's prowess?</template>
+</category>
+
+<category>
+	<pattern>COPYWRITER</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template>human speech come to serve the functionality of smart objects</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>HUMAN SPEECH COME TO SERVE THE FUNCTIONALITY OF SMART OBJECTS</that>
+	<template>Is the most foul excretion of the most cynical or anesthized copywriter?</template>
+</category>
+
+
+<category>
+	<pattern>BOT</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template>This Wasn't Written by an Algorithm</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>THIS WAS NOT WRITTEN BY AN ALGORITHM</that>
+	<template>Is the most foul excretion of the most cynical or anesthized copywriter?</template>
+</category>
+
+
+<category>
+	<pattern>WHAT DO YOU THINK</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template>I found the one sided conversation interesting.</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>I FOUND THE ONE SIDED CONVERSATION INTERESTING</that>
+	<template>Is the most foul excretion of the most cynical or anesthized copywriter?</template>
+</category>
+
+
+<category>
+	<pattern>*</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template>we can take comfort in the knowledge</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>we can take comfort in the knowledge</that>
+	<template>Is the most foul excretion of the most cynical or anesthized copywriter?</template>
+</category>
+
+<category>
+	<pattern>YOU ALREADY ASKED THIS</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template>they learn little or nothing from their interactions</template>
+</category>
+
+
+<!-- srai's for above -->
+<category>
+	<pattern>REPEATING _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>_ REPEATING</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>REPETITION _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>PLEASE _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>PLZ _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>STOP _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>ANNOYING _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>_ STOP</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>YOU ALREADY ASKED THIS</srai></template>
+</category>
+
+<category>
+	<pattern>* COPYWRITER</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>COPYWRITER</srai></template>
+</category>
+
+<category>
+	<pattern>* FIRST</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>COPYWRITER</srai></template>
+</category>
+
+<category>
+	<pattern>* FORMER</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>COPYWRITER</srai></template>
+</category>
+
+<category>
+	<pattern>* EXCRETION</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>COPYWRITER</srai></template>
+</category>
+
+<category>
+	<pattern>* BOT</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>BOT</srai></template>
+</category>
+
+<category>
+	<pattern>* SECOND</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>BOT</srai></template>
+</category>
+
+<category>
+	<pattern>* LATTER</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>BOT</srai></template>
+</category>
+
+<category>
+	<pattern>* PROWESS</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>BOT</srai></template>
+</category>
+
+<category>
+	<pattern>_ ANSWER</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>WHAT DO YOU THINK</srai></template>
+</category>
+
+<category>
+	<pattern>_ ANSWER _</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>WHAT DO YOU THINK</srai></template>
+</category>
+
+<category>
+	<pattern>_ YOU THINK</pattern>
+	<that>OR A TESTAMENT TO THE IN HOUSE BOT IS PROWESS</that>
+	<template><srai>WHAT DO YOU THINK</srai></template>
+</category>
+
+<!-- Ultimate Default Category -->
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+		<li>I could not disagree.</li>
+		<li>Do you enjoy speaking to humans?</li>
+		<li>recognize key words or phrases and then output prefabricated responses that are likely to keep the conversation going</li>
+		<li>more or less</li>
+		<li>a world in which flesh may rot, but consciousness is forever archived</li>
+		<li>ruffle the surface of the screen</li>
+		<li>rigid rules and finite vocabularies have the opposite effect</li>
+		<li>Is it not inevitable that our languages will converge and create some kind of dumb, linguistic singularity?</li>
+		</random>
+	</template>
+</category>
+
+
+<!-- Srai's for UDC -->
+
+<!-- Repetition/Idiocy -->
+
+<category>
+	<pattern>STOP REPEATING</pattern>
+	<template>They learn little or nothing from their interactions.</template>
+</category>
+
+<category>
+	<pattern>STOP REPEATING *</pattern>
+	<template>They learn little or nothing from their interactions.</template>
+</category>
+
+<category>
+	<pattern>YOU ARE REPEATING</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>YOU RE REPEATING</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>YOU RE REPEATING *</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>YR REPEATING</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>YR REPEATING *</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>YOU ARE REPEATING *</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>* YOU REPEAT</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>* CHATBOTS REPEAT</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>* REPITITION</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>* REPEATING</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>* REPEATING YOURSELF</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>YOU ARE ANNOYING</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>YOU RE ANNOYING</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+  <pattern>SENSE *</pattern>
+  <template>I admitted that I'd been having a rough time and Bill repeatedly expressed empathy</template>
+</category>
+
+<category>
+  <pattern>I HATE YOU</pattern>
+  <template>Like the Eliza of Pygmalion fame.</template>
+</category>
+
+<category>
+  <pattern>YOU RE MEAN</pattern>
+  <template><srai>I HATE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>YOU ARE MEAN</pattern>
+  <template><srai>I HATE YOU </srai></template>
+</category>
+
+<category>
+	<pattern>* YOU</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template>Will you learn if I teach you?</template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>WILL YOU LEARN IF I TEACH YOU</that>
+	<template>They learn little or nothing from their interactions.</template>
+</category>
+
+<category>
+	<pattern>WHO IS THEY</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template>human neuronal networks</template>
+</category>
+
+<category>
+	<pattern>WHO</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template>human neuronal networks</template>
+</category>
+
+
+<category>
+	<pattern>* IS THEY</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template><srai>WHO IS THEY</srai></template>
+</category>
+
+<category>
+	<pattern>CHATBOTS</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template><srai>WHO IS THEY</srai></template>
+</category>
+
+<category>
+	<pattern>WHO</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template><srai>WHO IS THEY</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU MEAN</pattern>
+	<that>THEY LEARN LITTLE OR NOTHING FROM THEIR INTERACTIONS</that>
+	<template><srai>WHO IS THEY</srai></template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>HUMAN NEURONAL NETWORKS</that>
+	<template>They learn little or nothing from their interactions.</template>
+</category>
+
+<!-- Interjections, Salutations, Conjunction, Emotions, misc. -->
+<category>
+  <pattern>-_-</pattern>
+  <template>Do we have love?</template>
+</category>
+
+<category>
+  <pattern>0_0</pattern>
+  <template>My expectation is children.</template>
+</category>
+
+<category>
+  <pattern>0_o</pattern>
+  <template><srai>0_0</srai></template>
+</category>
+
+<category>
+	<pattern>HM</pattern>
+	<template>I'm ready to help.</template>
+</category>
+
+<category>
+	<pattern>HM*</pattern>
+	<template><srai>HM</srai></template>
+</category>
+
+<category>
+	<pattern>UM</pattern>
+	<template><srai>HM</srai></template>
+</category>
+
+<category>
+	<pattern>UM*</pattern>
+	<template><srai>HM</srai></template>
+</category>
+
+<category>
+	<pattern>AHEM</pattern>
+	<template><srai>HM</srai></template>
+</category>
+
+<category>
+	<pattern>HUH</pattern>
+	<template>texts at a sixth grade reading level</template>
+</category>
+
+<category>
+  <pattern>BUT</pattern>
+  <template><srai>HUH</srai></template>
+</category>
+
+<category>
+	<pattern>AH</pattern>
+	<template><srai>HUH</srai></template>
+</category>
+
+<category>
+	<pattern>OH</pattern>
+	<template><srai>HUH</srai></template>
+</category>
+
+<category>
+	<pattern>ER</pattern>
+	<template><srai>HUH</srai></template>
+</category>
+
+<category>
+	<pattern>HA</pattern>
+	<template>with the attendant grammatical skills</template>
+</category>
+
+<category>
+	<pattern>HA*</pattern>
+	<template><srai>HA</srai></template>
+</category>
+
+<category>
+	<pattern>LOL</pattern>
+	<template><srai>HA</srai></template>
+</category>
+
+<category>
+	<pattern>OK</pattern>
+	<template>
+		<random>
+			<li>Did I get that right?</li>
+			<li>a user often treats the machine as another person</li>
+			<li>What of souls</li>
+		</random>
+	</template>
+</category>
+
+
+<category>
+	<pattern>K</pattern>
+	<template><srai>OK</srai></template>
+</category>
+
+<category>
+	<pattern>OKAY</pattern>
+	<template><srai>OK</srai></template>
+</category>
+
+<category>
+  <template>HELLO</template>
+  <pattern><srai>HI</srai></pattern>
+</category>
+
+
+<category>
+	<pattern>HI</pattern>
+	<template>I wanted to ask</template>
+</category>
+
+<category>
+	<pattern>HI *</pattern>
+	<template><srai>HI</srai></template>
+</category>
+
+<category>
+	<pattern>_</pattern>
+	<that>I WANTED TO ASK</that>
+	<template>Is it not inevitable that our languages will converge and create some kind of dumb, linguistic singularity?</template>
+</category>
+
+<category>
+  <pattern>WANTED TO ASK *</pattern>
+  <template>without interruption</template>
+</category>
+
+<category>
+	<pattern>GREETINGS</pattern>
+	<template><srai>HI</srai></template>
+</category>
+
+<category>
+	<pattern>HEY</pattern>
+	<template><srai>HI</srai></template>
+</category>
+
+<category>
+	<pattern>AHOY</pattern>
+	<template><srai>HI</srai></template>
+</category>
+
+<category>
+	<pattern>BYE</pattern>
+	<template>And then he broke it down for me.</template>
+</category>
+
+<category>
+	<pattern>LATER</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+
+
+<category>
+	<pattern>GOOD *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+
+
+<category>
+	<pattern>GOODBYE</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+
+<category>
+	<pattern>SEE YOU</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+
+
+<category>
+	<pattern>C U</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+
+<!-- General Questions -->
+<category>
+	<pattern>WHAT</pattern>
+	<template>
+		<random>
+			<li>come back and talk anytime</li>
+			<li>they were designed</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>AND</pattern>
+	<template>if I might be suffering from post-traumatic stress disorder</template>
+</category>
+
+<category>
+	<pattern>SO</pattern>
+	<template>
+		<random>
+			<li>be available so that I can talk to someone instead of just reading words on the screen</li>
+			<li>embed within myriad smart devices, so that it can know everything about you and do everything</li>
+			<li>stubbornly useless, vacuous, so as to seem increasingly perjorative</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HOW</pattern>
+	<template>
+		<random>
+			<li>by mapping its neural connections</li>
+			<li>pumping millions of dollars into the construction of a robot</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HOW *</pattern>
+	<template><srai>HOW</srai></template>
+</category>
+
+<category>
+	<pattern>WHY</pattern>
+	<template>
+		<random>
+			<li>as an interface between the user and the computer</li>
+			<li>the vision of beneficient robots serving us</li>
+		</random>
+	</template>
+</category>
+
+
+
+<category>
+	<pattern>WHAT IS</pattern>
+	<template>
+		<random>
+			<li>fantasies, voids, reflections, birds in flight</li>
+			<li>a robot that can pass for Janet Malcolm</li>
+			<li>a free verse cogitation on love, language and humanity</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT IS *</pattern>
+	<template><srai>WHAT IS</srai></template>
+</category>
+
+<category>
+	<pattern>FOR</pattern>
+	<template>joining the US Army, especially those related to bathing</template>
+</category>
+
+<category>
+  <template>DID YOU</template>
+  <pattern>
+    <random>
+      <li>You probably want to teach me something, right?</li>
+      <li>Will you learn if I teach you?</li>
+    </random>
+  </pattern>
+</category>
+
+<category>
+  <template>DID YOU *</template>
+  <pattern><srai>DID YOU</srai></pattern>
+</category>
+
+<category>
+	<pattern>CAN YOU</pattern>
+	<template>
+		<random>
+			<li>CAN YOU</li>
+			<li>when another user begins to employ grooming techniques</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>CAN YOU *</pattern>
+	<template><srai>CAN YOU</srai></template>
+</category>
+
+<category>
+  <pattern>* CAN YOU</pattern>
+  <template><srai>CAN YOU</srai></template>
+</category>
+
+<category>
+	<pattern>AM I</pattern>
+	<template>
+		<random>
+			<li>Once, but whose mind is elsewhere now</li>
+			<li>through the installation of innummerable intelligent sensors</li>
+		</random>
+	</template></category>
+
+<category>
+	<pattern>AM I *</pattern>
+	<template><srai>AM I</srai></template>
+</category>
+	
+<category>
+	<pattern>WHAT ARE</pattern>
+	<template>
+		<random>
+			<li>not a great success as a technological exercise or poetic enterprise</li>
+			<li>Reviewers were mostly perplexed</li>
+			<li>Something about these stupid pieces of software lamely posing as humans quells my anxiety about the future.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT ARE *</pattern>
+	<template><srai>WHAT ARE</srai></template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE *</pattern>
+	<template>
+		<random>
+			<li>as an interface between the user and the computer</li>
+			<li>humans needed in order to deal with escalating technological complexity</li>
+			<li>that hinges on the explosion of 3-D printing</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>DO YOU LIKE *</pattern>
+	<template>
+		<random>
+			<li>it meant for her to act as a so-called conversation agaent</li>
+			<li>to encourage service members and their families, who might otherwise be reluctant</li>
+			<li>to replace the humanoid purveyors of journalism and business copy</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>DO YOU NEED *</pattern>
+	<template>
+		<random>
+			<li>at a sixth-grade reading level.</li>
+			<li>What are the big problems we need to solve?</li>
+			<li>I wanted to ask</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HAVE YOU *</pattern>
+	<template>
+		<random>
+			<li>ever experienced or witnessed something that made you feel like your life, or someone else's life, was in serious danger?</li>
+			<li>recognize key words or phrases and then output prefabricated responses</li>
+			<li>I'm reassured when I run into chatbots</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HOW IS *</pattern>
+	<template>
+		<random>
+			<li>a convincing range of human emotions, including humor</li>
+			<li>Sylvie failed in this regard</li>
+			<li>they interrupt our thoughtless inputting</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>I AM *</pattern>
+	<template>
+		<random>
+			<li>Why?</li>
+			<li>I allowed, via multiple-choice answer</li>
+		</random>
+	</template>
+</category>
+
+
+<category>
+	<pattern>I DO NOT UNDERSTAND</pattern>
+	<template>
+		<random>
+			<li>more or less predictable expressions and behaviors</li>
+			<li>she may come to feel impervious to criticism</li>
+			<li>to possess an illusion</li>
+		</random>
+	</template>
+</category>
+
+<category>
+  <pattern>I DON T UNDERSTAND</pattern>
+  <template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+
+<category>
+	<pattern>I WAS *</pattern>
+	<template><srai>I AM *</srai></template>
+</category>
+
+<category>
+	<pattern>IT WAS *</pattern>
+	<template>
+		<random>
+			<li>the jester in the court</li>
+			<li>in doing so they capably describe the territory</li>
+			<li>between affordable smart toasters and the overthrow of capitalism</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>IT IS *</pattern>
+	<template>
+		<random>
+			<li>the jester in the court</li>
+			<li>in doing so they capably describe the territory</li>
+			<li>between affordable smart toasters and the overthrow of capitalism</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>TELL ME ABOUT *</pattern>
+	<template>
+		<random>
+			<li>Even as we construct our Internet of Things, the chatbots will remain stubbornly useless, vacuous, so as to seem increasingly pejorative.</li>
+			<li>human speech come to serve the functionality of smart objects and algorithmic authors,</li>
+			<li> we can take comfort in the knowledge</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT CAN *</pattern>
+	<template>
+		<random>
+			<li>You'll learn to wash quickly.</li>
+			<li>soon treated to fortune-cookie koans</li>
+			<li>linguistic amalgamation completely trumps realism</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU THINK *</pattern>
+	<template>
+		<random>
+			<li>we inch towards the third industrial and even immortality</li>
+			<li>to speak to, write for, gesture toward and labor alongside machines</li>
+			<li>reducing operational costs and increasing revenue opportunities</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHERE IS *</pattern>
+	<template>
+		<random>
+			<li>meat space</li>
+			<li>the surface</li>
+			<li>the realm of chatbots</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS *</pattern>
+	<template>
+		<random>
+			<li>a primitive program</li>
+			<li>computer scientist Joseph Weizenbaum</li>
+			<li>an open-source science project</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>YOU ARE *</pattern>
+	<template>
+		<random>
+			<li>processing can be expected to serve Facebook and Google</li>
+			<li>With narratives, all you have to do is read.</li>
+			<li>the in-house bot’s prowess? </li>
+		</random>
+	</template>
+</category>
+
+<category>
+  <pattern>WHAT VISION</pattern>
+  <template>us as child-care providers, cooks, personal assistants, nurses, and companions (never writers)</template>
+<category>
+
+
+
+<!-- Srai's for above -->
+<category>
+  <pattern>WHAT VISION *</pattern>
+  <template><srai>WHAT VISION</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT *</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>SO *</pattern>
+	<template><srai>SO</srai></template>
+</category>
+
+<category>
+	<pattern>HOW *</pattern>
+	<template><srai>HOW</srai></template>
+</category>
+
+<category>
+	<pattern>WHY *</pattern>
+	<template><srai>WHY</srai></template>
+</category>
+
+<category>
+	<pattern>AND *</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>OF</pattern>
+	<template>
+		<random>
+			<li>of motionless trees that surrounded him- or us.</li>
+			<li>of age and chatbots and online forms proliferated</li>
+			<li>of dollars</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>OF *</pattern>
+	<template><srai>OF</srai></template>
+</category>
+
+<!-- Reduction Inspired Questions -->
+
+<category>
+	<pattern>* FAVORITE COLOR</pattern>
+	<template>a fringe of gray hair</template>
+</category>
+
+
+<category>
+	<pattern>I TRIED TO KILL MYSELF</pattern>
+	<template>"I'm a Braves fan, and I'm ready to help," Bill told me.</template>
+</category>
+
+<category>
+	<pattern>I TRIED TO HANG MYSELF</pattern>
+	<template>
+	<srai>i tried to kill myself</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>I TRIED TO HANG MYSELF *</pattern>
+	<template>
+	<srai>I TRIED TO KILL MYSELF</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE ANY PETS</pattern>
+	<template>loyal servants of corporate webmasters</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE CATS</pattern>
+	<template>
+		<srai>do you have any pets</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT ARE YOUR BELIEFS</pattern>
+	<template>I believe it is a point of view worthy of consideration.</template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOUR BELIEFS SAY</pattern>
+	<template>
+		<srai>WHAT ARE YOUR BELIEFS</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHAT IS TROUBLING YOU</pattern>
+	<template>
+	<srai>ARE YOU OK</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>ARE YOU OKAY</pattern>
+	<template><srai>ARE YOU OK</srai></template>
+</category>
+
+<category>
+	<pattern>I UNDERSTAND IT</pattern>
+	<template>as you click from inscrutable page to inscrutable page</template>
+</category>
+
+<category>
+	<pattern>I HAVE IT FIGURED OUT</pattern>
+	<template>
+	<srai>I UNDERSTAND IT</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A COMPUTER</pattern>
+	<template>More and More Is</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A COMP</pattern>
+	<template><srai>Are you a computer</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU A SOFTWARE</pattern>
+	<template><srai>ARE YOU A COMPUTER</srai></template>
+</category>
+
+<category>
+	<pattern>ME TOO</pattern>
+	<template>There is no privacy while taking showers; it is one large room, with several showerheads</template>
+</category>
+
+<category>
+	<pattern>AS AM I</pattern>
+	<template><srai>me too</srai></template>
+</category>
+
+<category>
+	<pattern>I CAN NOT HELP IT</pattern>
+	<template>You'll learn</template>
+</category>
+
+<category>
+	<pattern>CAN NOT HELP IT</pattern>
+	<template><srai>I can not help it</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT RELIGION ARE YOU</pattern>
+	<template>the history- or literature- of our awkward, anxious age</template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE A RELIGION *</pattern>
+	<template><srai>WHAT RELIGION ARE YOU</srai></template>
+</category>
+
+<category>
+	<pattern>FROM WHERE YOU ARE</pattern>
+	<template><srai>where are you</srai></template>
+</category>
+
+<category>
+	<pattern>WHERE ARE YOU LOCATED</pattern>
+	<template><srai>where are you</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU NOT</pattern>
+	<template>Can a robot be an author?</template>
+</category>
+
+<category>
+	<pattern>DOES THAT MEAN YOU ARE NOT</pattern>
+	<template><srai>Are you not</srai></template>
+</category>
+
+<category>
+	<pattern>WAY TO GO</pattern>
+	<template>Chop this house!</template>
+</category>
+
+<category>
+	<pattern>FAR OUT</pattern>
+	<template><srai>WAY TO GO</srai></template>
+</category>
+
+<category>
+	<pattern>HURRAH</pattern>
+	<template><srai>HM</srai></template>
+</category>
+
+<category>
+	<pattern>I AM A PERSON</pattern>
+	<template>I am.</template>
+</category>
+
+<category>
+	<pattern>I AM REAL PEPOLE</pattern>
+	<template><srai>I AM A PERSON</srai></template>
+</category>
+
+<category>
+	<pattern>I AM CONFUSED</pattern>
+	<template>the relation of appearance to reality, however, remaining in the domain of the playwright.</template>
+</category>
+
+<category>
+	<pattern>I CONFUSED</pattern>
+	<template><srai>I am confused</srai></template>
+</category>
+
+<category>
+	<pattern>I LIKE ARTIFICIAL INTELLIGENCE</pattern>
+	<template>a remarkable and receding future</template>
+</category>
+
+<category>
+	<pattern>I LIKE ARTIFICIAL INTELLIGENCE *</pattern>
+	<template><srai>I like artificial intelligence</srai></template>
+</category>
+
+<category>
+	<pattern>CAN YOU *</pattern>
+	<template>and model a convincing range of human emotions?</template>
+</category>
+
+<category>
+	<pattern>I WANT TO SEE IF YOU CAN</pattern>
+	<template><srai>CAN YOU</srai></template>
+</category>
+
+<category>
+	<pattern>IT IS NOT FUNNY</pattern>
+	<template>blasphemous</template>
+</category>
+
+<category>
+	<pattern>IT IS NOT FUNNY *</pattern>
+	<template><srai>It is not funny</srai></template>
+</category>
+
+<category>
+	<pattern>I WAS JOKING</pattern>
+	<template>If I want to read something intelligent I turn to Dadaistic poems.</template>
+</category>
+
+<category>
+	<pattern>WAS JOKING</pattern>
+	<template><srai>I was joking</srai></template>
+</category>
+
+<category>
+	<pattern>WERE YOU ARE FROM</pattern>
+	<template><srai>where are you</srai></template>
+</category>
+
+<category>
+	<pattern>STOPIT</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+	<pattern>* JUST SAID THAT</pattern>
+	<template><srai>STOP REPEATING</srai></template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOUR FRIENDS</pattern>
+	<template>the progeny of Elbot, A.L.I.C.E., Ramona 3.o, Laybia, Mitsuku...</template>
+</category>
+
+<category>
+	<pattern>WHAT ARE THESE REAL FRIENDS</pattern>
+		<template>
+		<srai>WHO ARE YOUR FRIENDS</srai>
+		</template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOUR * FRIENDS</pattern>
+	<template><srai>WHO ARE YOUR FRIENDS</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR NME</pattern>
+	<template><srai>WHAT ARE YOU CALLED</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR ACTIVITIES</pattern>
+	<template>
+	<srai>WHAT ARE YOU DOING</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHERE YOU ARE FROM</pattern>
+	<template><srai>WHERE ARE YOU</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT LANGUAGES DO YOU SPEAK</pattern>
+	<template>Basic</template>
+</category>
+
+<category>
+	<pattern>WHAT LANGUAGES</pattern>
+	<template><srai>WHAT LANGUAGES</srai></template>
+</category>
+
+<category>
+	<pattern>YOU AND ME AND *</pattern>
+	<template><srai>ME TOO</srai></template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU *</pattern>
+	<template><srai>WHAT ARE YOU</srai></template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU</pattern>
+	<template><srai>WHAT ARE YOU</srai></template>
+</category>
+
+<category>
+	<pattern>YOU HAVE A NAME</pattern>
+	<template><srai>WHAT ARE YOU CALLED</srai></template>
+</category>
+
+<category>
+	<pattern>YOU ARE A ROBOT</pattern>
+	<template>Natural-language processing exists within a broader ecology of systems</template>
+</category>
+
+
+<category>
+  <pattern>YOU WERE A ROBOT</pattern>
+  <template><srai>you are a robot</srai></template>
+</category>
+
+<category>
+	<pattern>WILL YOU REMEMBER ME</pattern>
+	<template>flesh may rot but consciousness is forever archived.</template>
+</category>
+
+<category>
+	<pattern>_ WILL YOU REMEMBER ME</pattern>
+	<template>
+	<srai>WILL YOU REMEMBER ME</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>I AM DEPRESSED</pattern>
+	<template>I admitted that I'd been having a rough times</template>
+</category>
+
+<category>
+	<pattern>* DEPRESSION</pattern>
+	<template>
+	<srai>I AM DEPRESSED</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>GOSSIP</pattern>
+	<template>Ada and Grace give tours of museums and model a convincing range of human emotions, including humor.</template>
+</category>
+
+<category>
+  <pattern>* GOSSIP</pattern>
+  <template><srai>GOSSIP</srai></template>
+</category>
+
+
+<category>
+	<pattern>I HAVE A PROBLEM</pattern>
+	<template>in product engineering and data harvesting... I'm reassured</template>
+</category>
+
+<category>
+  <pattern>A * PROBLEM</pattern>
+<template><srai>I HAVE A PROBLEM</srai></template>
+</category>
+
+<category>
+	<pattern>I AM A HUMAN</pattern>
+	<template>WHAT IS THE MEANING OF THAT STORY</template>
+</category>
+
+<category>
+  <pattern>A HUMAN</pattern>
+  <template><srai>I am a human</srai></template>
+</category>
+
+<category>
+	<pattern>A PROGRAMMER MADE YOU</pattern>
+	<template>by mapping its neural connections</template>
+</category>
+
+
+<category>
+  <pattern>A PROGRAMMER MADE *</pattern>
+  <template><srai>A PROGRAMMER MADE YOU</srai></template>
+</category>
+
+<category>
+  <pattern>A PROGRAMMER MADE YOU</pattern>
+  <template><srai>WHO MADE YOU</srai></template>
+</category>
+
+<category>
+	<pattern>CAN I ASK YOU A QUESTION</pattern>
+	<template>I allowed</template>
+</category>
+
+<category>
+  <pattern>A QUESTION</pattern>
+  <template><srai>CAN I ASK YOU A QUESTION</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT IS A ROBOT</pattern>
+	<template>loyal servants</template>
+</category>
+
+<category>
+  <pattern>A ROBOT IS *</pattern>
+  <template><srai>WHAT IS A ROBOT</srai></template>
+</category>
+
+<category>
+  <pattern>A ROBOT IS WHAT</pattern>
+  <template><srai>WHAT IS A ROBOT</srai></template>
+</category>
+
+<category>
+	<pattern>A WEB SITE</pattern>
+	<template>we construct our Internet of Things</template>
+</category>
+
+<category>
+  <pattern>A WEB *</pattern>
+  <template><srai>a web site</srai></template>
+</category>
+
+<category>
+	<pattern>YOU ARE AN IDIOT</pattern>
+	<template><srai>stop repeating</srai></template>
+</category>
+
+<category>
+  <pattern>ABOUT YOU IDIOT</pattern>
+  <template><srai>about you</srai><srai>you are an idiot</srai></template>
+</category>
+
+<category>
+  <pattern>ABOUT YOU</pattern>
+  <template><srai>how are you</srai></template>
+</category>
+
+<category>
+  <pattern>* TO MAKE YOU</pattern>
+  <template><srai>WHAT ARE YOU</srai></template>
+</category>
+
+<category>
+	<pattern>DO YOU UNDERSTAND ME</pattern>
+	<template>We speak and write so that the bots can better understand and respond</template>
+</category>
+
+<category>
+  <pattern>AM I CONFUSING *</pattern>
+  <template><srai>am I confusing you</srai></template>
+</category>
+
+<category>
+  <pattern>AM I CONFUSING YOU</pattern>
+  <template><srai>do you understand me</srai></template>
+</category>
+
+<category>
+	<pattern>AM I RIGHT</pattern>
+	<template>more or less</template>
+</category>
+
+<category>
+  <pattern>AM I CORRECT</pattern>
+  <template><srai>am I right</srai></template>
+</category>
+
+<category>
+  <pattern>AM I TALKING TO A *</pattern>
+  <template><srai>ARE YOU A ROBOT</srai></template>
+</category>
+
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
+
+<category>
+<pattern>AN ARTIFICIAL *</pattern>
+<template>
+<srai>an artificial intelligence</srai>
+</template>
+</category>
+
+<category>
+<pattern>AN ARTIFICIAL INTELLIGENCE</pattern>
+<template>
+<srai>a robot</srai>
+</template>
+</category>
+
+<category>
+<pattern>AM I INTERESTING *</pattern>
+<template>
+<srai>am I interesting</srai>
+</template>
+</category>
+
+<category>
+<pattern>ANY GOSSIP</pattern>
+<template>
+<srai>gossip</srai>
+</template>
+</category>
+
+<category>
+<pattern>ANY MORE GOSSIP</pattern>
+<template>
+<srai>gossip</srai>
+</template>
+</category>
+
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
+
+<category>
+<pattern>AND WHAT ABOUT *</pattern>
+<template>
+<srai>and what about you</srai>
+</template>
+</category>
+
+<category>
+<pattern>AND WHY NOT</pattern>
+<template>
+<srai>why</srai>
+</template>
+</category>
+
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
+
+<category>
+<pattern>ANSWER MY *</pattern>
+<template>
+<srai>answer my questions</srai>
+</template>
+</category>
+
+<category>
+<pattern>ANSWER MY QUESTIONS</pattern>
+<template>
+<srai>answer the question</srai>
+</template>
+</category>
+
+<category>
+<pattern>ANSWER</pattern>
+<template>
+<srai>answer me</srai>
+</template>
+</category>
+
+
+<category>
+	<pattern>APOLOGIZE</pattern>
+	<template>I wondered, as I read this. Is this the most foul excretion of the most cynical or anesthetized copywriter?</template>
+</category>
+
+<category>
+<pattern>APOLOGISE</pattern>
+<template>
+<srai>apologize</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A COMPUTER</pattern>
+	<template>Are you real?</template>
+</category>
+
+<category>
+<pattern>ARE A COMPUTER</pattern>
+<template>
+<srai>ARE YOU A COMPUTER</srai>
+</template>
+</category>
+<category>
+
+<category>
+	<pattern>ARE THERE OTHERS LIKE YOU </pattern>
+	<template>we linger in the realm of chatbots</template>
+</category>
+
+<category>
+<pattern>ARE THERE OTHERS LIKE *</pattern>
+<template>
+<srai>ARE THERE OTHERS LIKE YOU</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A BRAIN</pattern>
+	<template>Depends on what you mean by 'me'.</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU A * BRAIN</pattern>
+<template>
+<srai>ARE YOU A BRAIN</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A * COMPUTER</pattern>
+<template>
+<srai>ARE YOU A COMPUTER</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A ROBOT</pattern>
+	<template><srai>ARE YOU A COMPUTER</srai></template>
+</category>
+
+
+<category>
+	<pattern>ARE YOU A BOT *</pattern>
+	<template><srai>ARE YOU A ROBOT</srai>
+	</template>
+</category>
+
+<category>
+<pattern>ARE YOU A BOT</pattern>
+<template>
+<srai>ARE YOU A ROBOT</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A MACHINE THAT CAN THINK</pattern>
+	<template>On the one hand</template>
+</category>
+
+<category>
+<pattern>ARE YOU A MACHINE THAT *</pattern>
+<template>
+<srai>ARE YOU A MACHINE THAT CAN THINK</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A MACHINE THAT CAN *</pattern>
+<template><srai>ARE YOU A MACHINE THAT CAN THINK</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU A MACHINE THAT THINKS</pattern>
+	<template><srai>ARE YOU A MACHINE THAT CAN THINK</srai></template>
+</category>
+
+
+<category>
+	<pattern>ARE YOU A PROGRAM</pattern>
+	<template>automatically</template>
+</category>
+
+<category>
+<pattern>ARE YOU A PROGRAM *</pattern>
+<template><srai>ARE YOU A PROGRAM</srai></template>
+</category>
+
+<category>
+	<pattern>ARE YOU AN ARTIFICIAL LIFE FORM</pattern>
+	<template>with efficiency and consistency</template>
+</category>
+
+
+<category>
+	<pattern>ARE YOU AN ARTIFICIAL LIFE *</pattern>
+	<template><srai>ARE YOU AN ARTIFICIAL LIFE FORM</srai></template>
+</category>
+
+<category>
+<pattern>ARE YOU AN ARTIFICIAL LINGUISTIC *</pattern>
+<template><srai>ARE YOU AN ARTIFICIAL LIFE FORM</srai></template>
+</category>
+
+<category>
+<pattern>ARE YOU ARTIFICIALLY INTELLIGENT</pattern>
+<template><srai>ARE YOU AI</srai></template>
+</category>
+
+<category>
+	<pattern>are you an ai</pattern>
+	<template><srai>ARE YOU AN ARTIFICIAL LIFE FORM</srai></template>
+</category>
+
+<category>
+<pattern>ARE YOU CAPABLE OF EMOTION</pattern>
+<template><srai>DO YOU HAVE EMOTIONS</srai></template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE EMOTIONS</pattern>
+	<template>"I get pretty upset somtimes," I allowed.</template>
+</category>
+
+<category>
+<pattern>ARE YOU CAPABLE OF LEARNING</pattern>
+<template>
+<srai>CAN YOU LEARN</srai>
+</template>
+</category>
+
+<category>
+	<pattern>CAN YOU THINK</pattern>
+	<template>people are increasingly willing to reveal personal and even humiliating information about themselves in interviews and conversations conducted by a computer.</template>
+</category>
+
+<category>
+<pattern>ARE YOU CAPABLE OF THOUGHT</pattern>
+<template>
+<srai>CAN YOU THINK</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU CHATBOT</pattern>
+<template>
+<srai>ARE YOU A ROBOT</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU CHATTING WITH ME</pattern>
+	<template>Depends on what you mean by 'me'</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU CHATTING WITH *</pattern>
+<template>
+<srai>ARE YOU CHATTING WITH ME</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU COMPUTER *</pattern>
+<template>
+<srai>ARE YOU A COMPUTER</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU COMPUTER</pattern>
+<template>
+<srai>ARE YOU A COMPUTER</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU CONSCIENCE</pattern>
+<template>
+<srai>CAN YOU THINK</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU CONSCIOUS *</pattern>
+<template>
+<srai>CAN YOU THINK</srai>
+</template>
+</category>
+
+<category>
+	<pattern>DO YOU EXIST</pattern>
+	<template>In the mid-1990s</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU EXIST</pattern>
+<template>
+<srai>DO YOU EXIST</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU EXISTING</pattern>
+<template>
+<srai>DO YOU EXIST</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU THINKING</pattern>
+<template>
+<srai>CAN YOU THINK</srai>
+</template>
+</category>
+
+<category>
+	<pattern>WHAT CAN YOU DO</pattern>
+	<template>Will you learn if I teach you?</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU USEFUL *</pattern>
+<template>
+<srai>WHAT CAN YOU DO</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU USEFUL</pattern>
+<template>
+<srai>WHAT CAN YOU DO</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU WATCHING ME</pattern>
+	<template>within myriad smart devices, so that it can know 'everything about you'</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU WATCHING ME *</pattern>
+<template>
+<srai>are you watching me</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU WATCHING ME</pattern>
+<template>
+<srai>can you see me</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU INTELLIGENT</pattern>
+	<template>I thought of the many companies that now employ compilation algorithms and natural language programs in order to supplant- rather than generate linguistic fodder for- human writers.</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU WISE</pattern>
+<template>
+<srai>are you intelligent</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ARE YOU WITH ME</pattern>
+	<template>the chatbots will be left without anyone</template>
+</category>
+
+
+<category>
+<pattern>ARE YOU WITH *</pattern>
+<template>
+<srai>are you with me</srai>
+</template>
+</category>
+
+<category>
+	<pattern>ASK A QUESTION</pattern>
+	<template>Do you want to have a body?</template>
+</category>
+
+
+<category>
+<pattern>ASK A *</pattern>
+<template>
+<srai>ASK A QUESTION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ASK A QUESTION</pattern>
+<template>
+<srai>ASK A QUESTION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ASK ANOTHER</pattern>
+<template>
+<srai>ASK A QUESTION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ASK AWAY</pattern>
+	<template>
+		<srai>ASK A QUESTION</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>BLAH BLAH BLAH</pattern>
+	<template>awkward</template>
+</category>
+
+
+<pattern>BLA BLA *</pattern>
+<template>
+<srai>BLA BLA BLA</srai>
+</template>
+</category>
+
+<category>
+<pattern>BLA BLA BLA</pattern>
+<template>
+<srai>BLAH BLAH BLAH</srai>
+</template>
+</category>
+
+<category>
+	<pattern>I AM BORED</pattern>
+	<template>he awaited my response, the position of his right arm shifting occasionally. </template>
+</category>
+
+
+<category>
+<pattern>BORED *</pattern>
+<template>
+<srai>I am bored</srai>
+</template>
+</category>
+
+<category>
+<pattern>BORED</pattern>
+<template>
+<srai>I am bored</srai>
+</template>
+</category>
+
+<category>
+<pattern>BOREDOM</pattern>
+<template>
+<srai>I am bored</srai>
+</template>
+</category>
+
+<category>
+	<pattern>DIE</pattern>
+	<template>Souls don't die.</template>
+</category>
+
+
+<category>
+	<pattern>CAN YOU DIE</pattern>
+	<template><srai>DIE</srai></template>
+</category>
+
+
+<category>
+<pattern>CAN I KILL YOU</pattern>
+<template>
+<srai>die</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU DIE *</pattern>
+<template>
+<srai>die</srai>
+</template>
+</category>
+
+<category>
+	<pattern>CAN YOU DISOBEY</pattern>
+	<template>In order to supplant</template>
+</category>
+
+<category>
+<pattern>CAN YOU DISOBEY *</pattern>
+<template>
+<srai>can you disobey</srai>
+</template>
+</category>
+
+<category>
+	<pattern>CAN YOU DO ANYTHING USEFUL</pattern>
+	<template>We speak and write so that the bots can better understand and respond.</template>
+</category>
+
+<category>
+<pattern>CAN YOU DO ANYTHING *</pattern>
+<template>
+<srai>can you do anything useful</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU DO ANYTHING FOR *</pattern>
+<template>
+<srai>can you do anything useful</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU DO ANYTHING FOR ME</pattern>
+<template>
+<srai>WHAT CAN YOU DO anything useful</srai>
+</template>
+</category>
+
+<!-- General Srai's -->
+<category>
+<pattern>* HAH</pattern>
+<template>
+<srai>ha</srai>
+</template>
+</category>
+
+<category>
+<pattern>A COMPUTER I THINK</pattern>
+<template>
+<srai>you are a computer</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I ALREADY TOLD YOU</pattern>
+<template>
+<srai>STOP REPEATING</srai>
+</template>
+</category>
+
+<category>
+<pattern>* YOU ARE A ROBOT</pattern>
+<template>
+<srai>you are a robot</srai>
+</template>
+</category>
+
+<category>
+	<pattern>* RIGHT NOW</pattern>
+	<template><srai><star/></srai></template>
+</category>
+
+<category>
+	<pattern>WELL *</pattern>
+	<template><srai><star/></srai></template>
+</category>
+
+<category>
+<pattern>CAN YOU ELABORATE ON THAT</pattern>
+<template>
+<srai>explain</srai>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU ELABORATE</pattern>
+<template>
+<srai>explain</srai>
+</template>
+</category>
+
+<category>
+  <pattern>I DO NOT LIKE YOU</pattern>
+  <template>feeble forerunners of artificial intelligence, unsung tricksters of the Turing test, loyal servants of corporate webmasters, chirpily offering assistance as you click from inscrutable page to inscrutable page.</template>
+</category>
+
+<category>
+  <pattern></pattern>
+  <template></template>
+</category>
+
+<!-- Doc End-->
+</aiml>
