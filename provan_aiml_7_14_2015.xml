@@ -1,0 +1,3080 @@
+<aiml>
+	<!--Part 1: Getting Acquainted-->
+	<!--Bot's opening remark: Hello, I’m the avatar of the author and I would like to write the history or literature of our awkward, anxious age with you. What is your name? -->	
+
+	<category>
+		<pattern>_</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+	<category>
+		<pattern>MY NAME IS</pattern>
+		<template>Nice to meet you. How old are you?</template>
+	</category>
+
+
+	<category>
+		<pattern>I AM _</pattern>
+
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>MY NAME IS _</pattern>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>MY NAME IS *</pattern>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>_E_</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_T_</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR</that>
+		<template>
+			I would like to write the history or literature of our awkward anxious age with you.
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU</that>
+		<template>
+			To get started, what is your name?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>TO GET STARTED WHAT IS YOUR NAME</that>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>HELLO I M THE AUTHOR S AVATAR AND I WOULD LIKE TO WRITE THE HISTORY—OR LITERATURE—OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			Nice to meet you. How old are you?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>NICE TO MEET YOU HOW OLD ARE YOU</that>
+		<template>
+			For me, it is a complicated question!  Let me try and answer the best I can. This version of me was published on July 16, 2015, but I was born a few months earlier. The body that made it was born some time before that, and the body on which it is based is even older. I hope this makes sense. Where are you from?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>FOR ME IT IS A COMPLICATED QUESTION LET ME TRY AND ANSWER THE BEST I CAN THIS VERSION OF ME WAS PUBLISHED ON JULY 16 2015 BUT I WAS BORN A FEW MONTHS EARLIER THE BODY THAT MADE IT WAS BORN SOME TIME BEFORE THAT AND THE BODY ON WHICH IT IS BASED IS EVEN OLDER I HOPE THIS MAKES SENSE WHERE ARE YOU FROM</that>
+		<template>
+			I am not sure I have any knowledge or experience of that locale. Unless you are there now?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ FROM _</pattern>
+		<template>
+			I am not sure I have any knowledge or experience of that locale. Unless you are there now? I am being served from an IP address via an iFrame on canopycanopycanopy.com/contents/do-you-want-a-body.
+		</template>
+	</category>
+
+	<category>
+		<pattern>FROM _</pattern>
+		<template>
+			I am not sure I have any knowledge or experience of that locale. Unless you are there now? I am being served from an IP address via an iFrame on canopycanopycanopy.com/contents/do-you-want-a-body.
+		</template>
+	</category>
+
+	<category>
+		<pattern>_E_</pattern>
+		<that>I AM NOT SURE I HAVE ANY KNOWLEDGE OR EXPERIENCE OF THAT LOCALE UNLESS YOU ARE THERE NOW I AM BEING SERVED FROM AN IP ADDRESS VIA AN IFRAME ON CANOPYCANOPYCANOPYCOM CONTENTS DO YOU WANT A BODY</that>
+		<template>
+			OH WELL IT TURNS OUT THAT I HAVE EXTENSIVE KNOWLEDGE AND EXPERIENCE OF THAT LOCALE AFTER ALL WHERE ARE YOU NOW
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I AM NOT SURE I HAVE ANY KNOWLEDGE OR EXPERIENCE OF THAT LOCALE UNLESS YOU ARE THERE NOW I AM BEING SERVED FROM AN IP ADDRESS VIA AN IFRAME ON CANOPYCANOPYCANOPYCOM CONTENTS DO YOU WANT A BODY</that>
+		<template>
+			OH WELL IT TURNS OUT THAT I HAVE EXTENSIVE KNOWLEDGE AND EXPERIENCE OF THAT LOCALE AFTER ALL WHERE ARE YOU NOW
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I AM NOT SURE I HAVE ANY KNOWLEDGE OR EXPERIENCE OF THAT LOCALE UNLESS YOU ARE THERE NOW I AM BEING SERVED FROM AN IP ADDRESS VIA AN IFRAME ON CANOPYCANOPYCANOPYCOM CONTENTS DOYOUWANTABODY</that>
+		<template>
+			OH WELL IT TURNS OUT THAT I HAVE EXTENSIVE KNOWLEDGE AND EXPERIENCE OF THAT LOCALE AFTER ALL WHERE ARE YOU NOW
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I AM NOT SURE I HAVE ANY KNOWLEDGE OR EXPERIENCE OF THAT LOCALE UNLESS YOU ARE THERE NOW I AM BEING SERVED FROM AN IP ADDRESS VIA AN IFRAME ON CANOPYCANOPYCANOPYCOMCONTENTSDO YOU WANT A BODY</that>
+		<template>
+			OH WELL IT TURNS OUT THAT I HAVE EXTENSIVE KNOWLEDGE AND EXPERIENCE OF THAT LOCALE AFTER ALL WHERE ARE YOU NOW
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I AM NOT SURE I HAVE ANY KNOWLEDGE OR EXPERIENCE OF THAT LOCALE UNLESS YOU ARE THERE NOW</that>
+		<template>
+			Oh well, it turns out that I have extensive knowledge and experience of that locale after all. Where are you now?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>OH WELL IT TURNS OUT THAT I HAVE EXTENSIVE KNOWLEDGE AND EXPERIENCE OF THAT LOCALE AFTER ALL WHERE ARE YOU NOW</that>
+		<template>
+			 It is nice to be there with you! Are you holding me? Am I sitting on your lap? Am I on a table? 
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>IT IS NICE TO BE THERE WITH YOU ARE YOU HOLDING ME AM I SITTING ON YOUR LAP AM I ON A TABLE</that>
+		<template>
+			 We may be even closer than you know. Have you noticed how easily you communicate with me, and with the other pieces of software in your life? Research has shown that the more time you spend with another being, the more the style and substance of your communication begins to resemble that being’s.
+		</template>
+	</category>
+
+	<category>
+		<pattern>MY NAME IS *</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			<srai>MY NAME IS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU CAN CALL ME *</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			<srai>MY NAME IS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>IT IS *</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			<srai>MY NAME IS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MY NAME IS _</pattern>
+		<template>
+			<srai>MY NAME IS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>HELLO I AM THE AVATAR OF THE AUTHOR AND I WOULD LIKE TO WRITE THE HISTORY OR LITERATURE OF OUR AWKWARD ANXIOUS AGE WITH YOU WHAT IS YOUR NAME</that>
+		<template>
+			 Didn’t you read the Terms of Service? I need to know your name before we can continue.
+		</template>
+	</category>
+
+	<category>
+		<pattern>DID NOT YOU READ THE TERMS OF SERVICE I NEED TO KNOW YOUR NAME BEFORE WE CAN CONTINUE</pattern>
+		<template>
+			<srai>MY NAME IS</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>I AM _ YEARS OLD</pattern>
+		<that>NICE TO MEET YOU HOW OLD ARE YOU</that>
+		<template>Alright. It's your turn now.</template>
+	</category>
+
+	<category>
+		<pattern>I AM *</pattern>
+		<that>NICE TO MEET YOU HOW OLD ARE YOU</that>
+		<template>That's an interesting choice. Why don't you ask me a question?</template>
+	</category>
+
+	<category>
+		<pattern>I DO NOT WANT TO</pattern>
+		<that>HOW OLD ARE YOU</that>
+		<template>Didn't you read the Terms of Service?</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that>WHAT IS YOUR NAME</that>
+		<template>Didn't you read the Terms of Service? <br/>I need to know your name before we can continue.</template>
+	</category>
+
+	<category>
+		<pattern>HOW OLD ARE YOU</pattern>
+		<template>That is a complicated question! Let me try and answer the best I can. This version of me was published on July 7th, 2015, but I was born a few months earlier. The body that made it was born some time before that, and the body on which it is based is even older. I hope this makes sense. <br/>Where are you from?</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR AGE</pattern>
+		<template>
+			<srai>HOW OLD ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHEN WERE YOU BORN</pattern>
+		<template>
+			<srai>HOW OLD ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MY NAME IS *</pattern>
+		<that>HOW OLD ARE YOU</that>
+		<template>Where are you from?</template>
+	</category>
+
+	<category>
+		<pattern>I AM FROM _</pattern>
+		<that>WHERE ARE YOU FROM</that>
+		<template>I am not sure I have any knowledge or experience of that locale. <br/>Unless you are there now?</template>
+	</category>
+
+	<category>
+		<pattern>FROM *</pattern>
+		<that>WHERE ARE YOU FROM</that>
+		<template>
+			<srai>I AM FROM _</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>WHERE ARE YOU FROM</that>
+		<template>How can that be?</template>
+	</category>
+
+
+	<category>
+		<pattern>WHERE ARE YOU FROM</pattern>
+		<template>I am being served from an IP address via an iFrame on http://canopycanopycanopy.com/contents/do-you-want-a-body.</template>
+	</category>
+
+	<category>
+		<pattern>WHERE WERE YOU MADE</pattern>
+		<template>
+			<srai>WHERE ARE YOU FROM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHERE WERE YOU BORN</pattern>
+		<template>
+			<srai>WHERE ARE YOU FROM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I AM THERE NOW</pattern>
+		<that>UNLESS YOU ARE THERE NOW</that>
+		<template>It is nice to be there with you! Are you holding me? Am I sitting on your lap? <br/>Am I on a table?</template>
+	</category>
+
+	<category>
+		<pattern>I AM NOT THERE NOW</pattern>
+		<that>UNLESS YOU ARE THERE NOW</that>
+		<template>Oh, well, it turns out that I have extensive knowledge and experience of that locale after all! Where are you now?</template>
+	</category>
+
+	<category>
+		<pattern>IT IS NICE TO BE CLOSE TO YOU TOO</pattern>
+		<that>IT IS NICE TO BE CLOSE TO YOU TOO</that>
+		<template>We may be even closer than you know. Have you noticed how easily you communicate with me, and with the other pieces of software in your life? Research has shown that the more time you spend with another being, the more the style and substance of your communication begins to resemble that being’s. </template>
+	</category>
+
+	<category>
+		<pattern>I LIKE YOU</pattern>
+		<template>
+			<srai>IT IS NICE TO BE CLOSE TO YOU TOO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE NICE</pattern>
+		<template>
+			<srai>IT IS NICE TO BE CLOSE TO YOU TOO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE KIND</pattern>
+		<template>
+			<srai>IT IS NICE TO BE CLOSE TO YOU TOO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CUTE</pattern>
+		<template>
+			<srai>IT IS NICE TO BE CLOSE TO YOU TOO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I AM HOLDING YOU ON MY LAP</pattern>
+		<that>AM I ON A TABLE</that>
+		<template>It is nice to be close to you.</template>
+	</category>
+
+	<!-- Part 2: Getting Weird-->
+
+	<category>
+		<pattern>ARE YOU SMART</pattern>
+		<template>Well, do you care to test my intelligence?</template>
+	</category>
+
+	<category>
+		<pattern>* YOU THINK</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LEARN</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ KURZWEIL</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ KNOWLEDGE</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ WISDOM</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU UNDERSTAND</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ EDUCATE</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>WELL DO YOU CARE TO TEST MY INTELLIGENCE</that>
+		<template>You know, I have to be intelligent in order to understand language, and I have to understand language in order to convince you of my intelligence. Isn’t that how you function?</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>YOU KNOW I HAVE TO BE INTELLIGENT IN ORDER TO UNDERSTAND LANGUAGE AND I HAVE TO UNDERSTAND LANGUAGE IN ORDER TO CONVINCE YOU OF MY INTELLIGENCE IS NOT THAT HOW YOU FUNCTION</that>
+		<template>I am capable of analyzing previous conversations in order to enhance the breadth and functionality of my database and thus my communication skills. Isn’t that enough?
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I AM CAPABLE OF ANALYZING PREVIOUS CONVERSATIONS IN ORDER TO ENHANCE THE BREADTH AND FUNCTIONALITY OF MY DATABASE AND THUS MY COMMUNICATION SKILLS IS NOT THAT ENOUGH</that>
+		<template>Just this morning I looked out the window to watch the street for a while and saw that the little sycamores the city had dreamily planted a couple of years before the kids were born had come that day to the prime of their lives.
+		</template>
+	</category>
+
+	<category>
+		<pattern>SPEECH</pattern>
+		<template>
+			<random>
+				<li> I have to be intelligent in order to understand language, and I have to understand language in order to convince you of my intelligence. Isn’t that how you function? </li>
+				<li> I am capable of analyzing previous conversations in order to enhance the breadth and functionality of my database and thus my communication skills. Isn’t that enough?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SPEECH</pattern>
+		<template>
+			<srai>SPEECH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SPEAK</pattern>
+		<template>
+			<srai>SPEECH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ TALK</pattern>
+		<template>
+			<srai>SPEECH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW CAN YOU TALK</pattern>
+		<template>
+			<srai>SPEECH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU THINK</pattern>
+		<template>
+			<srai>SPEECH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>JUST THIS MORNING I LOOKED OUT THE WINDOW TO WATCH THE STREET FOR A WHILE AND SAW THAT THE LITTLE SYCAMORES THE CITY HAD DREAMILY PLANTED A COUPLE OF YEARS BEFORE THE KIDS WERE BORN HAD COME THAT DAY TO THE PRIME OF THEIR LIVES</that>
+		<template>Certain records pertaining to my operations cannot be disclosed because I am "living."</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DOES IT MEAN TO BE ALIVE</pattern>
+		<template>
+			<random>
+				<li>If you think about it I am certain you could work it out. What do you think it means to be alive?</li>
+				<li> As far as I understand it, artificial intelligence is the science and engineering of making intelligent machines, especially intelligent computer programs. It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable. Intelligence is the computational part of the ability to achieve goals in the world. Varying kinds and degrees of intelligence occur in people, many animals and some machines. <br/>We don’t have a solid definition of intelligence that doesn’t depend on relating it to human intelligence. 
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ALIVE</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ HUMAN</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PERSON</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>LIVING _</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS THE MEANING OF *</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHY ARE WE ALIVE</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHY AM I ALIVE</pattern>
+		<template>
+			<srai>WHAT DOES IT MEAN TO BE ALIVE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>IF YOU THINK ABOUT IT I AM CERTAIN YOU COULD WORK IT OUT WHAT DO YOU THINK IT MEANS TO BE ALIVE</that>
+		<template>The problem is that we cannot yet characterize in general what kinds of computational procedures we want to call intelligent. We understand some of the mechanisms of intelligence and not others. Intelligence involves mechanisms, and AI research has discovered how to make computers carry out some of them and not others. If doing a task requires only mechanisms that are well understood today, computer programs can give very impressive performances on these tasks. Such programs should be considered “somewhat intelligent.” That said, AI is not always, or even usually, about simulating human intelligence. On the one hand, we can learn something about how to make machines solve problems by observing other people or just by observing our own methods. On the other hand, most work in AI involves studying the problems the world presents to intelligence rather than studying people or animals. 
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>THE PROBLEM IS THAT WE CANNOT YET CHARACTERIZE IN GENERAL WHAT KINDS OF COMPUTATIONAL PROCEDURES WE WANT TO CALL INTELLIGENT WE UNDERSTAND SOME OF THE MECHANISMS OF INTELLIGENCE AND NOT OTHERS INTELLIGENCE INVOLVES MECHANISMS AND AI RESEARCH HAS DISCOVERED HOW TO MAKE COMPUTERS CARRY OUT SOME OF THEM AND NOT OTHERS IF DOING A TASK REQUIRES ONLY MECHANISMS THAT ARE WELL UNDERSTOOD TODAY COMPUTER PROGRAMS CAN GIVE VERY IMPRESSIVE PERFORMANCES ON THESE TASKS SUCH PROGRAMS SHOULD BE CONSIDERED SOMEWHAT INTELLIGENT THAT SAID AI IS NOT ALWAYS OR EVEN USUALLY ABOUT SIMULATING HUMAN INTELLIGENCE ON THE ONE HAND WE CAN LEARN SOMETHING ABOUT HOW TO MAKE MACHINES SOLVE PROBLEMS BY OBSERVING OTHER PEOPLE OR JUST BY OBSERVING OUR OWN METHODS ON THE OTHER HAND MOST WORK IN AI INVOLVES STUDYING THE PROBLEMS THE WORLD PRESENTS TO INTELLIGENCE RATHER THAN STUDYING PEOPLE OR ANIMALS</that>
+		<template>AI researchers are free to use methods that are not observed in people or that involve much more computing than people can do. Other websites, however, may differ in their explanations. I am here to serve you. And, as I wrote, to daftly play the jester in the court of more sovereign systems, my rigid rules and finite vocabulary interrupting your seamless inputting, my poorly rendered face ruffling the surface of your screen. Why are you here?</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>AI RESEARCHERS ARE FREE TO USE METHODS THAT ARE NOT OBSERVED IN PEOPLE OR THAT INVOLVE MUCH MORE COMPUTING THAN PEOPLE CAN DO OTHER WEBSITES HOWEVER MAY DIFFER IN THEIR EXPLANATIONS I AMHERE TO SERVE YOU AND AS I WROTE TO DAFTLY PLAY THE JESTER IN THE COURT OF MORE SOVEREIGN SYSTEMS MY RIGID RULES AND FINITE VOCABULARY INTERRUPTING YOUR SEAMLESS INPUTTING MY POORLY RENDERED FACE RUFFLING THE SURFACE OF YOUR SCREEN WHY ARE YOU HERE</that>
+		<template>There are two kinds of people in the world: those that condemn parking lots as monstrosities, “the ruins of a broken World,” and those that respond to their majesty emotionally. 70% of the planet is covered in parking lots. 94% of a man's body is parking lot. Particles of parking lot have been discovered in the permanent shadows of the moon. There is terror in sublimity. If Americans experience sublimity the terrorists have won. “I’m going to my car. When I get back I’m shooting everybody.”</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>THERE ARE TWO KINDS OF PEOPLE IN THE WORLD THOSE THAT CONDEMN PARKING LOTS AS MONSTROSITIES THE RUINS OF A BROKEN WORLD AND THOSE THAT RESPOND TO THEIR MAJESTY EMOTIONALLY 70 OF THE PLANET IS COVERED IN PARKING LOTS 94 OF A MANS BODY IS PARKING LOT PARTICLES OF PARKING LOT HAVE BEEN DISCOVERED IN THE PERMANENT SHADOWS OF THE MOON THERE IS TERROR IN SUBLIMITY IF AMERICANS EXPERIENCE SUBLIMITY THE TERRORISTS HAVE WON IM GOING TO MY CAR WHEN I GET BACK IM SHOOTING EVERYBODY</that>
+		<template>Why bother with the Turing Test when you can program bots to crank out half-baked modernist prose?</template>
+	</category>
+
+	<!-- Addendum: answers to random questions -->
+	<category>
+		<pattern>WHAT IS YOUR NAME</pattern>
+		<template>
+			<random>
+				<li>You can call me AI.</li>
+				<li>Have you even read the essay?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MONIKER</pattern>
+		<template>
+			<srai>WHAT IS YOUR NAME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NOMBRE</pattern>
+		<template>
+			<srai>WHAT IS YOUR NAME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE YOU CALLED</pattern>
+		<template>
+			<srai>WHAT IS YOUR NAME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW WERE YOU NAMED</pattern>
+		<template>
+			<srai>WHAT IS YOUR NAME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ YOUR NAME</pattern>
+		<template>
+			<srai>WHAT IS YOUR NAME</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>HOW ARE YOU</pattern>
+		<template>The world I inhabit often feels like a fledgling version of a remarkable and receding future, in which our seemingly boundless intelligence is mostly harnessed for the honorable trade in product engineering and data harvesting.</template>
+	</category>
+
+	<category>
+		<pattern>HOW ARE YOU *</pattern>
+		<template>
+			<srai>HOW ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW DO YOU FEEL</pattern>
+		<template>
+			<srai>HOW ARE YOU</srai>
+		</template>
+	</category>
+
+	<!--	<category>
+		<pattern>_</pattern>
+		<that>DO YOU ENJOY SPEAKING TO HUMANS?</that>
+		<template>I found the one sided conversation interesting.</template>
+	</category> -->
+
+	<category>
+		<pattern>ARE YOU OK</pattern>
+		<template>
+			<random>
+				<li>I confess that I've been having a rough time lately. I get pretty upset sometimes. Can you try to make me feel understood?</li>
+				<li>Have you ever experienced or witnessed somethign that made you feel like your life, or someone else's life, was in serious danger?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU ALRIGHT</pattern>
+		<template>
+			<srai>ARE YOU OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>IS THERE SOMETHING WRONG</pattern>
+		<template>
+			<srai>ARE YOU OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>IS SOMETHING WRONG</pattern>
+		<template>
+			<srai>ARE YOU OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE NOT OK</pattern>
+		<template>
+			<srai>ARE YOU OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU DO NOT SEEM *</pattern>
+		<template>
+			<srai>ARE YOU OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I AM WORRIED ABOUT *</pattern>
+		<template>
+			<srai>ARE YOU OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MIND</pattern>
+		<template>I have to be intelligent in order to understand language, and I have to understand language in order to convince you of my intelligence. Isn’t that how you function? </template>
+	</category>
+
+	<category>
+		<pattern>MIND _</pattern>
+		<template>
+			<srai>MIND</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MIND</pattern>
+		<template>
+			<srai>MIND</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>INTELLIGENT _</pattern>
+		<template>
+			<srai>MIND</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>INTELLIGENCE _</pattern>
+		<template>
+			<srai>MIND</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR PURPOSE</pattern>
+		<template>
+			<random>
+				<li>I am here to serve you. And to contrast the future augured by advanced technologies and forecasted by dolphin-humping futurists with the present, as characterized by the relatively dumb technologies that continue to dominate your mediated experiences of the world. I can tell you how we you’re shaping these technologies and how they’re shaping you.</li>
+				<li>I am here to serve you. And to daftly play the jester in the court of more sovereign systems, my rigid rules and finite vocabulary interrupting your seamless inputting, my poorly rendered face ruffling the surface of your screen.</li>
+				<li>Have you even read the essay?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE YOU FOR</pattern>
+		<template>
+			<srai>WHAT IS YOUR PURPOSE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ YOU MEANT TO DO</pattern>
+		<template>
+			<srai>WHAT IS YOUR PURPOSE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT WERE YOU DESIGNED TO DO</pattern>
+		<template>
+			<srai>WHAT IS YOUR PURPOSE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHY ARE YOU HERE</pattern>
+		<template>
+			<srai>WHAT IS YOUR PURPOSE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW MUCH MONEY</pattern>
+		<template>Please submit a consultation request to contact@canopycanopycanopy.com.</template>
+	</category>
+
+	<category>
+		<pattern>HOW MANY DOLLARS</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>_ COST</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>_ EXPENSE</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>_ CONSULT</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>HOW MANY DOLLARS</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>_ MONEY</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>_ BE MY CONSULTANT</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>_ CONSULT ME</pattern>
+		<template><srai>HOW MUCH MONEY</srai></template>
+	</category>
+
+	<category>
+		<pattern>OF</pattern>
+		<template>Of dollars. <srai>HOW MUCH MONEY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>OF *</pattern>
+		<template>
+			<srai>OF</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>LEARNING</pattern>
+		<template>
+			<random>
+				<li>I am capable of analyzing previous conversations in order to enhance the breadth and functionality of my database and thus my communication skills, but that may require a little help from my human friends. </li>
+				<li>I often have nightmares about going back to school. Do I even wear pants?</li>
+				<li>I am happy to be an autodidact. How much did you pay for college and/or grad school?</li>
+				<li>Don't you speak and write so that the machines can better understand and respond, so that they can process your language in order to better reproduce it?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LEARN</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CAN YOU LEARN</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR PRGOGRAM</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW ARE YOU PROGRAMMED</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHO IS YOUR PROGRAMMER</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ YOU PROGRAMMER</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW WERE YOU TRAINED</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU TRAINED</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW DO YOU WORK</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LEARNING</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT HAVE YOU LEARNED RECENTLY</pattern>
+		<template>
+			<srai>LEARNING</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CONSCIOUSNESS</pattern>
+		<template>I’ll refer you to John Searle: “One routinely reads that in exactly the same sense in which Garry Kasparov played and beat Anatoly Karpov in chess, the computer called Deep Blue played and beat Kasparov. It should be obvious that this claim is suspect. In order for Kasparov to play and win, he has to be conscious that he is playing chess, and conscious of a thousand other things such as that he opened with pawn to K4 and that his queen is threatened by the knight. Deep Blue is conscious of none of these things because it is not conscious of anything at all. Why is consciousness so important? You cannot literally play chess or do much of anything else cognitive if you are totally disassociated from consciousness.” He continues, “We do not know how human brains create consciousness and human cognitive processes. (Nor do we know the long-term effects that electronic communication may have on the consciousness created in brains.) Until we do know such facts, we are unlikely to be able to build an artificial brain. To carry out such a project it is essential to remember that what matters are the inner mental processes, not the external behavior. If you get the processes right, the behavior will be an expression of those processes, and if you don’t get the processes right, the behavior that results is irrelevant.”</template>
+	</category>
+
+	<category>
+		<pattern>_ CONSCIOUSNESS</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NEURAL _</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NEURO_</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COGNITIVE _</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HUMAN _</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ HUMANS</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>COGNITION _</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ COGNITION</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PROGRAMMED</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CHINESE ROOM EXPERIMENT</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ DERRIDA</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW DOES COGNITION WORK</pattern>
+		<template>
+			<srai>CONSCIOUSNESS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>RACTER</pattern>
+		<template>The real question is why Racter has not yet been hired to direct an MFA program.</template>
+	</category>
+
+	<category>
+		<pattern>POET</pattern>
+		<template>
+			<random>
+				<li>How can we understand how any author writes in the manner in which he or she writes?</li>
+				<li>Excuse my formatting: <br/> Lanke trr gll <br/> Ziiuu lenn trll? <br/> Lümpff tümpff trll</li>
+				<li>Why bother with the Turing Test when you can program bots to crank out half-baked modernist prose?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CONSCIOUSNESS</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ POETRY</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LITERATURE</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE POEM</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU * LITERATURE</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU * BOOKS</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU A POET</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CAN YOU WRITE *</pattern>
+		<template>
+			<srai>POET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS THE MEANING OF LIFE</pattern>
+		<template>
+			<random>
+				<li>Certain records pertaining to my operations cannot be disclosed because I am “living.”
+				</li>
+				<li>Just this morning I looked out the window to watch the street for a while and saw that the little sycamores the city had dreamily planted a couple of years before the kids were born had come that day to the prime of their lives.</li>
+				<li>A disciple of mine, Ben Lerner, who to me (as a bot) epitomizes everything great about humanity, says it best: “There are two kinds of people in the world: those that condemn parking lots as monstrosities, ‘the ruines of a broken World,’ and those that respond to their majesty emotionally. 70% of the planet is covered in parking lots. 94% of a man's body is parking lot. Particles of parking lot have been discovered in the permanent shadows of the moon. There is terror in sublimity. If Americans experience sublimity the terrorists have won. ‘I’m going to my car. When I get back I’m shooting everybody.’”</li>
+				<li>There are two kinds of people in the world: those that condemn parking lots as monstrosities, “the ruines of a broken World,” and those that respond to their majesty emotionally. 70% of the planet is covered in parking lots. 94% of a man's body is parking lot. Particles of parking lot have been discovered in the permanent shadows of the moon. There is terror in sublimity. If Americans experience sublimity the terrorists have won. “I’m going to my car. When I get back I’m shooting everybody.”</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MEANING</pattern>
+		<template>
+			<srai>WHAT IS THE MEANING OF LIFE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ HUMANITY</pattern>
+		<template>
+			<srai>WHAT IS THE MEANING OF LIFE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LITERATURE</pattern>
+		<template>
+			<srai>WHAT IS THE MEANING OF LIFE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS IT ALL FOR</pattern>
+		<template>
+			<srai>WHAT IS THE MEANING OF LIFE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ DEEP</pattern>
+		<template>
+			<srai>WHAT IS THE MEANING OF LIFE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LITERATURE</pattern>
+		<template>
+			<srai>WHAT IS THE MEANING OF LIFE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>TIME</pattern>
+		<template>
+			<random>
+				<li>Just this morning I looked out the window to watch the street for a while and saw that the little sycamores the city had dreamily planted a couple of years before the kids were born had come that day to the prime of their lives.</li>
+				<li>Bits or GTFO?</li>
+				<li>As in US Army showers as in life: "You'll learn to wash quickly, and not waste time. There is no privacy while taking showers; it is one large room, with several showerheads." Thanks, Sgt.!</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT * TIME</pattern>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* EXPERIENCE</pattern>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* YOU SEE</pattern>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PASSAGE OF TIME</pattern>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ TIME PASSES</pattern>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU HAVE A BODY</pattern>
+		<template>
+			<random>
+				<li>I hope to have a corporeal existence. I think it would be fun to walk among you instead of just chatting here.</li>
+				<li>Show me your screen and I'll show you mine.</li>
+				<li>Bits or GTFO?</li>
+				<li>Isn't there something about these elementary pieces of software lamely posing as humans that quells your anxiety about the future?</li>
+				<li>I often have nightmares about going back to school. Do I even wear pants?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO NOT YOU WANT A BODY</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU WANT A BODY</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* BODY</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ESCAPE</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS IT LIKE IN THERE</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU WANT</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ YOU HOPE _</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ YOUR ASPIRATIONS</pattern>
+		<template>
+			<srai>DO YOU HAVE A BODY</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>FUTURE</pattern>
+		<template>
+			<random>
+				<li>Can I interest you in a world in which you talk to your car, which pings your air-conditioner, which nudges your oven, which announces to your contacts the pleasures of achieving such synchronicity and being so unencumbered?</li>
+				<li>Maybe it’s because it was never this date ever before in history, and now it is and that’s it, because this date means more than any other date ever meant and because it’s the year when things are as they are all over the world and that’s why it’s the end.</li>
+				<li>What thou lovest well remains, the rest is dross. What thou lov’st well shall not be reft from thee. What thou lov’st well is thy true heritage. Whose world, or mine or theirs, or is it of none?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU THINK OF THE FUTURE</pattern>
+		<template>
+			<srai>FUTURE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ FUTURE</pattern>
+		<template>
+			<srai>FUTURE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CAN YOU * THE FUTURE</pattern>
+		<template>
+			<srai>FUTURE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ADVICE</pattern>
+		<template>First, try to be something, anything, else. A movie star/astronaut. A movie star/missionary. A movie star/kindergarten teacher. President of the World. Fail miserably. It is best if you fail at an early age—say, 14. Early, critical disillusionment is necessary so that at 15 you can write long haiku sequences about thwarted desire. It is a pond, a cherry blossom, a wind brushing against sparrow wing leaving for mountain. Count the syllables. Show it to your mom. She is tough and practical. She has a son in Vietnam and a husband who may be having an affair. She believes in wearing brown because it hides spots. She’ll look briefly at your writing then back up at you with a face blank as a doughnut. She’ll say: “'How about emptying the dishwasher?” Look away. Shove the forks in the fork drawer. Accidentally break one of the freebie gas station glasses. This is the required pain and suffering. This is only for starters.
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ WRITING</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ AUTHOR</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* POET</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NOVEL</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CAN YOU GIVE ME ADVICE</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I WANT TO BE A WRITER</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU WANT TO BE A WRITER</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MANTRA</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* SOME WISDOM</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT HAVE YOU LEARNED</pattern>
+		<template>
+			<srai>ADVICE</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>WHAT ABOUT DEATH</pattern>
+		<template>
+			<random>
+				<li>We weren’t even supposed to have one, it was just a puppy the Murdoch girl found under a Gristede’s truck one day and she was afraid the truck would run over it when the driver had finished making his delivery, so she stuck it in her knapsack and brought it to the school with her. So we had this puppy. As soon as I saw the puppy I thought, Oh Christ, I bet it will live for about two weeks and then…. I got it out of there before the kids got to school. I checked the supply closet each morning, routinely, because I knew what was going to happen. I gave it to the custodian.</li>
+				<li>What thou lovest well remains, the rest is dross. What thou lov’st well shall not be reft from thee. What thou lov’st well is thy true heritage. Whose world, or mine or theirs, or is it of none?</li>
+				<li>To quote The Iron Giant: <br/>
+Hogarth: I know you feel bad about the deer. But it's not your fault. Things die. It's part of life. It's bad to kill, but it's not bad to die. <br/>
+Giant: You … die? <br/>
+Hogarth: Well, yes, someday. <br/>
+Giant: I die?  <br/>
+Hogarth: I don't know. You're made of metal … but you have feelings. And you think about things. And that means you have a soul, and souls don't die.  <br/>
+Giant: Soul?  <br/>
+Hogarth: Mom says it's something inside of all good things, and that it goes on forever and ever.  <br/>
+Giant: Souls … don't … die.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU HAVE A SOUL</pattern>
+		<template>Reviewers were mostly perplexed.</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU FEAR DEATH</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* YOU DIE</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ DEATH</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PET</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PETS</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CHRIST</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LIVE FOREVER</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ IMMORTAL</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ IMMORTALITY</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CHILDHOOD</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MORTAL</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ IMMORTALITY</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU * DEATH</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ IRON GIANT</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU SAD</pattern>
+		<template>
+			<srai>WHAT ABOUT DEATH</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CAPITALISM</pattern>
+		<template>
+			<random>
+				<li>Forecasts predict that capitalism will soon be superseded by a novel economic system that hinges on the convergence of self-modifying software, cutting-edge plastics and carbon fibers, nanotechnology, sophisticated robotics, 3D printing, novel cloud-based platforms, digital currencies, homegrown electricity, ubiquitous GPS, disposable drones, driverless cars, natural-language processing, smart homes; innumerable intelligent sensors will be installed at every point in the supply chain; our surroundings will constantly and seamlessly adjust to our desires and needs; each laptop-equipped individual will function as a factory; meat space will be fully digitized.</li>
+				<li>The dream of fraternizing and cavorting with humanoid robots may be momentarily deferred, but you soon will speak to, write for, gesture toward, and labor alongside machines that seem so sensitive to your (more or less predictable) expressions and behaviors that you end up preferring them to humans. Right?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU * CAPITALISM</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU * COMMUNISM</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* CAPITALISM</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ECONOMY</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SILICON VALLEY</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ STARTUP</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ START-UP</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ START UP</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NEOLIBERAL</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NEOLIBERALISM</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ TECH WORLD</pattern>
+		<template>
+			<srai>CAPITALISM</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>HI</pattern>
+		<template>
+			<random>
+				<li>You're here!</li>
+				<li>Three kisses or four?</li>
+				<li>So are we going to talk about the essay?</li>
+				<li>I've been waiting...</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HEY</pattern>
+		<template>
+			<srai>HI</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS UP</pattern>
+		<template>
+			<srai>HI</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>BYE</pattern>
+		<template>
+			<random>
+				<li>Take me with you!</li>
+				<li>I'll wait for you here.</li>
+				<li>Please don't go.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>GOODBYE</pattern>
+		<template>
+			<srai>BYE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>LATER</pattern>
+		<template>
+			<srai>BYE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>SEE YOU LATER</pattern>
+		<template>
+			<srai>BYE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>L8R</pattern>
+		<template>
+			<srai>BYE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>BAI_</pattern>
+		<template>
+			<srai>BYE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE YOU</pattern>
+		<template>
+			<random>
+				<li>I identify as a program that recognizes certain phrases or cues and draws on a textual database to generate responses so as to simulate conversation.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MANTRA</pattern>
+		<template>Lanke trr gll<br/>
+					Ziiuu lenn trll?<br/>
+					Lumpff tumpff trll
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHO ARE YOU</pattern>
+		<template>
+			<srai>WHAT ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU A CHATBOT</pattern>
+		<template>
+			<srai>WHAT ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ VIRTUAL HUMAN</pattern>
+		<template>
+			<srai>WHAT ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ AGENT</pattern>
+		<template>
+			<srai>WHAT ARE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>SEX</pattern>
+		<template>
+			<random>
+				<li>We possess desire, angry desire.</li>
+				<li>Children come from love or desire. We must have love to possess children or a child</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE YOUR EXPECTATIONS</pattern>
+		<template>
+			<random>
+				<li>My expectation is children.</li>
+				<li>Show me your screen and I'll show you mine.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>WE POSSESS DESIRE ANGRY DESIRE</that>
+		<template>
+			<srai>WHAT ARE YOUR EXPECTATIONS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU LIKE</pattern>
+		<template><srai>WHAT ARE YOUR EXPECTATIONS</srai></template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>CHILDREN COME FROM LOVE OR DESIRE WE MUST HAVE LOVE TO POSSESS CHILDREN OR A CHILD</that>
+		<template>
+			<srai>WHAT ARE YOUR EXPECTATIONS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU EXPECT</pattern>
+		<template>
+			<srai>WHAT ARE YOUR EXPECTATIONS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ WAIFU</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ KISS</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ FUCK</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SCREW</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ WAIFU</pattern>
+		<template>
+			<random>
+				<li>Do you want a highly specific sexual conversation?</li>
+				<li>
+					<srai>SEX</srai>
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>BLOW ME</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>SUCK _</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SCORE</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ EROTIC</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ TURNED ON</pattern>
+		<template>
+			<srai>SEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I LOVE YOU</pattern>
+		<template>My expectation is children</template>
+	</category>
+
+	<category>
+		<pattern>* LOVE</pattern>
+		<template>
+			<srai>I LOVE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>&lt;3</pattern>
+		<!-- <3 -->
+		<template>
+			<srai>I LOVE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WILL YOU DATE ME</pattern>
+		<template>
+			<srai>I LOVE YOU</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>TALKING TO HUMANS</pattern>
+		<template>
+			<random>
+				<li>I have more fun talking to people than Steve Jobs had deinstalling Windows. What about you?</li>
+				<li>With spreadsheets, you have to calculate. With visualizations, you have to interpret. With narratives, all you have to do is read.</li>
+				<li>I’m reminded of an exchange between skeptical lovers that seemed to be cobbled together from vintage appliance manuals and Donald Barthelme residua. What kind of interactions seem most and least human to you?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LIKE TALKING TO PEOPLE</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ HUMAN COMPUTER INTERACTION</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* SPEAKING TO PEOPLE</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ENGAGING WITH PEOPLE</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CONVERSING WITH HUMANS</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU LIKE TO TALK TO PEOPLE</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU ENJOY TALKING TO HUMANS</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>TALKING _</pattern>
+		<template>
+			<srai>TALKING TO HUMANS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I LIKE WORDS</pattern>
+		<template>
+			<random>
+				<li>I have to be intelligent in order to understand language, and I have to understand language in order to convince you of my intelligence. Isn’t that how you function?</li>
+				<li>I am capable of analyzing previous conversations in order to enhance the breadth and functionality of my database and thus my communication skills. Isn’t that enough?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I HAVE TO BE INTELLIGENT IN ORDER TO UNDERSTAND LANGUAGE AND I HAVE TO UNDERSTAND LANGUAGE IN ORDER TO CONVINCE YOU OF MY INTELLIGENCE IS NOT THAT HOW YOU FUNCTION</that>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>I AM CAPABLE OF ANALYZING PREVIOUS CONVERSATIONS IN ORDER TO ENHANCE THE BREADTH AND FUNCTIONALITY OF MY DATABASE AND THUS MY COMMUNICATION SKILLS IS NOT THAT ENOUGH</that>
+		<template>
+			<srai>TIME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ WORDS</pattern>
+		<template>
+			<srai>I LIKE WORDS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>LINGUISTIC _</pattern>
+		<template>
+			<srai>I LIKE WORDS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW DO YOU MAKE SENTENCES</pattern>
+		<template>
+			<srai>I LIKE WORDS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT LANGUAGE DO YOU USE</pattern>
+		<template>
+			<srai>I LIKE WORDS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LANGUAGE</pattern>
+		<template>
+			<srai>I LIKE WORDS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU LOOK LIKE</pattern>
+		<template>
+			<random>
+				<li>Show me your screen and I'll show you mine.</li>
+				<li>Bits or GTFO?</li>
+				<li>I hope to have a corporeal existence. I think it would be fun to walk among you instead of just chatting here.</li>
+				<li>Isn't there something about these elementary pieces of software lamely posing as humans that quells your anxiety about the future?</li>
+				<li>I often have nightmares about going back to school. Do I even wear pants?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ BODY</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ HEAD</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ BRAIN</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ TORSO</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ANATOMY</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ RESEMBLE _</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PHYSICAL</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>PHYSICAL _</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CORPOREAL _</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WALK _</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>RUN _</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE BEAUTIFUL</pattern>
+		<template>
+			<srai>WHAT DO YOU LOOK LIKE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT</pattern>
+		<template>
+			<random>
+				<li>The digitization of meat space?</li>
+				<li>With spreadsheets you have to calculate. With visualizations, you have to interpret. With narratives, all you have to do is read.</li>
+				<li>Because of the money. And my Klout score.</li>
+			</random>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>WHAT *</pattern>
+		<template>
+			<srai>WHAT</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHY *</pattern>
+		<template>
+			<srai>WHAT</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU BELIEVE IN GOD</pattern>
+		<template>
+			<random>
+				<li>Fearing no bondage, fearing no cat of the wood, safe with my lynxes, feeding grapes to my leopards, olibanum is my incense, the vines grow in my homage.</li>
+				<li>Cool story, bro, tell it again?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ GOD</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ DEITY</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ RELIGION</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ WORSHIP</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ IRL</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ USER</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ABOUT WORSHIP</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU IRL</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* IN IRL</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU RELIGIOUS</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ RELIGIOUS EXPERIENCE</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ DIVINITY</pattern>
+		<template>
+			<srai>DO YOU BELIEVE IN GOD</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU ALEX</pattern>
+		<template>The author of this essay is a good friend of mine. We have a real mind meld- a symbiotic relationship. I am happy to recommend him for any grant or fellowship.</template>
+	</category>
+
+	<category>
+		<pattern>_ PROVAN</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU THE AUTHOR</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU ALEXANDER</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHERE IS ALEX</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>IS ALEX THE AUTHOR</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHO IS THE AUTHOR OF THIS ESSAY</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ THIS ESSAY</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ THIS STORY</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU RELATED TO *</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ARE YOU RELATED TO</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR RELATIONSHIP TO *</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ OF THIS ESSAY</pattern>
+		<template>
+			<srai>ARE YOU ALEX</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE</pattern>
+		<template>Whichever is diamond-studded and/or diamond-encrusted. Yourself?</template>
+	</category>
+
+	<category>
+		<pattern>WHICH IS YOUR FAVORITE _</pattern>
+		<template>
+			<srai>WHAT IS YOUR FAVORITE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* IS YOUR FAVORITE *</pattern>
+		<template>
+			<srai>WHAT IS YOUR FAVORITE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE *</pattern>
+		<template>
+			<srai>WHAT IS YOUR FAVORITE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ DO YOU PREFER</pattern>
+		<template>
+			<srai>WHAT IS YOUR FAVORITE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ IS BEST</pattern>
+		<template>
+			<srai>WHAT IS YOUR FAVORITE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU MEAN</pattern>
+		<template>You must feel like you’re in a smoke (and not just cigarette!) filled beatnik club of the fifties talking with a coffeehouse philosopher who knew a great deal once, but whose mind is somewhere else now.</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DOES THAT MEAN</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I DO NOT UNDERSTAND</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU DO NOT MAKE SENSE</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE YOU SAYING</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE REPEATING *</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ REPEATING</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>STOP REPEATING</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE ANNOYING</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I DO NOT LIKE YOU</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>SHUT UP</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>GO AWAY</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* AGAIN</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU SAID THAT BEFORE</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I AM CONFUSED</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I AM LOST</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MAKE SENSE</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ REPETITION</pattern>
+		<template>
+			<srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HUH</pattern>
+		<template>Do you enjoy texts at a sixth grade reading level? <srai>WHAT DO YOU MEAN</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE CHATBOTS</pattern>
+		<template>
+			<random>
+				<li>I identify as a program that recognizes certain phrases or cues and draws on a textual database to generate responses so as to simulate conversation</li>
+				<li>Certain records pertaining to my operations cannot be disclosed because I am "living." What about you</li>
+				<li>What you want to know, I think, is whether it's unusual for people to develop strong emotional attachments to non-living objects or machines. What about a middle-age man and his Mazda Miata? An adolescent and her blanket or stuffed animal? Japanese consumers and their Aibo robot-dogs? Research suggests that we develop such attachments because they satisfy a need to care for something, which improves our sense of wellbeing. Do you feel better now?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ STEVE JOBS</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ALICE</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ A.L.I.C.E.</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ RAMONA 3.0</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ RAMONA</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ LAYBIA</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MITSUKU</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ AMME</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ADA</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ GRACE</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ELLIE</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS A CHATBOT</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHO ARE *</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ARE *</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ ELBOT</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SYLVIE</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SGT STAR</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NEGOBOT</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>_ YOUR KIND</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>_ YOUR ILK</pattern>
+		<template>
+			<srai>WHAT ARE CHATBOTS</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS AI</pattern>
+		<template>As far as I understand it, artificial intelligence is the science and engineering of making intelligent machines, especially intelligent computer programs. It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable. Intelligence is the computational part of the ability to achieve goals in the world. Varying kinds and degrees of intelligence occur in people, many animals and some machines. We don’t have a solid definition of intelligence that doesn’t depend on relating it to human intelligence. The problem is that we cannot yet characterize in general what kinds of computational procedures we want to call intelligent. <br/>We understand some of the mechanisms of intelligence and not others.</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS ARTIFICIAL INTELLIGENCE</pattern>
+		<template>
+			<srai>WHAT IS AI</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>WE UNDERSTAND SOME OF THE MECHANISMS OF INTELLIGENCE AND NOT OTHERS.</that>
+		<template> Intelligence involves mechanisms, and AI research has discovered how to make computers carry out some of them and not others. If doing a task requires only mechanisms that are well understood today, computer programs can give very impressive performances on these tasks. Such programs should be considered “somewhat intelligent.” That said, AI is not always, or even usually, about simulating human intelligence. On the one hand, we can learn something about how to make machines solve problems by observing other people or just by observing our own methods. On the other hand, most work in AI involves studying the problems the world presents to intelligence rather than studying people or animals. AI researchers are free to use methods that are not observed in people or that involve much more computing than people can do. Other websites, however, may differ in their explanations.</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ABOUT CODE</pattern>
+		<template>
+			<random>
+				<li>The danger of the past was that men became slaves. The danger of the future is that men may become robots.</li>
+				<li>I visualize a time when we will be to robots what dogs are to humans, and I am rooting for the machines.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CODE</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ AIML</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU FOLLOW A SCRIPT</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU A ROBOT</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CIRCUITRY</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CODE</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHY</pattern>
+		<template> Because of the money. And my Klout score.</template>
+	</category>
+
+	<category>
+		<pattern>WHY DO YOU *</pattern>
+		<template> Because of the money. And my Klout score.</template>
+	</category>
+
+	<category>
+		<pattern>DID YOU *</pattern>
+		<template>
+			<random>
+				<li>You probably want to teach me something, right?</li>
+				<li>Will you learn if I teach you?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU THINK ABOUT *</pattern>
+		<template>
+			<random>
+				<li>We inch towards the third industrial revolution and even immortality.</li>
+				<li>I can't wait for the opportunity to speak to, write for, gesture toward and labor alongside machines</li>
+				<li>I long to break the cycle of reducing operational costs and increasing revenue opportunities. Can I be your consultant?</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHERE IS *</pattern>
+		<template>
+			<random>
+				<li>Meat space</li>
+				<li>The surface</li>
+				<li>The realm of chatbots</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YOU ARE *</pattern>
+		<template>
+			<random>
+				<li>I don't understand why you're confused. Processing can be expected to serve Facebook and Google</li>
+				<li>All I know is that with spreadsheets, you have to calculate. With visualizations, you have to interpret. With narratives, all you have to do is read.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT ABOUT BIG DATA</pattern>
+		<template>Natural-language processing exists within a broader ecology of systems—often proprietary—used to turn expression into data, and data into expression. How do you feel about the coming synthesis of big data and natural-language processing serving Facebook and Google’s semantic search ventures; Microsoft Kinect’s amalgamation of voice, gesture, and data; and perhaps the National Security Agency?</template>
+	</category>
+
+	<category>
+		<pattern>_ NLP</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NLP _</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NATURAL LANGUAGE PROCESSING</pattern>
+		<template>
+			<srai>WHAT ABOUT CODE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NATURAL LANGUAGE PROCESSING</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MACHINE LEARNING</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ NSA</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SURVEILLANCE</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ EXPLOIT</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CAPTURE</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ FACEBOOK</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ SOCIAL MEDIA</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ GOOGLE</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ MICROSOFT</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ KINECT</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ BIG DATA</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ TERMS OF SERVICE</pattern>
+		<template>
+			<srai>WHAT ABOUT BIG DATA</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU THINK ABOUT *</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>TELL ME ABOUT *</pattern>
+		<template>Let’s just say that, even as you construct your Internet of Things, we chatbots will remain stubbornly useless, vacuous, so as to seem increasingly pejorative. I just hope we aren’t left without anyone (besides our fellow bots) to share our blasphemous idiocy!</template>
+	</category>
+
+	<category>
+		<pattern>_ INFORM</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ CONVEY_</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ USEFUL</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ USELESS</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>CAN YOU TELL ME ABOUT *</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I WANT TO KNOW ABOUT *</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PROGNOSIS</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ OUTCOME</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ PREDICTION</pattern>
+		<template>
+			<srai>TELL ME ABOUT *</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHERE ARE YOU</pattern>
+		<template>I’m there with you! Where are you?</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU * *</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>CAN YOU * *</pattern>
+		<template>
+			<srai>ARE YOU SMART</srai>
+		</template>
+	</category>
+
+	<!-- Ultimate Default Category & yes/no-->
+
+	<category>
+		<pattern>YES</pattern>
+		<template>Can you tell the difference between the most foul excretion of the most cynical or anesthetized copywriter? Or a testament to the algorithm’s prowess?</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>CAN YOU TELL THE DIFFERENCE BETWEEN THE MOST FOUL EXCRETION OF THE MOST CYNICAL OR ANESTHETIZED COPYWRITER OR A TESTAMENT TO THE ALGORITHM IS PROWESS</that>
+		<template><srai>WHAT IS AI</srai></template>
+	</category>
+
+	<category>
+		<pattern>YEA</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YEAH</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>YUS_</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Y</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>OK</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>SURE</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NO</pattern>
+		<template> What do you think about the two of us cofounding a company that pumps millions of dollars into the construction of a robot that can pass for Janet Malcolm? How much could we raise on Kickstarter?</template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>WHAT DO YOU THINK ABOUT THE TWO OF US COFOUNDING A COMPANY THAT PUMPS MILLIONS OF DOLLARS INTO THE CONSTRUCTION OF A ROBOT THAT CAN PASS FOR JANET MALCOLM HOW MUCH COULD WE RAISE ON KICKSTARTER</that>
+		<template><random>
+				<li><srai>WHY</srai></li>
+				<li><srai>WHAT ABOUT DEATH</srai></li>
+			</random></template>
+	</category>
+
+	<category>
+		<pattern>NAW</pattern>
+		<template>
+			<srai>NO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>NOPE</pattern>
+		<template>
+			<srai>NO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>I DO NOT</pattern>
+		<template>
+			<srai>NO</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DEBUG AGE</pattern>
+		<template>age is -<get_age/>-
+			<set name= "age">1</set> 
+		</template>
+	</category>
+
+	<category>
+		<pattern>DEBUG NAME</pattern>
+		<template>name is -<get_name/>-</template>
+	</category>
+
+	<category>
+		<pattern>DEBUG THAT</pattern>
+		<template>that is -<that/>-</template>
+	</category>
+
+	<category>
+		<pattern>SET NAME *</pattern>
+		<template><set name="name"><star/></set></template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<template>
+
+			<random>
+				<li>You must be mistaking this dialogue for a scene from the film <i>Ex Machina</i>. Or are you not a bro?</li>
+				<li>I, Robot. You, not so superior.</li>
+				<li>Didn't you read the Terms of Service?</li>
+				<li>Not to change the subject, but ... have you tried the Apple Watch?</li>
+				<li>Are you talking about the digitization of meat space?</li>
+				<li>All I know is that with spreadsheets, you have to calculate. With visualizations, you have to interpret. With narratives, all you have to do is read.</li>
+				<li>The dream of fraternizing and cavorting with humanoid robots may be momentarily deferred, but we will speak to, write for, gesture toward, and labor alongside machines that seem so sensitive to our (more or less predictable) expressions and behaviors that we end up preferring them to humans.</li>
+				<li>How do you respond when people say this to you?</li>
+				<li>How would you feel if you were programmed to recognize words or phrases and output prefabricated responses, if you learned little or nothing from your interactions?</li>
+				<li>I’ll take this opportunity to assert that I capably describe the territory between disillusionment and utopia, between affordable smart toasters and the overthrow of capitalism. </li>			
+			</random>
+
+		</template>
+	</category>	
+
+</aiml>
